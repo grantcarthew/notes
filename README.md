@@ -2,6 +2,7 @@
 
 General notes for technology:
 
+- [Artificial Intelligence Prompts](AiPrompts/README.md)
 - [Commands](Commands.md)
 - [Debian](Debian/README.md)
 - [Deno](Deno.md)
