@@ -1,8 +1,13 @@
 # Command Cheat Sheet
 
-This page is my long term memory of command line tools.
+This page is my long-term memory of command line tools.
 
-Another great resource is [tldr pages](https://tldr.sh/).
+Resources:
+
+- [tldr](https://tldr.sh/)
+- [cheat.sh](http://cheat.sh/)
+
+To use cheat.sh: `curl cheat.sh/<command>` Eg. `curl cheat.sh/rg`
 
 ## Linux
 
