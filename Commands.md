@@ -4,7 +4,7 @@ This page is my long-term memory of command line tools.
 
 Resources:
 
-- [tldr](https://tldr.sh/)
+- [tldr.sh](https://tldr.sh/)
 - [cheat.sh](http://cheat.sh/)
 
 To use cheat.sh: `curl cheat.sh/<command>` Eg. `curl cheat.sh/rg`
