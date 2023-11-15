@@ -2,6 +2,7 @@
 
 General notes for technology:
 
+- [Commands](Commands.md)
 - [Debian](Debian/README.md)
 - [Deno](Deno.md)
 - [EndeavourOS](EndeavourOS.md)
