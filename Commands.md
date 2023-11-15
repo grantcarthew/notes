@@ -129,6 +129,7 @@ wsl --set-version <name> 2  # Set wsl distro to use WSLv2
 
 ```shell
 terraform force-unlock -force <lock id> # Removes a lock from the state
+rg -l '.' | entr -c bash -c 'echo "-- $(date +%T) --" && terraform fmt -recursive && terraform validate' # Watch files and validate
 ```
 
 ## Container
