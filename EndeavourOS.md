@@ -111,12 +111,16 @@ Descriptions:
 ## GUI Apps
 
 ```shell
-sudo pacman -S libreoffice-fresh \
+sudo pacman -S \
+    gnome-browser-connector \
+    libreoffice-fresh \
     xournalpp
+
 ```
 
 Descriptions:
 
+- [gnome-browser-connector](https://wiki.gnome.org/Projects/GnomeShellIntegration/Installation): Native host messaging connector
 - [LibreOffice](https://www.libreoffice.org/): Free Office Suite
 - [Xournal++](https://xournalpp.github.io/): Take handwritten notes with ease
 
