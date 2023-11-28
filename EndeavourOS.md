@@ -126,6 +126,7 @@ Descriptions:
 
 ### Other GUI App
 
+- [bruno](https://www.usebruno.com/): Fast and Git-Friendly Opensource API client
 - [Parabolic](https://github.com/NickvisionApps/Parabolic): Download web video and audio (YouTube Downloader)
 - [Ticket Booth](https://flathub.org/apps/me.iepure.Ticketbooth): Keep track of your favorite shows
 - [Upscaler](https://flathub.org/apps/io.gitlab.theevilskeleton.Upscaler): Upscale and enhance a given image
