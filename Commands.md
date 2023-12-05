@@ -2,7 +2,13 @@
 
 This page is my long-term memory of command line tools.
 
-Resources:
+Easy access:
+
+```shell
+alias cmd="curl -s 'https://raw.githubusercontent.com/grantcarthew/notes/main/Commands.md'"
+```
+
+Other Resources:
 
 - [tldr.sh](https://tldr.sh/)
 - [cheat.sh](http://cheat.sh/)
