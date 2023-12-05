@@ -156,6 +156,7 @@ kubectl delete pod <pod name> # Restart a pod if deployment unchanged
 kubectl exec -it <pod name> -- sh # Start an interactive shell into a running single container pod
 kubectl exec <pod name> -- sh -c 'echo $<env variable name>' # Display a pod environment variable
 kubectl get deployment --output yaml # Print the current deployment to the terminal
+kubectl debug node/<node-name> -it --image=ubuntu # Root access to cluster node
 
 helm install <release name> <chart name> # Installs a new package into the K8s cluster
 helm install <release name> <chart directory> # Installs a new package from an unpacked chart
