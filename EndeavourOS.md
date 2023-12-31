@@ -8,7 +8,7 @@ Review the following:
 - [Cloud Tools](#cloud-tools)
 
 ## References
-- [https://github.com/rothgar/awesome-tuis](Awesome TUIs)
+- [Awesome TUIs](https://github.com/rothgar/awesome-tuis)
 
 ## Basic Setup
 
