@@ -7,6 +7,9 @@ Review the following:
 - [GUI Apps](#gui-apps)
 - [Cloud Tools](#cloud-tools)
 
+## References
+- [https://github.com/rothgar/awesome-tuis](Awesome TUIs)
+
 ## Basic Setup
 
 ```shell
@@ -36,6 +39,7 @@ sudo pacman -Sy \
     neovim \
     ngrep \
     ntp \
+    ouch \
     p7zip \
     procs \
     python-pipx \
@@ -93,6 +97,7 @@ Descriptions:
 - [neovim](https://github.com/neovim/neovim) (nvim): Better vim
 - [ngrep](https://github.com/jpr5/ngrep): GNU grep applied to the network layer
 - [ntp](https://en.wikipedia.org/wiki/Network_Time_Protocol): Time sync
+- [ouch](https://github.com/ouch-org/ouch): Painless compression and decompression in the terminal
 - [p7zip](https://www.7-zip.org/download.html) (7z): File archiver with a high compression ratio
 - [procs](https://github.com/dalance/procs): A modern replacement for ps written in Rust
 - [pipx](https://github.com/pypa/pipx): Install and Run Python Applications in Isolated Environments 
