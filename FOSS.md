@@ -4,6 +4,10 @@ My list of Free Open Source Software.
 
 https://osssoftware.org/
 
+## CLI Tools
+
+My current list of command-line tools is on the [EndeavourOS page under Basic Setup](https://github.com/grantcarthew/notes/blob/main/EndeavourOS.md#basic-setup).
+
 ## Categories
 
 * [Audio](#audio)
