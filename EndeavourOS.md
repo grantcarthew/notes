@@ -23,14 +23,12 @@ sudo pacman -Sy \
     dog \
     dua-cli \
     entr \
-    exa \
     fd \
     fdupes \
     fzf \
     git \
     gping \
     hq \
-    htop \
     jq \
     lsd \
     mcfly \
@@ -40,7 +38,6 @@ sudo pacman -Sy \
     ngrep \
     ntp \
     ouch \
-    p7zip \
     procs \
     python-pipx \
     ranger \
@@ -51,7 +48,6 @@ sudo pacman -Sy \
     tlp \
     tmux \
     ttf-cascadia-code \
-    unzip \
     yamllint \
     yq
 
@@ -65,6 +61,7 @@ sudo pacman -S \
 # For Gnome
 sudo pacman -S hunspell-en_au
 
+# Time sync
 sudo systemctl enable ntpd
 sudo systemctl start ntpd
 ```
@@ -78,27 +75,23 @@ Descriptions:
 - [ctop](https://github.com/bcicen/ctop): Top-like interface for container metrics
 - [curlie](https://github.com/rs/curlie): The power of curl, the ease of use of httpie
 - [dog](https://github.com/ogham/dog): A command-line DNS client
-- [dua-cli](https://github.com/Byron/dua-cli): View disk space usage and delete unwanted data, fast
+- [dua](https://github.com/Byron/dua-cli): View disk space usage and delete unwanted data, fast
 - [entr](https://github.com/eradman/entr): Run arbitrary commands when files change
-- [exa](https://github.com/ogham/exa): A modern replacement for ‘ls’
 - [fd](https://github.com/sharkdp/fd): A simple, fast and user-friendly alternative to 'find'
 - [fdupes](https://github.com/adrianlopezroche/fdupes): Identifying or deleting duplicate files
 - [fzf](https://github.com/junegunn/fzf): A command-line fuzzy finder
 - [git](https://git-scm.com/): Source code management
 - [gping](https://github.com/orf/gping): Ping, but with a graph
 - [hq](https://github.com/coderobe/hq): A HTML processor inspired by jq
-- [htop](https://github.com/htop-dev/htop): An interactive process viewer
 - [jq](https://github.com/jqlang/jq): Command-line JSON processor
 - [lsd](https://github.com/lsd-rs/lsd): The next gen ls command 
-- [McFly](https://github.com/cantino/mcfly): McFly replaces your default ctrl-r shell history search
-- (removed) [mosh](https://github.com/mobile-shell/mosh): Mobile shell that supports roaming and intelligent local echo
+- [mcfly](https://github.com/cantino/mcfly): McFly replaces your default ctrl-r shell history search
 - [mtr](https://github.com/traviscross/mtr): Combines the functionality of traceroute and ping into one tool
 - [ncdu](https://en.wikipedia.org/wiki/Ncdu): Disk usage analyzer with an ncurses interface
 - [neovim](https://github.com/neovim/neovim) (nvim): Better vim
 - [ngrep](https://github.com/jpr5/ngrep): GNU grep applied to the network layer
 - [ntp](https://en.wikipedia.org/wiki/Network_Time_Protocol): Time sync
 - [ouch](https://github.com/ouch-org/ouch): Painless compression and decompression in the terminal
-- [p7zip](https://www.7-zip.org/download.html) (7z): File archiver with a high compression ratio
 - [procs](https://github.com/dalance/procs): A modern replacement for ps written in Rust
 - [pipx](https://github.com/pypa/pipx): Install and Run Python Applications in Isolated Environments 
 - [ranger](https://github.com/ranger/ranger): A VIM-inspired filemanager for the console
@@ -109,9 +102,13 @@ Descriptions:
 - [tlp](https://github.com/linrunner/TLP): Optimize Linux Laptop Battery Life
 - [tmux](https://github.com/tmux/tmux): Terminal multiplexer
 - [ttf-cascadia-code](https://github.com/microsoft/cascadia-code): Programming and terminal font
-- [unzip](https://man.archlinux.org/man/unzip.1.en): File decompression
 - [yamllint](https://github.com/adrienverge/yamllint): Linter for YAML files
 - [yq](https://github.com/mikefarah/yq): YAML, JSON, XML, CSV, TOML and properties processor
+- (removed due to lsd) [exa](https://github.com/ogham/exa): A modern replacement for ‘ls’
+- (removed due to btop) [htop](https://github.com/htop-dev/htop): An interactive process viewer
+- (removed as unused) [mosh](https://github.com/mobile-shell/mosh): Mobile shell that supports roaming and intelligent local echo
+- (removed due to ouch) [p7zip](https://www.7-zip.org/download.html) (7z): File archiver with a high compression ratio
+- (removed due to ouch) [unzip](https://man.archlinux.org/man/unzip.1.en): File decompression
 
 ## GUI Apps
 
