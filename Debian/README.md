@@ -35,10 +35,10 @@ sed -i 's/main/main contrib non-free/' /etc/apt/sources.list
 apt update; apt-get -y full-upgrade
 
 # Server Installation
-apt install sudo vim ntp git tmux curl htop bmon exa lshw build-essential apt-listbugs apt-listchanges netselect-apt apt-file rsync bash-completion dnsutils
+apt install sudo vim ntp git tmux curl btop bmon lsd fd-find mtr ripgrep lshw build-essential apt-listbugs apt-listchanges netselect-apt apt-file rsync bash-completion dnsutils
 
 # Desktop Installation
-apt install sudo vim ntp git tmux curl htop bmon exa lshw lshw-gtk  build-essential apt-listbugs apt-listchanges netselect-apt apt-file  rsync bash-completion dnsutils alacarte pavucontrol gnote
+apt install sudo vim ntp git tmux curl btop bmon lsd fd-find mtr ripgrep lshw lshw-gtk  build-essential apt-listbugs apt-listchanges netselect-apt apt-file rsync bash-completion dnsutils alacarte pavucontrol gnote
 
 vim /etc/sudoers # Add your account with desired permissions
 exit
