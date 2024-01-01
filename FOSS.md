@@ -6,7 +6,7 @@ https://osssoftware.org/
 
 ## CLI Tools
 
-My current list of command-line tools is on the [EndeavourOS page under Basic Setup](https://github.com/grantcarthew/notes/blob/main/EndeavourOS.md#basic-setup).
+My current list of command-line tools is on the [EndeavourOS page](https://github.com/grantcarthew/notes/blob/main/EndeavourOS.md#basic-setup) under Basic Setup. See the Descriptions below the code block for details of each tool.
 
 ## Categories
 
