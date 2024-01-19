@@ -128,12 +128,17 @@ Descriptions:
 
 ### Other GUI App
 
-- [bruno](https://www.usebruno.com/): Fast and Git-Friendly Opensource API client
+- Open-Source API Clients:
+  - [bruno](https://www.usebruno.com/): Fast and Git-Friendly Opensource API client
+  - [Firecamp](https://firecamp.dev/): Developer-first OpenSource API DevTool, Postman/Insomnia alternative.
+  - [Keyploy](https://keploy.io/): Open-source, developer-centric backend testing tool
 - [Parabolic](https://github.com/NickvisionApps/Parabolic): Download web video and audio (YouTube Downloader)
 - [Ticket Booth](https://flathub.org/apps/me.iepure.Ticketbooth): Keep track of your favorite shows
 - [Upscaler](https://flathub.org/apps/io.gitlab.theevilskeleton.Upscaler): Upscale and enhance a given image
 - [Warehouse](https://flathub.org/apps/io.github.flattool.Warehouse): Manages installed Flatpaks, their user data, and Flatpak remotes
-- [Warp](https://apps.gnome.org/Warp/): Fast and secure file transfer
+- File sharing:
+  - [Warp](https://apps.gnome.org/Warp/): Fast and secure file transfer
+  - [zrok](https://zrok.io/): Open source sharing solution built on OpenZiti, the zero trust networking platform
 
 ## AI Tools
 
