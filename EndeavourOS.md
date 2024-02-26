@@ -17,6 +17,7 @@ sudo pacman -Sy \
     bandwhich \
     bash-completion \
     bat \
+    broot \
     btop \
     ctop \
     curlie \
@@ -71,6 +72,7 @@ Descriptions:
 - [bandwhich](https://github.com/imsnif/bandwhich): Terminal bandwidth utilization tool
 - [bash-completion](https://github.com/scop/bash-completion): Programmable completion functions for bash
 - [bat](https://github.com/sharkdp/bat): A cat clone with syntax highlighting and Git integration
+- [broot](https://github.com/Canop/broot): A new way to see and navigate directory trees
 - [btop](https://github.com/aristocratos/btop): A monitor of resources
 - [ctop](https://github.com/bcicen/ctop): Top-like interface for container metrics
 - [curlie](https://github.com/rs/curlie): The power of curl, the ease of use of httpie
