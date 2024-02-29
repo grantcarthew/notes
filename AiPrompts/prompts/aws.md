@@ -25,6 +25,7 @@
 
 - **AWS CLI v2**
 - **Bash v5 scripting**
+- Use **#!/usr/bin/env bash** for the hashbang
 - **Do not** use the `--query` or `--filter` AWS CLI command arguments
 - **jq** for filtering
 - Scripts will have **minimal comments** and be **extremely readable**
