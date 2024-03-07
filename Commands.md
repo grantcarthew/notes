@@ -163,6 +163,8 @@ kubectl exec -it <pod name> -- sh # Start an interactive shell into a running si
 kubectl exec <pod name> -- sh -c 'echo $<env variable name>' # Display a pod environment variable
 kubectl get deployment --output yaml # Print the current deployment to the terminal
 kubectl debug node/<node-name> -it --image=ubuntu # Root access to cluster node
+kubectl rollout restart deployment/<deployment-name> # Restart all pods in a deployment
+kubectl rollout restart deployment -n <namespace> # Restart all deployments in a namespace
 
 helm install <release name> <chart name> # Installs a new package into the K8s cluster
 helm install <release name> <chart directory> # Installs a new package from an unpacked chart
