@@ -129,6 +129,7 @@ sqlcmd -i <sql file> -U <user> -S <server address> -P <password> # Execute an SQ
 ```shell
 wsl --list -v  # Show Windows Subsystem for Linux virtual machines
 wsl --set-version <name> 2  # Set wsl distro to use WSLv2
+WSLENV=GOPATH/l:USERPROFILE/w:SOMEVAR/wp # Share environment variables between Windows and WSL
 ```
 
 ## Cloud
