@@ -47,6 +47,11 @@ To use cheat.sh: `curl cheat.sh/<command>` Eg. `curl cheat.sh/rg`
 ## Linux
 
 ```shell
+tar -xzf /path/to/yourfile.tar.gz -C /path/to/target/directory  # Extract a tar archive into a directory
+tar -czf archive.tar.gz /path/to/directory  # Create a gzip-compressed tar archive
+tar -tf archive.tar  # List contents of a tar archive
+tar -cWf archive.tar /path/to/directory  # Verify an archive
+
 df -h  # Show free disk space
 du -shc /var/*  # Show directory disk usage
 du -h --max-depth=1 /var  # Show directory disk usage going one folder deep
