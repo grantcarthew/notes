@@ -37,5 +37,5 @@
 ## Project Structure
 
 - Central communication via signals and slots hosted in a hidden QWidget
-- Application windows are constructed as a QWidget hosting a QGraphicsView hosting a QGraphicsScene
+- Application windows are constructed as a QWidget hosting a QGraphicsView hosting a QGraphicsScene, all subclassed
 - QGraphicsItems are subclassed to create custom QGraphicsItems
