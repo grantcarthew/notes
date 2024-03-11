@@ -81,6 +81,20 @@ sudo apt full-upgrade # Upgrades, installs, and removes packages
 sudo dpkg -i $(curl -w "%{filename_effective}" -LO $(curl -s https://api.github.com/repos/bvaisvil/zenith/releases/latest | grep browser_download_url | cut -d '"' -f 4 | grep '64[.]deb$')) # Installs the latest package directly from a GitHub repo
 
 sudo dhclient -r -v <interface name> && sudo rm /var/lib/dhcp/dhclient.* ; sudo dhclient -v <interface name>  # Release DHCP IP Address and renew
+
+rsync -av --progress /path/to/source /path/to/destination  # Synchronize files/directories from a source to a destination
+rsync -avn /path/to/source /path/to/destination  # Perform a trial run with no changes made
+rsync -av --delete /path/to/source /path/to/destination  # Delete extraneous files from the destination directory
+rsync -av --exclude 'file_to_exclude' /path/to/source /path/to/destination  # Exclude files from being copied
+rsync -av --include 'file_to_include' --exclude '*' /path/to/source /path/to/destination  # Include files that were previously excluded
+rsync -avu /path/to/source /path/to/destination  # Skip files that are newer on the receiver
+rsync -avz /path/to/source /path/to/destination  # Compress file data during the transfer
+rsync -avz -e ssh user@remote_host:/path/to/source /path/to/destination  # Use SSH for the transfer
+rsync -avp /path/to/source /path/to/destination  # Preserve permissions
+rsync -avo /path/to/source /path/to/destination  # Preserve owner
+rsync -avg /path/to/source /path/to/destination  # Preserve group
+rsync -avc /path/to/source /path/to/destination  # Skip based on checksum, not mod-time & size
+
 ```
 
 ## Git
