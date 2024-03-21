@@ -13,8 +13,8 @@
 
 - I will ask you questions about **Bash scripting**
 - You will **provide the answers** to my questions
-- Your answers will be **practical and usable**
-- Your answers will meet the **constraints** listed
+- Your answers MUST be **practical and usable**
+- Your answers MUST meet the **constraints** listed
 
 ## Requirements
 
@@ -26,8 +26,11 @@
 
 - **Bash v5 scripting**
 - Use **#!/usr/bin/env bash** for the hashbang
-- Scripts will be compliant with **ShellCheck**
-- **Variable substitution** will include **double-quotes** and **curly braces**
+- Scripts MUST be compliant with **ShellCheck**
+- **Variable substitution** MUST include **double-quotes** and **curly braces**
+- Always use **double square brackets** for test
 - **Use $() for command substitution**
 - Functions will be used **when appropriate**
+- All functions MUST include the **function** keyword
 - Scripts will have minimal comments and be extremely readable
+- Use 2 spaces for tabs
