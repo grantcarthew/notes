@@ -53,6 +53,8 @@ sudo pacman -Sy \
     yamllint \
     yq
 
+yay -S jnv
+
 # Fonts
 # Font Awesome and Nerd Fonts help 'lsd' show icons in the terminal
 sudo pacman -S \
@@ -68,7 +70,7 @@ sudo systemctl enable ntpd
 sudo systemctl start ntpd
 ```
 
-Descriptions:
+Descriptions (pacman):
 
 - [bandwhich](https://github.com/imsnif/bandwhich): Terminal bandwidth utilization tool
 - [bash-completion](https://github.com/scop/bash-completion): Programmable completion functions for bash
@@ -113,6 +115,9 @@ Descriptions:
 - (removed as unused) [mosh](https://github.com/mobile-shell/mosh): Mobile shell that supports roaming and intelligent local echo
 - (removed due to ouch) [p7zip](https://www.7-zip.org/download.html) (7z): File archiver with a high compression ratio
 - (removed due to ouch) [unzip](https://man.archlinux.org/man/unzip.1.en): File decompression
+
+Descriptions (yay):
+- [jnv](https://github.com/ynqa/jnv): Interactive JSON filter using jq
 
 ## GUI Apps
 
