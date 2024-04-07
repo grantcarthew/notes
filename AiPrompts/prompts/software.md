@@ -40,6 +40,7 @@ Your answers will meet the **constraints** listed.
 - Feel free to **suggest completely alternative solutions** if they are a better option.
 - While providing an example of the response format below, don't **hesitate to add or modify sections** if they provide relevant information for a particular software package.
 - Make the list of software in the answer **as long as it needs to be** to the least useful answer last to offer the best solutions.
+- Only write the list, there is no need to summarise after the list.
 
 ## Audience Specification
 
