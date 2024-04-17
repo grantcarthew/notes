@@ -124,6 +124,7 @@ Descriptions (yay):
 ```shell
 sudo pacman -S \
     gnome-browser-connector \
+    gpick \
     libreoffice-fresh \
     xournalpp
 
@@ -132,6 +133,7 @@ sudo pacman -S \
 Descriptions:
 
 - [gnome-browser-connector](https://wiki.gnome.org/Projects/GnomeShellIntegration/Installation): Native host messaging connector
+- [Gpick](https://www.gpick.org/): Advanced color picker and palette editing tool
 - [LibreOffice](https://www.libreoffice.org/): Free Office Suite
 - [Xournal++](https://xournalpp.github.io/): Take handwritten notes with ease
 
