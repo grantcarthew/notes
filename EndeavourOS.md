@@ -125,6 +125,7 @@ Descriptions (yay):
 sudo pacman -S \
     gnome-browser-connector \
     gpick \
+    flatpak \
     libreoffice-fresh \
     pinta \
     xournalpp
@@ -135,6 +136,7 @@ Descriptions:
 
 - [gnome-browser-connector](https://wiki.gnome.org/Projects/GnomeShellIntegration/Installation): Native host messaging connector
 - [Gpick](https://www.gpick.org/): Advanced color picker and palette editing tool
+- [flatpak](https://flathub.org/): Apps for Linux
 - [LibreOffice](https://www.libreoffice.org/): Free Office Suite
 - [Pinta](https://www.pinta-project.com/): Pinta is a free, open source program for drawing and image editing
 - [Xournal++](https://xournalpp.github.io/): Take handwritten notes with ease
