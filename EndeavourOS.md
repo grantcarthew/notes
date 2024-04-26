@@ -130,6 +130,11 @@ sudo pacman -S \
     pinta \
     xournalpp
 
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+# https://flathub.org/setup/EndeavourOS
+# Restart
+
+flatpak install flathub info.beyondallreason.bar
 ```
 
 Descriptions:
