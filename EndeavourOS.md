@@ -123,6 +123,7 @@ Descriptions (yay):
 
 ```shell
 sudo pacman -S \
+    copyq \
     gnome-browser-connector \
     gpick \
     flatpak \
@@ -139,6 +140,7 @@ flatpak install flathub info.beyondallreason.bar
 
 Descriptions:
 
+- [copyq](https://github.com/hluk/CopyQ): Clipboard manager with advanced features
 - [gnome-browser-connector](https://wiki.gnome.org/Projects/GnomeShellIntegration/Installation): Native host messaging connector
 - [Gpick](https://www.gpick.org/): Advanced color picker and palette editing tool
 - [flatpak](https://flathub.org/): Apps for Linux
