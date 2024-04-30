@@ -123,6 +123,7 @@ Descriptions (yay):
 
 ```shell
 sudo pacman -S \
+    code \
     copyq \
     gnome-browser-connector \
     gpick \
@@ -140,6 +141,7 @@ flatpak install flathub info.beyondallreason.bar
 
 Descriptions:
 
+- [code](https://github.com/microsoft/vscode): Visual Studio Code
 - [copyq](https://github.com/hluk/CopyQ): Clipboard manager with advanced features
 - [gnome-browser-connector](https://wiki.gnome.org/Projects/GnomeShellIntegration/Installation): Native host messaging connector
 - [Gpick](https://www.gpick.org/): Advanced color picker and palette editing tool
@@ -147,6 +149,18 @@ Descriptions:
 - [LibreOffice](https://www.libreoffice.org/): Free Office Suite
 - [Pinta](https://www.pinta-project.com/): Pinta is a free, open source program for drawing and image editing
 - [Xournal++](https://xournalpp.github.io/): Take handwritten notes with ease
+
+### Office Apps
+
+```shell
+
+yay -S teams-for-linux
+
+```
+
+Descriptions:
+
+- [teams-for-linux](https://github.com/IsmaelMartinez/teams-for-linux): Unofficial Microsoft Teams for Linux client
 
 ### Other GUI App
 
@@ -172,7 +186,6 @@ Descriptions:
 
 ```shell
 sudo pacman -S \
-    aws-cli-v2 \
     helm \
     kubectl \
     kubectx \
@@ -183,7 +196,7 @@ yay -S opentofu
 
 Descriptions:
 
-- [aws-cli](https://aws.amazon.com/cli/): Unified tool to manage your AWS services
+- [aws-cli-v2](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html): Unified tool to manage your AWS services
 - [kubectl](https://kubernetes.io/docs/tasks/tools/): Kubernetes command-line tool
 - [kubectx](https://github.com/ahmetb/kubectx) (includes kubens): Faster way to switch between clusters and namespaces in kubectl
 - [opentofu](https://opentofu.org/): The open source infrastructure as code tool
