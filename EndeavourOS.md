@@ -123,6 +123,7 @@ Descriptions (yay):
 
 ```shell
 sudo pacman -S \
+    chromium \
     code \
     copyq \
     gnome-browser-connector \
@@ -141,6 +142,7 @@ flatpak install flathub info.beyondallreason.bar
 
 Descriptions:
 
+- [chromium](https://www.chromium.org/chromium-projects/): Open-source browser project
 - [code](https://github.com/microsoft/vscode): Visual Studio Code
 - [copyq](https://github.com/hluk/CopyQ): Clipboard manager with advanced features
 - [gnome-browser-connector](https://wiki.gnome.org/Projects/GnomeShellIntegration/Installation): Native host messaging connector
