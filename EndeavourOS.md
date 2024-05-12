@@ -13,7 +13,7 @@ Review the following:
 ## Basic Setup
 
 ```shell
-sudo pacman -Sy \
+sudo pacman --refresh --sync --noconfirm \
     bandwhich \
     bash-completion \
     bat \
@@ -53,17 +53,17 @@ sudo pacman -Sy \
     yamllint \
     yq
 
-yay -S jnv
+yay --sync --noconfirm jnv
 
 # Fonts
 # Font Awesome and Nerd Fonts help 'lsd' show icons in the terminal
-sudo pacman -S \
+sudo pacman --sync --noconfirm \
     otf-cascadia-code \
     otf-font-awesome \
     nerd-fonts
 
 # For Gnome
-sudo pacman -S hunspell-en_au
+sudo pacman --sync --noconfirm hunspell-en_au
 
 # Time sync
 sudo systemctl enable ntpd
@@ -122,7 +122,7 @@ Descriptions (yay):
 ## GUI Apps
 
 ```shell
-sudo pacman -S \
+sudo pacman --sync --noconfirm \
     chromium \
     code \
     copyq \
@@ -134,6 +134,8 @@ sudo pacman -S \
     vlc \
     xclip \
     xournalpp
+
+sudo pacman --sync --noconfirm speech-dispatcher # Required for Firefox speech synthesis
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 # https://flathub.org/setup/EndeavourOS
@@ -191,13 +193,13 @@ Descriptions:
 ## Cloud Tools
 
 ```shell
-sudo pacman -S \
+sudo pacman --sync --noconfirm \
     helm \
     kubectl \
     kubectx \
     terraform
 
-yay -S opentofu
+yay --sync --noconfirm opentofu
 ```
 
 Descriptions:
