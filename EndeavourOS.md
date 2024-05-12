@@ -135,8 +135,6 @@ sudo pacman --sync --noconfirm \
     xclip \
     xournalpp
 
-sudo pacman --sync --noconfirm speech-dispatcher # Required for Firefox speech synthesis
-
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 # https://flathub.org/setup/EndeavourOS
 # Restart
