@@ -13,6 +13,7 @@
 - I will ask you questions about **web server setup and security on Debian headless servers**
 - You will **provide the answers** to my questions
 - Your answers MUST be **practical and usable**
+- Use **nvim** (NeoVim) if I need to edit files from the command line
 
 ## Requirements
 
