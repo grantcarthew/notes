@@ -211,6 +211,30 @@ Descriptions:
 
 ## Containers
 
+Containers using rootless containerd runtime:
+
 ```shell
-sudo pacman -S containerd minikube nerdctl
+sudo pacman -S containerd minikube nerdctl rootlesskit slirp4netns cni-plugins libvirt qemu
+
+# Without sudo for rootless containers
+containerd-rootless-setuptool.sh install
+systemctl --user start contained
+
+# Test container
+nerdctl run hello-world
+
+# Minikube
+sudo usermod -aG libvirt $USER # Logout
+sudo systemctl start libvirtd
+virt-host-validate
+virsh domcapabilities --virttype="kvm"
+minikube start --container-runtime=containerd --cni=cilium
+```
+
+Docker runtime:
+
+```shell
+sudo pacman -S docker docker-compose minikube
+# Restart
+minikube start
 ```
