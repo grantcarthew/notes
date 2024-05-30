@@ -208,3 +208,9 @@ Descriptions:
 - [opentofu](https://opentofu.org/): The open source infrastructure as code tool
 - [terraform](https://www.terraform.io/): Infrastructure automation to provision and manage resources in any cloud or data center
 - [helm](https://helm.sh/): Package manager for Kubernetes
+
+## Containers
+
+```shell
+sudo pacman -S containerd minikube nerdctl
+```
