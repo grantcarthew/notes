@@ -184,9 +184,16 @@ Descriptions:
 
 ## AI Tools
 
-- [chatGPT-shell-cli](https://github.com/0xacx/chatGPT-shell-cli/tree/main): Simple shell script to use OpenAI's ChatGPT and DALL-E from the terminal
+```shell
+pipx install shell-gpt
+
+# Set default model to gpt-4o
+nvim ~/.config/shell_gpt/.sgptrc
+# DEFAULT_MODEL=gpt-4o
+```
+
 - [shell_gpt](https://github.com/TheR1D/shell_gpt): [Python] A command-line productivity tool powered by GPT-3 and GPT-4
-- [aichat](https://github.com/sigoden/aichat): [Rust] Use GPT-4(V), Gemini, LocalAI, Ollama and other LLMs in the terminal
+
 
 ## Cloud Tools
 
