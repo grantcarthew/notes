@@ -5,7 +5,10 @@ EndeavourOS running notes
 Review the following:
 - [Basic Setup](#basic-setup)
 - [GUI Apps](#gui-apps)
+- [AI Tools](#ai-tools)
 - [Cloud Tools](#cloud-tools)
+- [Containers](#containers)
+
 
 ## References
 - [Awesome TUIs](https://github.com/rothgar/awesome-tuis)
