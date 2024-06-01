@@ -36,6 +36,7 @@ sudo pacman --refresh --sync --noconfirm \
     iotop \
     jq \
     lsd \
+    lsof \
     mcfly \
     mtr \
     ncdu \
@@ -94,7 +95,8 @@ Descriptions (pacman):
 - [hq](https://github.com/coderobe/hq): A HTML processor inspired by jq
 - [iotop](https://github.com/Tomas-M/iotop): A top utility for IO
 - [jq](https://github.com/jqlang/jq): Command-line JSON processor
-- [lsd](https://github.com/lsd-rs/lsd): The next gen ls command 
+- [lsd](https://github.com/lsd-rs/lsd): The next gen ls command
+- [lsof](https://github.com/lsof-org/lsof): List open files
 - [mcfly](https://github.com/cantino/mcfly): McFly replaces your default ctrl-r shell history search
 - [mtr](https://github.com/traviscross/mtr): Combines the functionality of traceroute and ping into one tool
 - [ncdu](https://en.wikipedia.org/wiki/Ncdu): Disk usage analyzer with an ncurses interface
