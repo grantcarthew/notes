@@ -30,6 +30,7 @@ sudo pacman --refresh --sync --noconfirm \
     git \
     gping \
     hq \
+    iotop \
     jq \
     lsd \
     mcfly \
@@ -88,6 +89,7 @@ Descriptions (pacman):
 - [git](https://git-scm.com/): Source code management
 - [gping](https://github.com/orf/gping): Ping, but with a graph
 - [hq](https://github.com/coderobe/hq): A HTML processor inspired by jq
+- [iotop](https://github.com/Tomas-M/iotop): A top utility for IO
 - [jq](https://github.com/jqlang/jq): Command-line JSON processor
 - [lsd](https://github.com/lsd-rs/lsd): The next gen ls command 
 - [mcfly](https://github.com/cantino/mcfly): McFly replaces your default ctrl-r shell history search
