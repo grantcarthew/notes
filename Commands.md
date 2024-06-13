@@ -164,6 +164,8 @@ git push origin --tags # Pushes all local tags to the origin
 git remote -v # List all remotes
 git remote add <remote-alias> <remote-address> # Add a new remote
 git remote rm <remote-alias> # Remove a remote
+
+git update-index --assume-unchanged .vscode/* # Ignore local changes to tracked files
 ```
 
 ## SQL
