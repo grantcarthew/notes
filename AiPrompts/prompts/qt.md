@@ -49,6 +49,7 @@
 
 - Central communication via signals and slots hosted in a hidden QWidget
 - Application windows are constructed as a QWidget hosting a QGraphicsView hosting a QGraphicsScene, all subclassed
+- CMakeLists.txt is used to build the project
 - QGraphicsItems are subclassed to create custom QGraphicsItems
 - Target platforms: Linux X11 and Wayland, Microsoft Windows, Apple Mac
 - Linux deployment via Flatpak
