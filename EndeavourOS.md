@@ -212,11 +212,14 @@ sudo pacman --sync --noconfirm \
     terraform
 
 yay --sync --noconfirm opentofu
+
+pipx install awslogs
 ```
 
 Descriptions:
 
 - [aws-cli-v2](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html): Unified tool to manage your AWS services
+- [awslogs](https://github.com/jorgebastida/awslogs): AWS CloudWatch logs for Humans
 - [kubectl](https://kubernetes.io/docs/tasks/tools/): Kubernetes command-line tool
 - [kubectx](https://github.com/ahmetb/kubectx) (includes kubens): Faster way to switch between clusters and namespaces in kubectl
 - [opentofu](https://opentofu.org/): The open source infrastructure as code tool
