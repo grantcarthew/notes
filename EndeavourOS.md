@@ -192,7 +192,7 @@ Descriptions:
 ## AI Tools
 
 ```shell
-pipx install shell-gpt
+pipx install python-define shell-gpt --force
 
 # Set default model to gpt-4o
 nvim ~/.config/shell_gpt/.sgptrc
@@ -213,7 +213,7 @@ sudo pacman --sync --noconfirm \
 
 yay --sync --noconfirm opentofu
 
-pipx install awslogs
+pipx install awslogs --force
 ```
 
 Descriptions:
