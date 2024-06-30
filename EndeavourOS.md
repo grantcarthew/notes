@@ -8,6 +8,7 @@ Review the following:
 - [AI Tools](#ai-tools)
 - [Cloud Tools](#cloud-tools)
 - [Containers](#containers)
+- [Configuration](#configuration)
 
 
 ## References
@@ -16,7 +17,7 @@ Review the following:
 ## Basic Setup
 
 ```shell
-sudo pacman --refresh --sync --noconfirm \
+sudo pacman --refresh --sync \
     bandwhich \
     bash-completion \
     bat \
@@ -58,7 +59,7 @@ sudo pacman --refresh --sync --noconfirm \
     yamllint \
     yq
 
-yay --sync --noconfirm jnv
+yay --sync jnv
 
 # Fonts
 # Font Awesome and Nerd Fonts help 'lsd' show icons in the terminal
@@ -68,7 +69,7 @@ sudo pacman --sync --noconfirm \
     nerd-fonts
 
 # For Gnome
-sudo pacman --sync --noconfirm hunspell-en_au
+sudo pacman --sync hunspell-en_au
 
 # Time sync
 sudo systemctl enable ntpd
@@ -207,7 +208,7 @@ nvim ~/.config/shell_gpt/.sgptrc
 ## Cloud Tools
 
 ```shell
-sudo pacman --sync --noconfirm \
+sudo pacman --sync \
     helm \
     kubectl \
     kubectx \
@@ -257,3 +258,16 @@ sudo pacman -S docker docker-compose minikube
 # Restart
 minikube start
 ```
+
+## Configuration
+
+### Bluetooth
+
+[Bluetooth - ArchWiki](https://wiki.archlinux.org/title/bluetooth)
+
+```shell
+sudo pacman --refresh --sync bluez bluez-utils
+sudo systemctl enable bluetooth
+sudo systemctl start bluetooth
+```
+
