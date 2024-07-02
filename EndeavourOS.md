@@ -31,6 +31,7 @@ sudo pacman --refresh --sync \
     fd \
     fdupes \
     fzf \
+    gdb \
     git \
     gping \
     hq \
@@ -91,6 +92,7 @@ Descriptions (pacman):
 - [fd](https://github.com/sharkdp/fd): A simple, fast and user-friendly alternative to 'find'
 - [fdupes](https://github.com/adrianlopezroche/fdupes): Identifying or deleting duplicate files
 - [fzf](https://github.com/junegunn/fzf): A command-line fuzzy finder
+- [gdb](https://sourceware.org/gdb/): GNU Project debugger
 - [git](https://git-scm.com/): Source code management
 - [gping](https://github.com/orf/gping): Ping, but with a graph
 - [hq](https://github.com/coderobe/hq): A HTML processor inspired by jq
