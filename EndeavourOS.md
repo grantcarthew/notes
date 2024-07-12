@@ -216,6 +216,7 @@ sudo pacman --sync \
     kubectx \
     terraform
 
+yay --sync --noconfirm stu
 yay --sync --noconfirm opentofu
 
 pipx install awslogs --force
@@ -228,6 +229,7 @@ Descriptions:
 - [kubectl](https://kubernetes.io/docs/tasks/tools/): Kubernetes command-line tool
 - [kubectx](https://github.com/ahmetb/kubectx) (includes kubens): Faster way to switch between clusters and namespaces in kubectl
 - [opentofu](https://opentofu.org/): The open source infrastructure as code tool
+- [stu](https://github.com/lusingander/stu): TUI (Terminal/Text UI) application for AWS S3 Bucket
 - [terraform](https://www.terraform.io/): Infrastructure automation to provision and manage resources in any cloud or data center
 - [helm](https://helm.sh/): Package manager for Kubernetes
 
