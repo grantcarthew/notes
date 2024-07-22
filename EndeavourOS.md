@@ -216,7 +216,8 @@ sudo pacman --sync \
     kubectx \
     terraform
 
-yay --sync --noconfirm stu
+yay --sync --noconfirm stu tflint
+
 yay --sync --noconfirm opentofu
 
 pipx install awslogs --force
@@ -231,6 +232,7 @@ Descriptions:
 - [opentofu](https://opentofu.org/): The open source infrastructure as code tool
 - [stu](https://github.com/lusingander/stu): TUI (Terminal/Text UI) application for AWS S3 Bucket
 - [terraform](https://www.terraform.io/): Infrastructure automation to provision and manage resources in any cloud or data center
+- [tflint](https://github.com/terraform-linters/tflint): A Pluggable Terraform Linter
 - [helm](https://helm.sh/): Package manager for Kubernetes
 
 ## Containers
