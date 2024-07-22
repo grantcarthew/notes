@@ -41,8 +41,9 @@ Other Resources:
 
 - [tldr.sh](https://tldr.sh/)
 - [cheat.sh](http://cheat.sh/)
+  - To use cheat.sh: `curl cheat.sh/<command>` Eg. `curl cheat.sh/rg`
+- [Bash-Oneliner](https://github.com/onceupon/Bash-Oneliner)
 
-To use cheat.sh: `curl cheat.sh/<command>` Eg. `curl cheat.sh/rg`
 
 ## Linux
 
