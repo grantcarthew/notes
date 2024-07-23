@@ -37,6 +37,7 @@ sudo pacman --refresh --sync \
     gping \
     gron \
     hq \
+    hyperfine \
     iotop \
     jless \
     jq \
@@ -62,6 +63,7 @@ sudo pacman --refresh --sync \
     tlp \
     tmux \
     ttf-cascadia-code \
+    vegeta \
     yamllint \
     yazi \
     yq \
@@ -107,6 +109,7 @@ Descriptions (pacman):
 - [gping](https://github.com/orf/gping): Ping, but with a graph
 - [gron](https://github.com/FGRibreau/gron): Make JSON greppable!
 - [hq](https://github.com/coderobe/hq): A HTML processor inspired by jq
+- [hyperfine](https://github.com/sharkdp/hyperfine): A command-line benchmarking tool
 - [iotop](https://github.com/Tomas-M/iotop): A top utility for IO
 - [jless](https://github.com/PaulJuliusMartinez/jless): JSON viewer designed for reading, exploring, and searching through JSON data
 - [jq](https://github.com/jqlang/jq): Command-line JSON processor
@@ -131,6 +134,7 @@ Descriptions (pacman):
 - [tlp](https://github.com/linrunner/TLP): Optimize Linux Laptop Battery Life
 - [tmux](https://github.com/tmux/tmux): Terminal multiplexer
 - [ttf-cascadia-code](https://github.com/microsoft/cascadia-code): Programming and terminal font
+- [vegeta](https://github.com/tsenart/vegeta): HTTP load testing tool and library. It's over 9000!
 - [yamllint](https://github.com/adrienverge/yamllint): Linter for YAML files
 - [yazi](https://github.com/sxyazi/yazi): Blazing fast terminal file manager written in Rust, based on async I/O
 - [yq](https://github.com/mikefarah/yq): YAML, JSON, XML, CSV, TOML and properties processor
@@ -275,11 +279,6 @@ sudo pacman -S docker docker-compose minikube
 # Restart
 minikube start
 ```
-
-## Benchmarking
-
-- [hyperfine](https://github.com/sharkdp/hyperfine): A command-line benchmarking tool
-- [vegeta](https://github.com/tsenart/vegeta): HTTP load testing tool and library. It's over 9000!
 
 ## Configuration
 
