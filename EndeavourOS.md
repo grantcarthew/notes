@@ -49,12 +49,14 @@ sudo pacman --refresh --sync \
     neovim \
     ngrep \
     ntp \
+    oha \
     ouch \
     procs \
     progress \
     python-pipx \
     ranger \
     ripgrep \
+    rmlint \
     rsync \
     sd \
     shellcheck \
@@ -120,12 +122,14 @@ Descriptions (pacman):
 - [neovim](https://github.com/neovim/neovim) (nvim): Better vim
 - [ngrep](https://github.com/jpr5/ngrep): GNU grep applied to the network layer
 - [ntp](https://en.wikipedia.org/wiki/Network_Time_Protocol): Time sync
+- [oha](https://github.com/hatoo/oha): HTTP load generator
 - [ouch](https://github.com/ouch-org/ouch): Painless compression and decompression in the terminal
 - [procs](https://github.com/dalance/procs): A modern replacement for ps written in Rust
 - [progress](https://github.com/Xfennec/progress/tree/master): Displays percentage of running core util commands
 - [pipx](https://github.com/pypa/pipx): Install and Run Python Applications in Isolated Environments 
 - [ranger](https://github.com/ranger/ranger): A VIM-inspired filemanager for the console
 - [ripgrep](https://github.com/BurntSushi/ripgrep) (rg): Better file text search
+- [rmlint](https://github.com/sahib/rmlint): Extremely fast tool to remove duplicates and other lint from your filesystem
 - [rsync](https://en.wikipedia.org/wiki/Rsync): Efficiently transferring and synchronizing files between a computer and a storage
 - [sd](https://github.com/chmln/sd): Intuitive find & replace CLI (sed alternative)
 - [shellcheck](https://www.shellcheck.net/): Finds bugs in your shell scripts
