@@ -1,5 +1,7 @@
 # Lenovo Legion Pro 7i (16", Gen 9)
 
+[EndeavourOS Discussion](https://forum.endeavouros.com/t/crashing-issues-on-lenovo-legion-pro-7i-16-gen-9/58375)
+
 ## Nvidia Support
 
 ```shell
@@ -14,7 +16,6 @@ nvidia-inst -o
 ```shell
 yay --sync lenovolegionlinux-git lenovolegionlinux-dkms-git
 ```
-
 
 ## Hybrid Graphics Utility
 
