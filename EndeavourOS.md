@@ -25,6 +25,7 @@ sudo pacman --refresh --sync \
     btop \
     ctop \
     curlie \
+    difftastic \
     dog \
     dua-cli \
     entr \
@@ -34,8 +35,10 @@ sudo pacman --refresh --sync \
     gdb \
     git \
     gping \
+    gron \
     hq \
     iotop \
+    jless \
     jq \
     lsd \
     lsof \
@@ -52,13 +55,18 @@ sudo pacman --refresh --sync \
     ranger \
     ripgrep \
     rsync \
+    sd \
     shellcheck \
     speedtest-cli \
+    starship \
     tlp \
     tmux \
     ttf-cascadia-code \
     yamllint \
-    yq
+    yazi \
+    yq \
+    zellij \
+    zoxide
 
 yay --sync jnv
 
@@ -86,6 +94,7 @@ Descriptions (pacman):
 - [btop](https://github.com/aristocratos/btop): A monitor of resources
 - [ctop](https://github.com/bcicen/ctop): Top-like interface for container metrics
 - [curlie](https://github.com/rs/curlie): The power of curl, the ease of use of httpie
+- [difftastic](https://github.com/Wilfred/difftastic): A structural diff that understands syntax
 - [dog](https://github.com/ogham/dog): A command-line DNS client
 - [dua](https://github.com/Byron/dua-cli): View disk space usage and delete unwanted data, fast
 - [entr](https://github.com/eradman/entr): Run arbitrary commands when files change
@@ -93,16 +102,18 @@ Descriptions (pacman):
 - [fdupes](https://github.com/adrianlopezroche/fdupes): Identifying or deleting duplicate files
 - [fzf](https://github.com/junegunn/fzf): A command-line fuzzy finder
 - [gdb](https://sourceware.org/gdb/): GNU Project debugger
+- [gdu](https://github.com/dundee/gdu): Fast disk usage analyzer with console interface written in Go
 - [git](https://git-scm.com/): Source code management
 - [gping](https://github.com/orf/gping): Ping, but with a graph
+- [gron](https://github.com/FGRibreau/gron): Make JSON greppable!
 - [hq](https://github.com/coderobe/hq): A HTML processor inspired by jq
 - [iotop](https://github.com/Tomas-M/iotop): A top utility for IO
+- [jless](https://github.com/PaulJuliusMartinez/jless): JSON viewer designed for reading, exploring, and searching through JSON data
 - [jq](https://github.com/jqlang/jq): Command-line JSON processor
 - [lsd](https://github.com/lsd-rs/lsd): The next gen ls command
 - [lsof](https://github.com/lsof-org/lsof): List open files
 - [mcfly](https://github.com/cantino/mcfly): McFly replaces your default ctrl-r shell history search
 - [mtr](https://github.com/traviscross/mtr): Combines the functionality of traceroute and ping into one tool
-- [ncdu](https://en.wikipedia.org/wiki/Ncdu): Disk usage analyzer with an ncurses interface
 - [neovim](https://github.com/neovim/neovim) (nvim): Better vim
 - [ngrep](https://github.com/jpr5/ngrep): GNU grep applied to the network layer
 - [ntp](https://en.wikipedia.org/wiki/Network_Time_Protocol): Time sync
@@ -113,18 +124,18 @@ Descriptions (pacman):
 - [ranger](https://github.com/ranger/ranger): A VIM-inspired filemanager for the console
 - [ripgrep](https://github.com/BurntSushi/ripgrep) (rg): Better file text search
 - [rsync](https://en.wikipedia.org/wiki/Rsync): Efficiently transferring and synchronizing files between a computer and a storage
+- [sd](https://github.com/chmln/sd): Intuitive find & replace CLI (sed alternative)
 - [shellcheck](https://www.shellcheck.net/): Finds bugs in your shell scripts
 - [speedtest-cli](https://github.com/sivel/speedtest-cli): Command line network speed test
+- [starship](https://github.com/starship/starship): The minimal, blazing-fast, and infinitely customizable prompt
 - [tlp](https://github.com/linrunner/TLP): Optimize Linux Laptop Battery Life
 - [tmux](https://github.com/tmux/tmux): Terminal multiplexer
 - [ttf-cascadia-code](https://github.com/microsoft/cascadia-code): Programming and terminal font
 - [yamllint](https://github.com/adrienverge/yamllint): Linter for YAML files
+- [yazi](https://github.com/sxyazi/yazi): Blazing fast terminal file manager written in Rust, based on async I/O
 - [yq](https://github.com/mikefarah/yq): YAML, JSON, XML, CSV, TOML and properties processor
-- (removed due to lsd) [exa](https://github.com/ogham/exa): A modern replacement for ‘ls’
-- (removed due to btop) [htop](https://github.com/htop-dev/htop): An interactive process viewer
-- (removed as unused) [mosh](https://github.com/mobile-shell/mosh): Mobile shell that supports roaming and intelligent local echo
-- (removed due to ouch) [p7zip](https://www.7-zip.org/download.html) (7z): File archiver with a high compression ratio
-- (removed due to ouch) [unzip](https://man.archlinux.org/man/unzip.1.en): File decompression
+- [zellij](https://github.com/zellij-org/zellij): A terminal workspace with batteries included 
+- [zoxide](https://github.com/ajeetdsouza/zoxide): A smarter cd command
 
 Descriptions (yay):
 - [jnv](https://github.com/ynqa/jnv): Interactive JSON filter using jq
@@ -264,6 +275,11 @@ sudo pacman -S docker docker-compose minikube
 # Restart
 minikube start
 ```
+
+## Benchmarking
+
+- [hyperfine](https://github.com/sharkdp/hyperfine): A command-line benchmarking tool
+- [vegeta](https://github.com/tsenart/vegeta): HTTP load testing tool and library. It's over 9000!
 
 ## Configuration
 
