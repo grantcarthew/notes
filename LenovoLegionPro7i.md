@@ -1,4 +1,4 @@
-# Lenovo Legion Pro 7i (16", Gen 9)
+# Lenovo Legion Pro 7i (16", Gen 9) 16IRX9H
 
 References:
 
