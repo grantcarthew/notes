@@ -1,6 +1,11 @@
 # Lenovo Legion Pro 7i (16", Gen 9)
 
-[EndeavourOS Discussion](https://forum.endeavouros.com/t/crashing-issues-on-lenovo-legion-pro-7i-16-gen-9/58375)
+References:
+
+- [Lenovo Legion Pro 7i (16", Gen9)](https://www.lenovo.com/au/en/p/laptops/legion-laptops/legion-7-series/lenovo-legion-pro-7i-gen-9-(16-inch-intel)/83decto1wwau1)
+- [Lenovo Legion 7i Arch Wiki](https://wiki.archlinux.org/title/Lenovo_Legion_7i)
+- [EndeavourOS Discussion](https://forum.endeavouros.com/t/crashing-issues-on-lenovo-legion-pro-7i-16-gen-9/58375)
+- [LenovoLegionLinux Issue](https://github.com/johnfanv2/LenovoLegionLinux/issues/173)
 
 ## Nvidia Support
 
