@@ -63,6 +63,7 @@ sudo pacman --refresh --sync \
     shellcheck \
     speedtest-cli \
     starship \
+    syncthing \
     tigervnc \
     tlp \
     tmux \
@@ -75,6 +76,8 @@ sudo pacman --refresh --sync \
     zoxide
 
 yay --sync jnv
+
+yay --sync syncthing-gtk
 
 # Fonts
 # Font Awesome and Nerd Fonts help 'lsd' show icons in the terminal
@@ -138,6 +141,8 @@ Descriptions (pacman):
 - [shellcheck](https://www.shellcheck.net/): Finds bugs in your shell scripts
 - [speedtest-cli](https://github.com/sivel/speedtest-cli): Command line network speed test
 - [starship](https://github.com/starship/starship): The minimal, blazing-fast, and infinitely customizable prompt
+- [syncthing](https://syncthing.net/): Continuous file synchronization program
+- [syncthing-gtk](https://github.com/kozec/syncthing-gtk): GTK3 based GUI and notification area icon for Syncthing
 - [tigervnc](https://github.com/TigerVNC/tigervnc): High performance, multi-platform VNC client and server 
 - [tlp](https://github.com/linrunner/TLP): Optimize Linux Laptop Battery Life
 - [tmux](https://github.com/tmux/tmux): Terminal multiplexer
