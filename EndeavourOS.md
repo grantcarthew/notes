@@ -55,6 +55,7 @@ sudo pacman --refresh --sync \
     progress \
     python-pipx \
     ranger \
+    remmina \
     ripgrep \
     rmlint \
     rsync \
@@ -128,6 +129,7 @@ Descriptions (pacman):
 - [progress](https://github.com/Xfennec/progress/tree/master): Displays percentage of running core util commands
 - [pipx](https://github.com/pypa/pipx): Install and Run Python Applications in Isolated Environments 
 - [ranger](https://github.com/ranger/ranger): A VIM-inspired filemanager for the console
+- [remmina](https://gitlab.com/Remmina/Remmina): The GTK Remmina Remote Desktop Client
 - [ripgrep](https://github.com/BurntSushi/ripgrep) (rg): Better file text search
 - [rmlint](https://github.com/sahib/rmlint): Extremely fast tool to remove duplicates and other lint from your filesystem
 - [rsync](https://en.wikipedia.org/wiki/Rsync): Efficiently transferring and synchronizing files between a computer and a storage
