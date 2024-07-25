@@ -63,6 +63,7 @@ sudo pacman --refresh --sync \
     shellcheck \
     speedtest-cli \
     starship \
+    tigervnc \
     tlp \
     tmux \
     ttf-cascadia-code \
@@ -137,6 +138,7 @@ Descriptions (pacman):
 - [shellcheck](https://www.shellcheck.net/): Finds bugs in your shell scripts
 - [speedtest-cli](https://github.com/sivel/speedtest-cli): Command line network speed test
 - [starship](https://github.com/starship/starship): The minimal, blazing-fast, and infinitely customizable prompt
+- [tigervnc](https://github.com/TigerVNC/tigervnc): High performance, multi-platform VNC client and server 
 - [tlp](https://github.com/linrunner/TLP): Optimize Linux Laptop Battery Life
 - [tmux](https://github.com/tmux/tmux): Terminal multiplexer
 - [ttf-cascadia-code](https://github.com/microsoft/cascadia-code): Programming and terminal font
