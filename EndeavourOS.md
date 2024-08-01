@@ -166,6 +166,8 @@ sudo pacman --sync --noconfirm \
     code \
     copyq \
     gnome-browser-connector \
+    gnome-firmware \
+    gnome-software \
     gpick \
     flatpak \
     libreoffice-fresh \
@@ -221,7 +223,7 @@ Descriptions:
 - File sharing:
   - [Warp](https://apps.gnome.org/Warp/): Fast and secure file transfer
   - [zrok](https://zrok.io/): Open source sharing solution built on OpenZiti, the zero trust networking platform
-
+ 
 ## AI Tools
 
 ```shell
