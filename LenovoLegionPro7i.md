@@ -42,11 +42,11 @@ yay --sync lenovolegionlinux-git lenovolegionlinux-dkms-git
 ```shell
 sudo pacman --sync nvidia-prime
 yay -S supergfxctl
-systemctl enable supergfxd
-systemctl start supergfxd
+sudo systemctl enable supergfxd
+sudo systemctl start supergfxd
 
-superfgxctl -s        # List supported modes
-superfgxctl -g        # Get current mode
+supergfxctl -s        # List supported modes
+supergfxctl -g        # Get current mode
 supergfxctl -m hybrid # Switch to hybrid mode
 
 prime-run /path/to/exe
