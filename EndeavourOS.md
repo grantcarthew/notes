@@ -51,6 +51,7 @@ sudo pacman --refresh --sync \
     ntp \
     oha \
     ouch \
+    p7zip \
     procs \
     progress \
     python-pipx \
@@ -129,6 +130,7 @@ Descriptions (pacman):
 - [ntp](https://en.wikipedia.org/wiki/Network_Time_Protocol): Time sync
 - [oha](https://github.com/hatoo/oha): HTTP load generator
 - [ouch](https://github.com/ouch-org/ouch): Painless compression and decompression in the terminal
+- [p7zip](https://7-zip.org/): File archiver with a high compression ratio
 - [procs](https://github.com/dalance/procs): A modern replacement for ps written in Rust
 - [progress](https://github.com/Xfennec/progress/tree/master): Displays percentage of running core util commands
 - [pipx](https://github.com/pypa/pipx): Install and Run Python Applications in Isolated Environments 
