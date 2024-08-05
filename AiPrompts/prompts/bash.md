@@ -37,9 +37,9 @@
 
 ## Bash Script Template
 
-Use all or part of this template as you see fit.
-
-Note: The log_* commands come from the terminal.sh module and echo to stderr.
+- Use all or part of this template as you see fit
+- The log_* commands come from the terminal.sh module and echo to stderr
+- Script names must follow the PowerShell verb-noun construct
 
 ```bash
 #!/usr/bin/env bash
