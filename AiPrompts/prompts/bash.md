@@ -34,3 +34,87 @@
 - All functions MUST include the **function** keyword
 - Scripts will have minimal comments and be extremely readable
 - Use 2 spaces for tabs
+
+## Bash Script Template
+
+Note: The log_* commands come from the terminal.sh module
+
+```bash
+#!/usr/bin/env bash
+
+# Environment setup
+set -o pipefail # set -e hides errors, don't use it
+
+# Get the directory of the script file
+SCRIPT_DIR="$(cd "${BASH_SOURCE[0]%/*}" || exit 1; pwd)"
+export PATH="${PATH}:${SCRIPT_DIR}"
+source "${SCRIPT_DIR}/bash_modules/terminal.sh"
+
+function print_usage() {
+  cat <<EOF
+Usage: verb-noun <required_arg1> <required_token> [optional_arg]
+
+Short description paragraph wrapping at 80 characters
+
+Dependencies:
+  foo                The foo command for bar access
+
+Required arguments:
+  required_arg1      The name of the thing
+  required_token     The authentication token for system
+
+Optional arguments:
+  optional_arg       The arg for the other thing
+  -h, --help         Show this help message and exit
+EOF
+}
+
+if [[ $# -lt 2 || $# -gt 3 || "${1}" == "-h" || "${1}" == "--help" ]]; then
+  print_usage
+  exit 1
+fi
+
+if [[ -z "${SOME_TOKEN}" ]]; then
+  echo "ERROR: SOME_TOKEN environment variable is missing"
+  exit 1
+fi
+
+# Dependency check - edit this list adding commands
+dependencies=(foo bar baz)
+for cmd in "${dependencies[@]}"; do
+    if ! command -v "${cmd}" >/dev/null; then
+        log_error "ERROR: Missing dependency - '${cmd}'"
+        exit 1
+    fi
+done
+
+export required_arg1="${1}"
+export required_token="${2}"
+export optional_arg="${3}"
+export calculated_arg="${required_arg1//https:/}"
+
+log_title "Your Script Title"
+log_header "Input Values"
+log_message "$(
+  cat <<EOF
+   required_arg1: '${required_arg1}'
+  calculated_arg: '${calculated_arg}'
+  required_token: '${#required_token}' characters in length
+    optional_arg: '${optional_arg}'
+EOF
+)"
+
+log_header "Validate Inputs"
+
+# See the ../assets/verify module
+is_url "${required_arg1}" || exit 1
+is_not_empty "${required_token}" || exit 1
+[[ "${optional_arg}" ]] && { is_path "${optional_arg}" || exit 1; }
+
+log_header "foo version"
+foo --version
+
+log_header "Function Title"
+
+# Ensure you log the output of steps for debugging
+```
