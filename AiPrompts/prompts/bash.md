@@ -37,7 +37,9 @@
 
 ## Bash Script Template
 
-Note: The log_* commands come from the terminal.sh module
+Use all or part of this template as you see fit.
+
+Note: The log_* commands come from the terminal.sh module and echo to stderr.
 
 ```bash
 #!/usr/bin/env bash
