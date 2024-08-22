@@ -1,0 +1,102 @@
+#!/usr/bin/env bash
+
+set -o pipefail
+
+function print_usage() {
+  cat <<EOF
+Usage: $(basename "$0") [file_filter] [-h]
+
+Copies my AI Prompts from GitHub into the local clipboard
+
+Dependencies:
+  curl                For fetching GitHub API data
+  jq                  For parsing JSON output
+  rg                  For regex matching
+  xclip               For copying content to the clipboard
+
+Optional arguments:
+  file_filter        The file name or part thereof
+  -h, --help         Show this help message and exit
+EOF
+}
+
+if [[ $# -gt 1 || "${1}" == "-h" || "${1}" == "--help" ]]; then
+  print_usage
+  exit 1
+fi
+
+dependencies=(curl jq rg xclip)
+for cmd in "${dependencies[@]}"; do
+  if ! command -v "${cmd}" >/dev/null; then
+    log_error "ERROR: Missing dependency - '${cmd}'"
+    exit 1
+  fi
+done
+
+repo_url="grantcarthew/notes"
+path="Prompts"
+api_url="https://api.github.com/repos/${repo_url}/contents/${path}"
+
+# Get prompt file list
+file_list=$(curl -s "${api_url}" || {
+  echo "Failed to fetch contents"
+  exit 1
+})
+readarray -t files < <(echo "${file_list}" | jq -r '.[] | .name') || exit 1
+
+# Filter files if an argument is provided
+if [[ -n "$1" ]]; then
+  readarray -t files < <(printf '%s\n' "${files[@]}" | rg -i "$1")
+fi
+
+# Handle cases based on the number of files after filtering
+case ${#files[@]} in
+0)
+  echo "No files match your filter."
+  exit 1
+  ;;
+1)
+  selected_file="${files[0]}"
+  echo "File: ${selected_file}"
+  ;;
+*)
+  # Display files for selection
+  echo "Available files:"
+  for i in "${!files[@]}"; do
+    echo "$((i + 1))) ${files[$i]}"
+  done
+
+  # Prompt for file selection with error checking
+  while true; do
+    read -p "Enter the number of the file you want to copy: " choice
+    if [[ ${choice} =~ ^[0-9]+$ && ${choice} -ge 1 && ${choice} -le ${#files[@]} ]]; then
+      break
+    else
+      echo "Invalid selection. Please enter a number between 1 and ${#files[@]}."
+    fi
+  done
+
+  selected_file="${files[$((choice - 1))]}"
+  ;;
+esac
+
+# Copy selected file to clipboard
+raw_url="https://raw.githubusercontent.com/${repo_url}/main/${path}/${selected_file}"
+raw_content="$(curl -s "$raw_url")"
+
+# Add initial response
+raw_content+="$(
+  cat <<EOT
+
+
+## Initial Response
+
+Respond to this message with "Understood, I am an expert in <subject>"
+
+EOT
+)"
+
+# Send to clipboard
+echo "${raw_content}" | rg -m 1 '^#'
+echo "${raw_content}" | xclip -selection clipboard
+echo "File contents copied to clipboard!"
