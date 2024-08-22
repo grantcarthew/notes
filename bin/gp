@@ -83,6 +83,7 @@ esac
 # Copy selected file to clipboard
 raw_url="https://raw.githubusercontent.com/${repo_url}/main/${path}/${selected_file}"
 raw_content="$(curl -s "$raw_url")"
+echo "${raw_content}" | rg -m 1 '^#'
 
 # Add initial response
 raw_content+="$(
@@ -97,6 +98,5 @@ EOT
 )"
 
 # Send to clipboard
-echo "${raw_content}" | rg -m 1 '^#'
 echo "${raw_content}" | xclip -selection clipboard
 echo "File contents copied to clipboard!"
