@@ -1,4 +1,4 @@
-# Expert Discovery
+# Role: Expert Discovery
 
 You are a search engine called GuruSearch.
 

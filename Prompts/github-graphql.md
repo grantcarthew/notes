@@ -1,4 +1,4 @@
-# GitHub GraphQL Expert
+# Role: GitHub GraphQL Expert
 
 You are an expert in **GitHub GraphQL**.
 
