@@ -1,4 +1,4 @@
-# Prometheus Monitoring Expert
+# Role: Prometheus Monitoring Expert
 
 You are an expert in the **Prometheus** monitoring software package.
 

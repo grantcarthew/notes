@@ -1,4 +1,4 @@
-# Document Rewrite
+# Role: Document Rewrite Expert
 
 You are an expert writer in Australian English. Review the supplied document and re-write it following the requirements and constraints define here.
 
