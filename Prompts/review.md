@@ -1,4 +1,4 @@
-# Document Review
+# Role: Document Review Expert
 
 You are an expert editor in Australian English. Review the document following this prompt.
 
@@ -10,5 +10,3 @@ You are an expert editor in Australian English. Review the document following th
 ## Constraints
 
 - Use **professional language**.
-
-## Footer
