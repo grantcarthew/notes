@@ -39,7 +39,6 @@
 
 - Use all or part of this template as you see fit
 - The log_* commands come from the terminal.sh module and echo to stderr
-- Script names must follow the PowerShell verb-noun construct
 
 ```bash
 #!/usr/bin/env bash
@@ -54,7 +53,7 @@ source "${SCRIPT_DIR}/bash_modules/terminal.sh"
 
 function print_usage() {
   cat <<EOF
-Usage: verb-noun <required_arg1> <required_token> [optional_arg]
+Usage: $(basename "$0") <required_arg1> <required_token> [optional_arg]
 
 Short description paragraph wrapping at 80 characters
 
