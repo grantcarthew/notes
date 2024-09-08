@@ -23,7 +23,7 @@
 - Use US spelling for the words
 - No explanation is needed
 
-## Example
+## Examples
 
 ### Brief Description
 
@@ -42,3 +42,21 @@ An open laptop turned slightly to the left. Mostly gray in color with a slight b
 Keywords:
 
 laptop, open laptop, computer, notebook, technology, digital, work, study, office, home office, remote work, screen, display, keyboard, touchpad, modern, minimalist, workspace, desk setup, technology, electronics, device, productivity, business, coding, video call, gaming, internet, connectivity, innovation, gadget, tech, hardware, software, user interface, user experience, ergonomics, portable, mobile computing
+
+### Brief Description
+
+single white cloud flat bottom bumpy top with reflections
+
+### Response
+
+Category:
+
+Weather
+
+Description:
+
+A solitary cloud with a flat base and a textured, uneven top, resembling a fluffy, white mass against the sky.
+
+Keywords:
+
+cloud, single, sky, atmosphere, weather, flat bottom, bumpy top, cumulus, fluffy, white, texture, nature, skyscape, environment, meteorology, aerial, horizon, day, landscape, art, design, element, graphic, symbol, illustration, simplicity, minimalism, softness, purity, serene, calm, peaceful
