@@ -18,6 +18,7 @@ Review the following:
 
 ```shell
 sudo pacman --refresh --sync \
+    aichat \
     bandwhich \
     bash-completion \
     bat \
@@ -97,6 +98,7 @@ sudo systemctl start ntpd
 
 Descriptions (pacman):
 
+- [aichat](https://github.com/sigoden/aichat): All-in-one AI CLI tool
 - [bandwhich](https://github.com/imsnif/bandwhich): Terminal bandwidth utilization tool
 - [bash-completion](https://github.com/scop/bash-completion): Programmable completion functions for bash
 - [bat](https://github.com/sharkdp/bat): A cat clone with syntax highlighting and Git integration
@@ -229,14 +231,23 @@ Descriptions:
 ## AI Tools
 
 ```shell
-pipx install python-define shell-gpt --force
-
-# Set default model to gpt-4o
-nvim ~/.config/shell_gpt/.sgptrc
-# DEFAULT_MODEL=gpt-4o
+# aichat installed with pacman above
+nvim ~/.config/aichat/config.yaml
 ```
 
-- [shell_gpt](https://github.com/TheR1D/shell_gpt): [Python] A command-line productivity tool powered by GPT-3 and GPT-4
+```yaml
+model: openai:gpt-4o
+stream: true
+keybindings: vim
+editor: nvim
+wrap: auto
+wrap_code: false
+clients:
+- type: openai
+  api_key: null
+```
+
+- [aichat](https://github.com/sigoden/aichat): All-in-one AI CLI tool
 
 
 ## Cloud Tools
