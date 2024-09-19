@@ -44,6 +44,7 @@ sudo pacman --refresh --sync \
     jq \
     lsd \
     lsof \
+    ltrace \
     mcfly \
     mtr \
     ncdu \
@@ -65,6 +66,7 @@ sudo pacman --refresh --sync \
     shellcheck \
     speedtest-cli \
     starship \
+    strace \
     syncthing \
     tigervnc \
     tlp \
@@ -125,6 +127,7 @@ Descriptions (pacman):
 - [jq](https://github.com/jqlang/jq): Command-line JSON processor
 - [lsd](https://github.com/lsd-rs/lsd): The next gen ls command
 - [lsof](https://github.com/lsof-org/lsof): List open files
+- [ltrace](https://www.man7.org/linux/man-pages/man1/ltrace.1.html): A library call tracer
 - [mcfly](https://github.com/cantino/mcfly): McFly replaces your default ctrl-r shell history search
 - [mtr](https://github.com/traviscross/mtr): Combines the functionality of traceroute and ping into one tool
 - [neovim](https://github.com/neovim/neovim) (nvim): Better vim
@@ -145,6 +148,7 @@ Descriptions (pacman):
 - [shellcheck](https://www.shellcheck.net/): Finds bugs in your shell scripts
 - [speedtest-cli](https://github.com/sivel/speedtest-cli): Command line network speed test
 - [starship](https://github.com/starship/starship): The minimal, blazing-fast, and infinitely customizable prompt
+- [strace](https://man7.org/linux/man-pages/man1/strace.1.html): Trace system calls and signals
 - [syncthing](https://syncthing.net/): Continuous file synchronization program
 - [syncthing-gtk](https://github.com/kozec/syncthing-gtk): GTK3 based GUI and notification area icon for Syncthing
 - [tigervnc](https://github.com/TigerVNC/tigervnc): High performance, multi-platform VNC client and server 
