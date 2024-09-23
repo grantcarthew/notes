@@ -189,6 +189,7 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 # Restart
 
 flatpak install flathub info.beyondallreason.bar
+flatpak install flathub net.nokyan.Resources
 ```
 
 Descriptions:
@@ -202,6 +203,7 @@ Descriptions:
 - [flatpak](https://flathub.org/): Apps for Linux
 - [LibreOffice](https://www.libreoffice.org/): Free Office Suite
 - [Pinta](https://www.pinta-project.com/): Pinta is a free, open source program for drawing and image editing
+- [Resources](https://github.com/nokyan/resources): Keep an eye on system resources
 - [vlc](https://www.videolan.org/): Open source cross-platform multimedia player and framework
 - [xclip](https://github.com/astrand/xclip): Command line interface to the X11 clipboard
 - [Xournal++](https://xournalpp.github.io/): Take handwritten notes with ease
