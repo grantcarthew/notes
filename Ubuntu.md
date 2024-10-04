@@ -161,6 +161,9 @@ Descriptions (yay):
 ## GUI Apps
 
 ```shell
+# Remove the dock
+sudo apt remove gnome-shell-extension-ubuntu-dock
+
 sudo apt update && sudo apt install -y \
     alacarte \
     chromium \
