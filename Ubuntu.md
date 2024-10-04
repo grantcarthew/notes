@@ -166,6 +166,7 @@ sudo apt update && sudo apt install -y \
     chromium \
     copyq \
     gnome-browser-connector \
+    chrome-gnome-shell \
     gnome-firmware \
     gnome-software \
     gpick \
