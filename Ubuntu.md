@@ -17,46 +17,33 @@ Review the following:
 ## Basic Setup
 
 ```shell
-sudo pacman --refresh --sync \
-    aichat \
-    bandwhich \
+sudo apt update && sudo apt install -y \
     bash-completion \
     bat \
-    broot \
     btop \
-    ctop \
-    curlie \
-    difftastic \
-    dog \
-    dua-cli \
+    curl \
     entr \
-    fd \
     fdupes \
+    fonts-cascadia-code \
     fzf \
     gdb \
     git \
     gping \
     gron \
-    hq \
     hyperfine \
     iotop \
-    jless \
     jq \
     lsd \
     lsof \
     ltrace \
-    mcfly \
     mtr \
     ncdu \
     neovim \
     ngrep \
     ntp \
-    oha \
-    ouch \
     p7zip \
-    procs \
+    pipx \
     progress \
-    python-pipx \
     ranger \
     remmina \
     ripgrep \
@@ -65,37 +52,43 @@ sudo pacman --refresh --sync \
     sd \
     shellcheck \
     speedtest-cli \
-    starship \
     strace \
     syncthing \
-    tigervnc \
+    syncthing-gtk \
     tlp \
     tmux \
-    ttf-cascadia-code \
-    vegeta \
     yamllint \
-    yazi \
     yq \
-    zellij \
     zoxide
 
-yay --sync jnv
+# Install https://brew.sh/
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-yay --sync syncthing-gtk
+brew install \
+  aichat \
+  bandwhich \
+  broot \
+  ctop \
+  curlie \
+  difftastic \
+  dog \
+  dua-cli \
+  fd \
+  hq \
+  jless \
+  mcfly \
+  oha \
+  ouch \
+  procs \
+  starship \
+  vegeta \
+  yazi \
+  zellij
 
 # Fonts
 # Font Awesome and Nerd Fonts help 'lsd' show icons in the terminal
-sudo pacman --sync --noconfirm \
-    otf-cascadia-code \
-    otf-font-awesome \
-    nerd-fonts
+[getnf](https://github.com/getnf/getnf)
 
-# For Gnome
-sudo pacman --sync hunspell-en_au
-
-# Time sync
-sudo systemctl enable ntpd
-sudo systemctl start ntpd
 ```
 
 Descriptions (pacman):
@@ -168,21 +161,23 @@ Descriptions (yay):
 ## GUI Apps
 
 ```shell
-sudo pacman --sync --noconfirm \
+sudo apt update && sudo apt install -y \
     alacarte \
     chromium \
-    code \
     copyq \
     gnome-browser-connector \
     gnome-firmware \
     gnome-software \
     gpick \
     flatpak \
-    libreoffice-fresh \
-    pinta \
+    libreoffice \
     vlc \
     xclip \
     xournalpp
+
+# Use the software centre for the following:
+- pinta
+- code
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 # https://flathub.org/setup/EndeavourOS
@@ -212,7 +207,7 @@ Descriptions:
 
 ```shell
 
-yay -S teams-for-linux
+flatpak install flathub com.github.IsmaelMartinez.teams_for_linux
 
 ```
 
@@ -237,7 +232,7 @@ Descriptions:
 ## AI Tools
 
 ```shell
-# aichat installed with pacman above
+# aichat installed above
 nvim ~/.config/aichat/config.yaml
 ```
 
@@ -259,7 +254,7 @@ clients:
 ## Cloud Tools
 
 ```shell
-sudo pacman --sync \
+sudo apt update && sudo apt install -y \
     helm \
     kubectl \
     kubectx \
