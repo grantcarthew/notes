@@ -304,14 +304,16 @@ sudo pacman -S docker docker-compose minikube
 minikube start
 ```
 
-## Configuration
-
-### Bluetooth
-
-[Bluetooth - ArchWiki](https://wiki.archlinux.org/title/bluetooth)
+## Fixes
 
 ```shell
-sudo pacman --refresh --sync bluez bluez-utils
-sudo systemctl enable bluetooth
-sudo systemctl start bluetooth
+sudo apt remove gnome-shell-extension-ubuntu-dock
+sudo snap remove firefox
 ```
+
+Install Firefox from here: https://support.mozilla.org/en-US/kb/install-firefox-linux
+
+
+
+
+
