@@ -165,10 +165,16 @@ Descriptions (yay):
 
 ## Laptop Battery Management
 
+[TLP](https://wiki.archlinux.org/title/TLP)
+
 ```shell
 sudo pacman --refresh --sync tlp
 sudo systemctl enable tlp.service
 sudo systemctl start tlp.service
+yay --sync tlpui
+
+# ThinkPads Only
+yay --refresh --sync threshy threshy-gui
 ```
 
 - [tlp](https://github.com/linrunner/TLP): Optimize Linux Laptop Battery Life
