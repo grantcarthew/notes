@@ -69,7 +69,6 @@ sudo pacman --refresh --sync \
     strace \
     syncthing \
     tigervnc \
-    tlp \
     tmux \
     ttf-cascadia-code \
     vegeta \
@@ -152,7 +151,6 @@ Descriptions (pacman):
 - [syncthing](https://syncthing.net/): Continuous file synchronization program
 - [syncthing-gtk](https://github.com/kozec/syncthing-gtk): GTK3 based GUI and notification area icon for Syncthing
 - [tigervnc](https://github.com/TigerVNC/tigervnc): High performance, multi-platform VNC client and server 
-- [tlp](https://github.com/linrunner/TLP): Optimize Linux Laptop Battery Life
 - [tmux](https://github.com/tmux/tmux): Terminal multiplexer
 - [ttf-cascadia-code](https://github.com/microsoft/cascadia-code): Programming and terminal font
 - [vegeta](https://github.com/tsenart/vegeta): HTTP load testing tool and library. It's over 9000!
@@ -164,6 +162,16 @@ Descriptions (pacman):
 
 Descriptions (yay):
 - [jnv](https://github.com/ynqa/jnv): Interactive JSON filter using jq
+
+## Laptop Battery Management
+
+```shell
+sudo pacman --refresh --sync tlp
+sudo systemctl enable tlp.service
+sudo systemctl start tlp.service
+```
+
+- [tlp](https://github.com/linrunner/TLP): Optimize Linux Laptop Battery Life
 
 ## GUI Apps
 
