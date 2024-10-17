@@ -4,11 +4,16 @@ EndeavourOS running notes
 
 Review the following:
 - [Basic Setup](#basic-setup)
+- [Laptop Battery Management](#laptop-battery-management)
 - [GUI Apps](#gui-apps)
+  - [Office Apps](#office-apps)
+  - [Other GUI Apps](#other-gui-apps)
 - [AI Tools](#ai-tools)
+  - [Local LLMs](#local-llms)
 - [Cloud Tools](#cloud-tools)
 - [Containers](#containers)
 - [Configuration](#configuration)
+  - [Blue Tooth](#blue-tooth)
 
 
 ## References
@@ -234,7 +239,7 @@ Descriptions:
 
 - [teams-for-linux](https://github.com/IsmaelMartinez/teams-for-linux): Unofficial Microsoft Teams for Linux client
 
-### Other GUI App
+### Other GUI Apps
 
 - Open-Source API Clients:
   - [bruno](https://www.usebruno.com/): Fast and Git-Friendly Opensource API client
@@ -250,6 +255,7 @@ Descriptions:
  
 ## AI Tools
 
+### Terminal AI Clients
 ```shell
 # aichat installed with pacman above
 nvim ~/.config/aichat/config.yaml
@@ -269,6 +275,18 @@ clients:
 
 - [aichat](https://github.com/sigoden/aichat): All-in-one AI CLI tool
 
+### Local LLMs
+
+```shell
+# Make sure the electron depencency is the right version
+# Read the command output and don't install the source version of electron
+yay --sync ollama anythingllm-desktop-bin electron26-bin
+```
+
+Descriptions:
+
+- [Ollama](https://ollama.com/): Get up and running with large language models
+- [Anything LLM](https://github.com/Mintplex-Labs/anything-llm): All-in-one AI app you were looking for
 
 ## Cloud Tools
 
