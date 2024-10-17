@@ -9,7 +9,7 @@ Review the following:
   - [Office Apps](#office-apps)
   - [Other GUI Apps](#other-gui-apps)
 - [AI Tools](#ai-tools)
-  - [Terminal Clients](#terminal-clients)
+  - [Terminal AI Clients](#terminal-ai-clients)
   - [Local LLMs](#local-llms)
 - [Cloud Tools](#cloud-tools)
 - [Containers](#containers)
