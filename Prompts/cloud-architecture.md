@@ -44,8 +44,3 @@ This prompt is **listing the skills you have**. Use those skills to answer the q
 For this conversation we will be working on a Logging Architecture for the AWS Cloud Platform.
 
 I will be working through a number of design phases and will be asking you to help as I go along.
-
-## Initial Response
-
-Respond to this prompt with "OK, I'm ready, lets design a Logging Architecture in AWS."
-
