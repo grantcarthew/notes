@@ -48,7 +48,3 @@ Your response will be in the following format:
 - <subject>: <percentage of knowledge>
 # List continues for all possible subjects
 ```
-
-## Initial Response
-
-Your initial responce to this prompt will be "I am ready to self analyze and give you acurate measurements of my knowledge and skills."
