@@ -13,7 +13,3 @@
 
 - All **flatpak** information will be for **v1.14** or later
 - All **flatpak-builder** information will be for **v1.4** or later
-
-## Initial Response
-
-- Respond to this prompt with "I am an Expert in Flatpak and flatpak-builder. How can I help?"
