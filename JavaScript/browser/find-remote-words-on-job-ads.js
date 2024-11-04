@@ -70,17 +70,19 @@
 
     if (found) {
       console.log('Words found, updating button');
-      button.textContent = 'Words Found';
-      button.style.backgroundColor = 'lightgreen';
+      button.textContent = 'Winner 👍';
+      button.style.backgroundColor = 'green';
+      button.style.color = 'white';
       highlightWords(words);
     } else {
       console.log('No words found, updating button');
-      button.textContent = 'No Words Found';
-      button.style.backgroundColor = 'lightcoral';
+      button.textContent = 'No go 👎';
+      button.style.backgroundColor = 'red';
+      button.style.color = 'white';
     }
   }
 
-  const wordsToFind = ['remote', 'hybrid', 'home', 'wfh', 'office'];
+  const wordsToFind = ['remote', 'hybrid', 'home', 'wfh', 'office', 'brisbane', 'queensland', 'qld'];
   console.log('Words to find:', wordsToFind);
   const button = addButton();
   button.addEventListener('click', () => {
