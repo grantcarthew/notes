@@ -18,13 +18,15 @@
    * @returns {HTMLButtonElement} The created button element
    */
   function addButton() {
+    console.log('Adding button to the page');
     const button = document.createElement('button');
-    button.textContent = 'Find Remote Words';
+    button.textContent = 'Find Words';
     button.style.position = 'fixed';
     button.style.top = '10px';
     button.style.right = '10px';
     button.style.zIndex = '1000';
     document.body.appendChild(button);
+    console.log('Button added:', button);
     return button;
   }
 
@@ -45,20 +47,45 @@
    * @param {string[]} words - The words to search for
    */
   function searchAndHighlight(button, words) {
-    const bodyText = document.body.textContent;
+    console.log('Searching for words:', words);
     const regex = new RegExp(`\\b(${words.join('|')})\\b`, 'i');
-    if (regex.test(bodyText)) {
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode: function (node) {
+        const isScript = node.parentNode.nodeName === 'SCRIPT';
+        console.log('Checking node:', node, 'Is script:', isScript);
+        return isScript ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
+      }
+    });
+
+    let found = false;
+    let node;
+    while (node = walker.nextNode()) {
+      console.log('Checking node text:', node.nodeValue);
+      if (regex.test(node.nodeValue)) {
+        console.log('Match found in node:', node);
+        found = true;
+        break;
+      }
+    }
+
+    if (found) {
+      console.log('Words found, updating button');
       button.textContent = 'Words Found';
       button.style.backgroundColor = 'lightgreen';
       highlightWords(words);
     } else {
+      console.log('No words found, updating button');
       button.textContent = 'No Words Found';
-      button.style.backgroundColor = 'lightred'
+      button.style.backgroundColor = 'lightcoral';
     }
   }
 
   const wordsToFind = ['remote', 'hybrid', 'home', 'wfh', 'office'];
+  console.log('Words to find:', wordsToFind);
   const button = addButton();
-  button.addEventListener('click', () => searchAndHighlight(button, wordsToFind));
+  button.addEventListener('click', () => {
+    console.log('Button clicked');
+    searchAndHighlight(button, wordsToFind);
+  });
   searchAndHighlight(button, wordsToFind);
 })();
