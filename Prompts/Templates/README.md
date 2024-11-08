@@ -10,7 +10,7 @@ They will not work as standalone prompts.
    - Important: Use the raw text links below.
 2. Read through the prompt in great detail.
 3. Add content or change content as needed.
-4. Test it out.
+4. Test it out by pasting it into an AI chat.
 5. Save it for future use.
 
 ## Raw Text Links
