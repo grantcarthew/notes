@@ -42,7 +42,7 @@ file_list=$(curl -s "${api_url}" || {
   echo "Failed to fetch contents"
   exit 1
 })
-readarray -t files < <(echo "${file_list}" | jq -r '.[] | .name') || exit 1
+readarray -t files < <(echo "${file_list}" | jq -r '.[] | select(.type == "file") | .name') || exit 1
 
 # Filter files if an argument is provided
 if [[ -n "$1" ]]; then
