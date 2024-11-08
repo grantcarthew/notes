@@ -7,7 +7,7 @@ They will not work as standalone prompts.
 ## Instructions
 
 1. Copy the prompt you desire into a text editor.
-   - Important: Use the raw text links below.
+   - **IMPORTANT**: Use the raw text links below.
 2. Read through the prompt in great detail.
 3. Add content or change content as needed.
 4. Test it out by pasting it into an AI chat.
