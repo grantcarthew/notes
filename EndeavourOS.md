@@ -258,6 +258,8 @@ Descriptions:
 ## Programming
 
 ```shell
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 sudo pacman --sync deno go lua rust zig
 
 yay --sync nvm
