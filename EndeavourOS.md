@@ -8,6 +8,7 @@ Review the following:
 - [GUI Apps](#gui-apps)
   - [Office Apps](#office-apps)
   - [Other GUI Apps](#other-gui-apps)
+- [Programming](#programming)
 - [AI Tools](#ai-tools)
   - [Terminal AI Clients](#terminal-ai-clients)
   - [Local LLMs](#local-llms)
@@ -253,6 +254,16 @@ Descriptions:
 - File sharing:
   - [Warp](https://apps.gnome.org/Warp/): Fast and secure file transfer
   - [zrok](https://zrok.io/): Open source sharing solution built on OpenZiti, the zero trust networking platform
+
+## Programming
+
+```shell
+sudo pacman --sync deno go lua rust zig
+
+yay --sync nvm
+
+nvm install node
+```
  
 ## AI Tools
 
