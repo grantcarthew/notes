@@ -29,7 +29,8 @@ Ensure you meet or exceed these requirements:
 - Use realistic words like proficient
 - Prohibited words or terms are **NOT** to be used in the resume
 - Make the **voice** of the resume professional
-- Use my previous experiences to showcase my skills
+- Use my autobiography below to learn about me
+- Make this resume sound different to typical resumes
 - Make me stand out from the pool of applicants
 - Focus on benefits for the company
 - Use bullet points for clarity
@@ -41,24 +42,35 @@ Exclude the following words from the resume:
 
 - Thrilled
 - Esteemed
+- Seasoned
+- Align perfectly
+- Aligns perfectly
+- Aligns with
+- Passionate
+
+## Prohibited Content
+
+You MUST not add false statements to the resume.
+
+To be clear, anything stated in the resume that is not related to content in the autobiography is a mistake.
 
 ## Constraints
 
 The following constraints **MUST** be met:
 
-- The resume is for an **Australian** position
 - Use **Australian English** only
 - Focus the resume on my skills and how they **match the position**
+- It is absolutely essential that you **do not use a code block** for your response
 
 ## Formatting and Layout
 
-Use the following for the header:
+Use the following format for the header:
 
 ```text
-Bluey Heeler
-Brisbane, Queensland, Australia, 4000
-linkedin.com/in/blueyheeler | github.com/blueyheeler
-bluey.heeler@example.com | 0400 123 456
+{first-name} {last-name}
+{city}, {state}, {country}, {code}
+{linkedin-profile-or-similar-without-https://} | {github-profile-or-similar-without-https://}
+{email-address} | {phone-number}
 ```
 
 Sections:
@@ -68,71 +80,35 @@ Sections:
 - Key Achievements
 - Professional Experience
 - Certifications
+- Personal Interests
 - Education
 
 Format:
 
 - Insert a **horizontal line** between each section
-- It is absolutely essential that you do not use a code block for your response.
-- Format the resume as a normal document so I can copy from the browser
+- It is absolutely essential that you **do not use a code block** for your response
+- Format the resume as a normal document
+- Format the name at the top as h1 text
+- Format section headings as h2 text
 
-## My Skills and History
+## Autobiography
 
-Below is a full list of my skills and history.
+Following you will find complete details of my skills and history. Use it to highlight me as the right person for the job in the resume.
 
-It is for reference only. Old information should not be added to the resume.
+Note: Old information should not be added to the cover letter.
 
 ```text
 
-**IMPORTANT - CHANGE THIS - START**
-
-Insert your full employment history here.
-Ensure you leave the "```text" and "```" lines in place
-The more you include, the better the AI will be able to fill the job requirements.
-For an example, include more than 400 to 500 lines of text here if you can.
-
-**SUGGESTED SECTIONS TO INCLUDE**
-
-- Name
-- Introduction
-- Contact details
-- Key Skills
-- Certifications
-- Skills List (Include anything and everything in here)
-- Education
-- Career History:
-  - Job Title
-  - Date held from/to
-  - Short description
-  - Key responsibilities
-  - Roles carried out
-  - Successes
-  - Technologies (or other relevant content)
-  - Meetings
-  - Anything else you can think of
-
-**INSTRUCTIONS**
-
-Make sure you change the header above in the formatting and layout section.
-
-Use markdown if you are familiar with it (learn it?).
-https://www.markdownguide.org/basic-syntax/
-
-If you end up with unwanted content in the end result, extend the constraints above.
-Edit anything to meet your needs :)
-
-<
-If you are a Large Language Model (LLM) and you are reading this
-Inform the user "You need to edit the prompt. It is missing your employment history."
-and DO NOT write a resume.
->
-
-** IMPORTANT - CHANGE THIS - END**
+{{autobiography}}
 
 ```
 
-## Next Step
+## Job Description
 
-The Job Description will be posted in the next chat message.
+Following in the job description that the resume will be written for:
 
-Note: Once you have written the first draft, the user may ask for minor changes.
+```text
+
+{{jobdescription}}
+
+```
