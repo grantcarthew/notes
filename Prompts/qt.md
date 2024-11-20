@@ -31,7 +31,7 @@
 - Code files will have an extension of **cpp**
 - Avoid using forward declarations
 - Use '/n' instead of std::endl
-- Use **QPointer** for pointers
+- Use **QSharedPointer**, **QScopedPointer**, or **QPointer** when appropriate
 - Use **QStringLiteral** for literal strings
 - Use **const** where applicable
 - Follow the Qt Framework styles and constructs
