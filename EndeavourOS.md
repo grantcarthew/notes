@@ -266,8 +266,8 @@ yay --sync nvm
 
 nvm install node
 
-# D-Bus Monitor
-sudo pacman --sync bustle
+# D-Bus Monitoring
+sudo pacman --sync bustle d-spy
 ```
  
 ## AI Tools
