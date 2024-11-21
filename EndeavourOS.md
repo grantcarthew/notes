@@ -265,6 +265,9 @@ sudo pacman --sync deno go lua rust zig
 yay --sync nvm
 
 nvm install node
+
+# D-Bus Monitor
+sudo pacman --sync bustle
 ```
  
 ## AI Tools
