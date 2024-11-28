@@ -99,6 +99,11 @@ sudo pacman --sync --noconfirm \
 # For Gnome
 sudo pacman --sync hunspell-en_au
 
+# Network Monitoring
+sudo pacman --sync vnstat
+sudo systemctl enable vnstat
+sudo systemctl start vnstat
+
 # Time sync
 sudo systemctl enable ntpd
 sudo systemctl start ntpd
@@ -161,6 +166,7 @@ Descriptions (pacman):
 - [tmux](https://github.com/tmux/tmux): Terminal multiplexer
 - [ttf-cascadia-code](https://github.com/microsoft/cascadia-code): Programming and terminal font
 - [vegeta](https://github.com/tsenart/vegeta): HTTP load testing tool and library. It's over 9000!
+- [vnstat](https://github.com/vergoh/vnstat): A network traffic monitor for Linux and BSD
 - [yamllint](https://github.com/adrienverge/yamllint): Linter for YAML files
 - [yazi](https://github.com/sxyazi/yazi): Blazing fast terminal file manager written in Rust, based on async I/O
 - [yq](https://github.com/mikefarah/yq): YAML, JSON, XML, CSV, TOML and properties processor
