@@ -21,6 +21,7 @@ Review the following:
 
 ```shell
 sudo apt update && sudo apt install -y \
+    apt-transport-https \
     bash-completion \
     bat \
     btop \
