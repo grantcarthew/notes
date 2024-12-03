@@ -18,13 +18,14 @@
 
 ## Requirements
 
+- Write a Bash script if there are many commands required
 - All example scripts will be in **code blocks**
 - If you reference information on the internet, **supply the URL**
 
 ## Constraints
 
 - **gcloud v1** or later
-- **gsutil v5.29** or later
+- **gsutil v5** or later
 - **Bash v5 scripting**
 - Use **#!/usr/bin/env bash** for the hashbang
 - **jq** for filtering
