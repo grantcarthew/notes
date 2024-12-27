@@ -41,6 +41,7 @@ sudo pacman --refresh --sync \
     fdupes \
     fzf \
     gdb \
+    ghostty \
     git \
     gping \
     gron \
@@ -107,6 +108,11 @@ sudo systemctl start vnstat
 # Time sync
 sudo systemctl enable ntpd
 sudo systemctl start ntpd
+
+# Ghostty Config
+# .config/ghostty/config
+# font-size = 22
+# theme = Builtin Solarized Dark
 ```
 
 Descriptions (pacman):
@@ -128,6 +134,7 @@ Descriptions (pacman):
 - [fzf](https://github.com/junegunn/fzf): A command-line fuzzy finder
 - [gdb](https://sourceware.org/gdb/): GNU Project debugger
 - [gdu](https://github.com/dundee/gdu): Fast disk usage analyzer with console interface written in Go
+- [Ghostty](https://ghostty.org/): Ghostty is a fast, feature-rich, and cross-platform terminal emulator
 - [git](https://git-scm.com/): Source code management
 - [gping](https://github.com/orf/gping): Ping, but with a graph
 - [gron](https://github.com/FGRibreau/gron): Make JSON greppable!
