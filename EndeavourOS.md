@@ -113,6 +113,11 @@ sudo systemctl start ntpd
 # .config/ghostty/config
 # font-size = 22
 # theme = Builtin Solarized Dark
+
+# Starship Config (https://starship.rs/config/)
+# .config/starship.toml
+# Places the directory on the second line
+format = '$all$directory$character'
 ```
 
 Descriptions (pacman):
@@ -165,7 +170,7 @@ Descriptions (pacman):
 - [sd](https://github.com/chmln/sd): Intuitive find & replace CLI (sed alternative)
 - [shellcheck](https://www.shellcheck.net/): Finds bugs in your shell scripts
 - [speedtest-cli](https://github.com/sivel/speedtest-cli): Command line network speed test
-- [starship](https://github.com/starship/starship): The minimal, blazing-fast, and infinitely customizable prompt
+- [starship](https://github.com/starship/starship) ([config](https://starship.rs/config/)): The minimal, blazing-fast, and infinitely customizable prompt
 - [strace](https://man7.org/linux/man-pages/man1/strace.1.html): Trace system calls and signals
 - [syncthing](https://syncthing.net/): Continuous file synchronization program
 - [syncthing-gtk](https://github.com/kozec/syncthing-gtk): GTK3 based GUI and notification area icon for Syncthing
