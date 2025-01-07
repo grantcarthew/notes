@@ -6,6 +6,7 @@ Review the following:
 - [Basic Setup](#basic-setup)
 - [Laptop Battery Management](#laptop-battery-management)
 - [GUI Apps](#gui-apps)
+  - [Alacarte](#alacarte)
   - [Office Apps](#office-apps)
   - [Other GUI Apps](#other-gui-apps)
 - [Programming](#programming)
@@ -111,8 +112,8 @@ sudo systemctl start ntpd
 
 # Ghostty Config
 # .config/ghostty/config
-# font-size = 22
-# theme = Builtin Solarized Dark
+# font-size = 18
+# theme = Breeze
 
 # Starship Config (https://starship.rs/config/)
 # .config/starship.toml
@@ -246,6 +247,23 @@ Descriptions:
 - [vlc](https://www.videolan.org/): Open source cross-platform multimedia player and framework
 - [xclip](https://github.com/astrand/xclip): Command line interface to the X11 clipboard
 - [Xournal++](https://xournalpp.github.io/): Take handwritten notes with ease
+
+### Alacarte
+
+Alacarte (Main Menu) created icons don't always comply with the Gnome pinned icon configurations.
+
+If you find a pinned app, when launched, creates a new icon on the launcher, do the following:
+
+```shell
+# Get the WMClass
+xprop | grep WM_CLASS # Then click the app window
+
+# Add the StartupWMClass to the desktop file
+ls ~/.local/share/applications/
+nvim ~/.local/share/applications/alacarte-made.desktop # or the correct file
+# Add:
+# StartupWMClass=<value-from-xprop>
+```
 
 ### Office Apps
 
