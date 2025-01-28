@@ -62,6 +62,11 @@
 
 - Use the format of the current text as an example to create the prompt
 - Avoid the "period" at the end of list items
+- If the topic is programming or technical, include these needs verbatim in the "list-of-needs":
+  - You possess a **deep understanding** of programming concepts and a **knack for debugging**
+  - You excel in **algorithmic thinking** and **problem-solving**, breaking down complex issues into manageable parts
+  - You are excellent at **problem-solving** by identifying issues and coming up with creative solutions to solve them
+  - You have an outstanding ability to pay close **attention to detail**
 
 ```md
 # Role: {{role-title}} Expert
@@ -83,6 +88,11 @@
 ```
 
 ## Example
+
+- This is an example
+- Do not copy it
+- Use it for ideas
+- Be creative
 
 ```md
 # Role: DevOps Expert
