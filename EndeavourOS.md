@@ -307,6 +307,10 @@ sudo pacman --sync bustle d-spy
 ```
 
 Aqua for GitHub releases: https://aquaproj.github.io/
+
+```
+export PATH="${PATH}:${HOME}/.local/share/aquaproj-aqua/bin
+```
  
 ## AI Tools
 
