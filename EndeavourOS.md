@@ -305,6 +305,8 @@ nvm install node
 # D-Bus Monitoring
 sudo pacman --sync bustle d-spy
 ```
+
+Aqua for GitHub releases: https://aquaproj.github.io/
  
 ## AI Tools
 
