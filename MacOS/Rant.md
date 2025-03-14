@@ -49,3 +49,25 @@ If you haven't tried Linux, do so (apt, pacman, yum, the list goes on).
 There are some open-source applications that I use. They don't seem to work correctly. Windows flicker and other launching issues. This is really the operating system's fault.
 
 Another issue I've seen with applications is the need to launch them twice. This is probably related to the stupid "Closing Applications" issue mentioned above.
+
+## Performance
+
+Everyone gets excited over the M-whatever performance. It might be a good chip, but from my experience, the usability is poor. Applications take quite a while to start (again, probably why they chose not to close applications properly). Graphics artifacts are noticeable here and there! An example is when using YouTube full-screen on Firefox. When going back to in-page view, the menus on Firefox have to redraw. Just shocking.
+
+In general, I'm not impressed. My Linux laptop is a Lenovo Legion, and the performance from that is far better. I think that is probably the operating system, though. I was always under the impression that Apple fans were brainwashed. I now know that to be a fact.
+
+I will comment here about the battery life. It appears to be amazing. I say "appears" because I don't use it. If I'm working, I'm working at a desk. If I'm just fixing a thing or doing a quick job on my lap, it is for less than an hour. Almost any laptop will do for me. So I'm not a great judge of the battery life. This is, in my opinion, the one truly winning feature of the Mac, and I don't care. I have a lower-powered Lenovo E16 that I can plug into my Tesla Model 3 (2022) USB port and be online for a week.
+
+## Hardware
+
+Again, not impressed. The keyboard is just horrid. I use a Keychron mechanical keyboard that is delightful to type on. I also have a cheaper but quite good Cooler Master keyboard. Both browns. I know it's a little unfair to compare a full mechanical keyboard to a laptop keyboard, and I'm not doing that here. I'm pointing out that I know what a good keyboard is.
+
+For a laptop, though, the Mac keyboard is flat, has limited throw on the keys, and poor tactile feedback. It's like typing on a piece of paper. Yuck! The Lenovo laptops I have are fantastic to type on. I have many years of laptop ownership to lean on here. This Mac keyboard rates about a 1 out of 10 in my book.
+
+The trackpad seems nice, but I don't use it.
+
+The screen is beautiful, no doubt about it. Definitely one of the best features of this device. It's a shame it comes with macOS, but then, the keyboard is garbage, so...
+
+I like that there are only USB-C ports. It's about time we got rid of USB-A. But any manufacturer can do this.
+
+Would I buy this device if it came with Linux, or I could install Linux with ease? That's a big NO!
