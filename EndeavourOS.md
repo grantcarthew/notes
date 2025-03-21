@@ -35,6 +35,7 @@ sudo pacman --refresh --sync \
     ctop \
     curlie \
     difftastic \
+    diskus \
     dog \
     dua-cli \
     entr \
@@ -132,6 +133,7 @@ Descriptions (pacman):
 - [ctop](https://github.com/bcicen/ctop): Top-like interface for container metrics
 - [curlie](https://github.com/rs/curlie): The power of curl, the ease of use of httpie
 - [difftastic](https://github.com/Wilfred/difftastic): A structural diff that understands syntax
+- [diskus](https://github.com/sharkdp/diskus): A minimal, fast alternative to 'du -sh' 
 - [dog](https://github.com/ogham/dog): A command-line DNS client
 - [dua](https://github.com/Byron/dua-cli): View disk space usage and delete unwanted data, fast
 - [entr](https://github.com/eradman/entr): Run arbitrary commands when files change
