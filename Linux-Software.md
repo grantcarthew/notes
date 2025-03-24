@@ -24,7 +24,6 @@ This page contains references to useful software packages for use with Linux and
 - [fzf](https://github.com/junegunn/fzf): A command-line fuzzy finder
 - [gdb](https://sourceware.org/gdb/): GNU Project debugger
 - [gdu](https://github.com/dundee/gdu): Fast disk usage analyzer with console interface written in Go
-- [Ghostty](https://ghostty.org/): Ghostty is a fast, feature-rich, and cross-platform terminal emulator
 - [git](https://git-scm.com/): Source code management
 - [gping](https://github.com/orf/gping): Ping, but with a graph
 - [gron](https://github.com/FGRibreau/gron): Make JSON greppable!
@@ -49,7 +48,6 @@ This page contains references to useful software packages for use with Linux and
 - [progress](https://github.com/Xfennec/progress/tree/master): Displays percentage of running core util commands
 - [pipx](https://github.com/pypa/pipx): Install and Run Python Applications in Isolated Environments 
 - [ranger](https://github.com/ranger/ranger): A VIM-inspired filemanager for the console
-- [remmina](https://gitlab.com/Remmina/Remmina): The GTK Remmina Remote Desktop Client
 - [ripgrep](https://github.com/BurntSushi/ripgrep) (rg): Better file text search
 - [rmlint](https://github.com/sahib/rmlint): Extremely fast tool to remove duplicates and other lint from your filesystem
 - [rsync](https://en.wikipedia.org/wiki/Rsync): Efficiently transferring and synchronizing files between a computer and a storage
@@ -58,13 +56,12 @@ This page contains references to useful software packages for use with Linux and
 - [speedtest-cli](https://github.com/sivel/speedtest-cli): Command line network speed test
 - [starship](https://github.com/starship/starship) ([config](https://starship.rs/config/)): The minimal, blazing-fast, and infinitely customizable prompt
 - [strace](https://man7.org/linux/man-pages/man1/strace.1.html): Trace system calls and signals
-- [syncthing](https://syncthing.net/): Continuous file synchronization program
-- [syncthing-gtk](https://github.com/kozec/syncthing-gtk): GTK3 based GUI and notification area icon for Syncthing
 - [tigervnc](https://github.com/TigerVNC/tigervnc): High performance, multi-platform VNC client and server 
 - [tmux](https://github.com/tmux/tmux): Terminal multiplexer
 - [ttf-cascadia-code](https://github.com/microsoft/cascadia-code): Programming and terminal font
 - [vegeta](https://github.com/tsenart/vegeta): HTTP load testing tool and library. It's over 9000!
 - [vnstat](https://github.com/vergoh/vnstat): A network traffic monitor for Linux and BSD
+- [xclip](https://github.com/astrand/xclip): Command line interface to the X11 clipboard
 - [yamllint](https://github.com/adrienverge/yamllint): Linter for YAML files
 - [yazi](https://github.com/sxyazi/yazi): Blazing fast terminal file manager written in Rust, based on async I/O
 - [yq](https://github.com/mikefarah/yq): YAML, JSON, XML, CSV, TOML and properties processor
@@ -73,3 +70,18 @@ This page contains references to useful software packages for use with Linux and
 
 ## Graphical
 
+- [Alacarte](https://gitlab.gnome.org/GNOME/alacarte): Menu editor for GNOME using the freedesktop.org menu specification.
+- [chromium](https://www.chromium.org/chromium-projects/): Open-source browser project
+- [code](https://github.com/microsoft/vscode): Visual Studio Code
+- [copyq](https://github.com/hluk/CopyQ): Clipboard manager with advanced features
+- [Ghostty](https://ghostty.org/): Ghostty is a fast, feature-rich, and cross-platform terminal emulator
+- [gnome-browser-connector](https://wiki.gnome.org/Projects/GnomeShellIntegration/Installation): Native host messaging connector
+- [Gpick](https://www.gpick.org/): Advanced color picker and palette editing tool
+- [flatpak](https://flathub.org/): Apps for Linux
+- [LibreOffice](https://www.libreoffice.org/): Free Office Suite
+- [Pinta](https://www.pinta-project.com/): Pinta is a free, open source program for drawing and image editing
+- [remmina](https://gitlab.com/Remmina/Remmina): The GTK Remmina Remote Desktop Client
+- [Resources](https://github.com/nokyan/resources): Keep an eye on system resources
+- [syncthing-gtk](https://github.com/kozec/syncthing-gtk) ([syncthing](https://syncthing.net/)): GTK3 based GUI and notification area icon for Syncthing
+- [vlc](https://www.videolan.org/): Open source cross-platform multimedia player and framework
+- [Xournal++](https://xournalpp.github.io/): Take handwritten notes with ease
