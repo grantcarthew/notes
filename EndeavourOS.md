@@ -2,6 +2,8 @@
 
 EndeavourOS running notes
 
+_For package details, see the [Linux Software](Linux-Software.md) page._
+
 Review the following:
 - [Basic Setup](#basic-setup)
 - [Laptop Battery Management](#laptop-battery-management)
@@ -39,6 +41,7 @@ sudo pacman --refresh --sync \
     dog \
     dua-cli \
     entr \
+    fastfetch \
     fd \
     fdupes \
     fzf \
@@ -121,75 +124,6 @@ sudo systemctl start ntpd
 # Places the directory on the second line
 format = '$all$directory$character'
 ```
-
-Descriptions (pacman):
-
-- [aichat](https://github.com/sigoden/aichat): All-in-one AI CLI tool
-- [bandwhich](https://github.com/imsnif/bandwhich): Terminal bandwidth utilization tool
-- [bash-completion](https://github.com/scop/bash-completion): Programmable completion functions for bash
-- [bat](https://github.com/sharkdp/bat): A cat clone with syntax highlighting and Git integration
-- [broot](https://github.com/Canop/broot): A new way to see and navigate directory trees
-- [btop](https://github.com/aristocratos/btop): A monitor of resources
-- [ctop](https://github.com/bcicen/ctop): Top-like interface for container metrics
-- [curlie](https://github.com/rs/curlie): The power of curl, the ease of use of httpie
-- [difftastic](https://github.com/Wilfred/difftastic): A structural diff that understands syntax
-- [diskus](https://github.com/sharkdp/diskus): A minimal, fast alternative to 'du -sh' 
-- [dog](https://github.com/ogham/dog): A command-line DNS client
-- [dua](https://github.com/Byron/dua-cli): View disk space usage and delete unwanted data, fast
-- [entr](https://github.com/eradman/entr): Run arbitrary commands when files change
-- [fd](https://github.com/sharkdp/fd): A simple, fast and user-friendly alternative to 'find'
-- [fdupes](https://github.com/adrianlopezroche/fdupes): Identifying or deleting duplicate files
-- [fzf](https://github.com/junegunn/fzf): A command-line fuzzy finder
-- [gdb](https://sourceware.org/gdb/): GNU Project debugger
-- [gdu](https://github.com/dundee/gdu): Fast disk usage analyzer with console interface written in Go
-- [Ghostty](https://ghostty.org/): Ghostty is a fast, feature-rich, and cross-platform terminal emulator
-- [git](https://git-scm.com/): Source code management
-- [gping](https://github.com/orf/gping): Ping, but with a graph
-- [gron](https://github.com/FGRibreau/gron): Make JSON greppable!
-- [hq](https://github.com/coderobe/hq): A HTML processor inspired by jq
-- [hyperfine](https://github.com/sharkdp/hyperfine): A command-line benchmarking tool
-- [iotop](https://github.com/Tomas-M/iotop): A top utility for IO
-- [jless](https://github.com/PaulJuliusMartinez/jless): JSON viewer designed for reading, exploring, and searching through JSON data
-- [jq](https://github.com/jqlang/jq): Command-line JSON processor
-- [lsd](https://github.com/lsd-rs/lsd): The next gen ls command
-- [lsof](https://github.com/lsof-org/lsof): List open files
-- [ltrace](https://www.man7.org/linux/man-pages/man1/ltrace.1.html): A library call tracer
-- [mcfly](https://github.com/cantino/mcfly): McFly replaces your default ctrl-r shell history search
-- [mtr](https://github.com/traviscross/mtr): Combines the functionality of traceroute and ping into one tool
-- [neovim](https://github.com/neovim/neovim) (nvim): Better vim
-- [ngrep](https://github.com/jpr5/ngrep): GNU grep applied to the network layer
-- [ntp](https://en.wikipedia.org/wiki/Network_Time_Protocol): Time sync
-- [oha](https://github.com/hatoo/oha): HTTP load generator
-- [ouch](https://github.com/ouch-org/ouch): Painless compression and decompression in the terminal
-- [p7zip](https://7-zip.org/): File archiver with a high compression ratio
-- [procs](https://github.com/dalance/procs): A modern replacement for ps written in Rust
-- [progress](https://github.com/Xfennec/progress/tree/master): Displays percentage of running core util commands
-- [pipx](https://github.com/pypa/pipx): Install and Run Python Applications in Isolated Environments 
-- [ranger](https://github.com/ranger/ranger): A VIM-inspired filemanager for the console
-- [remmina](https://gitlab.com/Remmina/Remmina): The GTK Remmina Remote Desktop Client
-- [ripgrep](https://github.com/BurntSushi/ripgrep) (rg): Better file text search
-- [rmlint](https://github.com/sahib/rmlint): Extremely fast tool to remove duplicates and other lint from your filesystem
-- [rsync](https://en.wikipedia.org/wiki/Rsync): Efficiently transferring and synchronizing files between a computer and a storage
-- [sd](https://github.com/chmln/sd): Intuitive find & replace CLI (sed alternative)
-- [shellcheck](https://www.shellcheck.net/): Finds bugs in your shell scripts
-- [speedtest-cli](https://github.com/sivel/speedtest-cli): Command line network speed test
-- [starship](https://github.com/starship/starship) ([config](https://starship.rs/config/)): The minimal, blazing-fast, and infinitely customizable prompt
-- [strace](https://man7.org/linux/man-pages/man1/strace.1.html): Trace system calls and signals
-- [syncthing](https://syncthing.net/): Continuous file synchronization program
-- [syncthing-gtk](https://github.com/kozec/syncthing-gtk): GTK3 based GUI and notification area icon for Syncthing
-- [tigervnc](https://github.com/TigerVNC/tigervnc): High performance, multi-platform VNC client and server 
-- [tmux](https://github.com/tmux/tmux): Terminal multiplexer
-- [ttf-cascadia-code](https://github.com/microsoft/cascadia-code): Programming and terminal font
-- [vegeta](https://github.com/tsenart/vegeta): HTTP load testing tool and library. It's over 9000!
-- [vnstat](https://github.com/vergoh/vnstat): A network traffic monitor for Linux and BSD
-- [yamllint](https://github.com/adrienverge/yamllint): Linter for YAML files
-- [yazi](https://github.com/sxyazi/yazi): Blazing fast terminal file manager written in Rust, based on async I/O
-- [yq](https://github.com/mikefarah/yq): YAML, JSON, XML, CSV, TOML and properties processor
-- [zellij](https://github.com/zellij-org/zellij): A terminal workspace with batteries included 
-- [zoxide](https://github.com/ajeetdsouza/zoxide): A smarter cd command
-
-Descriptions (yay):
-- [jnv](https://github.com/ynqa/jnv): Interactive JSON filter using jq
 
 ## Laptop Battery Management
 
