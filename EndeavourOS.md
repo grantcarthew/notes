@@ -168,22 +168,6 @@ flatpak install flathub info.beyondallreason.bar
 flatpak install flathub net.nokyan.Resources
 ```
 
-Descriptions:
-
-- [Alacarte](https://gitlab.gnome.org/GNOME/alacarte): Menu editor for GNOME using the freedesktop.org menu specification.
-- [chromium](https://www.chromium.org/chromium-projects/): Open-source browser project
-- [code](https://github.com/microsoft/vscode): Visual Studio Code
-- [copyq](https://github.com/hluk/CopyQ): Clipboard manager with advanced features
-- [gnome-browser-connector](https://wiki.gnome.org/Projects/GnomeShellIntegration/Installation): Native host messaging connector
-- [Gpick](https://www.gpick.org/): Advanced color picker and palette editing tool
-- [flatpak](https://flathub.org/): Apps for Linux
-- [LibreOffice](https://www.libreoffice.org/): Free Office Suite
-- [Pinta](https://www.pinta-project.com/): Pinta is a free, open source program for drawing and image editing
-- [Resources](https://github.com/nokyan/resources): Keep an eye on system resources
-- [vlc](https://www.videolan.org/): Open source cross-platform multimedia player and framework
-- [xclip](https://github.com/astrand/xclip): Command line interface to the X11 clipboard
-- [Xournal++](https://xournalpp.github.io/): Take handwritten notes with ease
-
 ### Alacarte
 
 Alacarte (Main Menu) created icons don't always comply with the Gnome pinned icon configurations.
