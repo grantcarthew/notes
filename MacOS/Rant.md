@@ -2,9 +2,34 @@
 
 The following things are driving me crazy and are good reasons for a Linux user to not want to ever work with a Mac. They probably apply to Windows users also.
 
+## System Info
+
+I got this info using [fastfetch](https://github.com/fastfetch-cli/fastfetch), which should show that I'm not using some ancient system:
+
+```txt
+Date: 2025-03-24
+OS: macOS Sequoia 15.3.2 arm64
+Host: MacBook Pro (16-inch, 2024, Three Thunderbolt 5 ports)
+Kernel: Darwin 24.3.0
+Shell: bash 5.2.37
+Display (Color LCD): 3456x2234 @ 120 Hz (as 1728x1117) in 16" [Built-in] *
+DE: Aqua
+WM: Quartz Compositor 278.2.7
+WM Theme: Multicolor (Light)
+CPU: Apple M4 Pro (14) @ 4.51 GHz
+GPU: Apple M4 Pro (20) @ 1.58 GHz [Integrated]
+Memory: 14.62 GiB / 24.00 GiB (61%)
+Swap: Disabled
+Disk (/): 74.59 GiB / 460.43 GiB (16%) - apfs [Read-only]
+```
+
 ## Boot After Login
 
 You sit down to work on your machine and type in your user name and password. After hitting enter, you wait while the system boots. What a broken experience. Well done, Linux and Windows.
+
+## Slow Unlock
+
+You walk back to your desk, press a key (I normally hit ESC), and type in your password. Oh, no, not on a macOS device. You press a key, then wait. It's not long, but you can't just type in your password. Why? What has it been doing? Going out on the town? Just let me unlock the device.
 
 ## Click Selects the Window
 
