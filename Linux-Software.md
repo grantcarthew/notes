@@ -32,6 +32,7 @@ This page contains references to useful software packages for use with Linux and
 - [hyperfine](https://github.com/sharkdp/hyperfine): A command-line benchmarking tool
 - [iotop](https://github.com/Tomas-M/iotop): A top utility for IO
 - [jless](https://github.com/PaulJuliusMartinez/jless): JSON viewer designed for reading, exploring, and searching through JSON data
+- [jnv](https://github.com/ynqa/jnv): Interactive JSON filter using jq
 - [jq](https://github.com/jqlang/jq): Command-line JSON processor
 - [lsd](https://github.com/lsd-rs/lsd): The next gen ls command
 - [lsof](https://github.com/lsof-org/lsof): List open files
