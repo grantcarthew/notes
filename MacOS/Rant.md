@@ -75,6 +75,12 @@ There are some open-source applications that I use. They don't seem to work corr
 
 Another issue I've seen with applications is the need to launch them twice. This is probably related to the stupid "Closing Applications" issue mentioned above.
 
+## File Explorer
+
+The "Finder" app is just... not good.
+
+If you right-click an archive file, where is the option to "Extract here"? Basic functionallity that is missing. OK, so you can double-click the file to extract it, but that's not what I want to do if I double-click it. If you double-click the file, you want to launch it, and in the case of an archive file, that means looking inside it. There should be a right-click options to extract it, not default to that. I imagine mac people don't know how to manage files by this looks of this.
+
 ## Performance
 
 Everyone gets excited over the M-whatever performance. It might be a good chip, but from my experience, the usability is poor. Applications take quite a while to start (again, probably why they chose not to close applications properly). Graphics artifacts are noticeable here and there! An example is when using YouTube full-screen on Firefox. When going back to in-page view, the menus on Firefox have to redraw. Just shocking.
