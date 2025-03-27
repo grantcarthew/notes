@@ -1,5 +1,14 @@
 # Apple Mac Operating System Notes
 
+## Desktop Changes
+
+Set the dock to autohide in the System Settings and execute the following to reduce the time it takes to show when the mouse is at the bottom of the screen:
+
+```sh
+# The float value can be 0.15 or any part of a second
+defaults write com.apple.dock autohide-delay -float 0; killall Dock
+```
+
 ## Karabiner-Elements
 
 The MacOS keyboard and desktop environment is a broken experience for Linux users. [Karabiner-Elements](https://karabiner-elements.pqrs.org/) can help with fixing some of the issues.
