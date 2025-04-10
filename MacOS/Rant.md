@@ -102,3 +102,8 @@ The screen is beautiful, no doubt about it. Definitely one of the best features 
 I like that there are only USB-C ports. It's about time we got rid of USB-A. But any manufacturer can do this.
 
 Would I buy this device if it came with Linux, or I could install Linux with ease? That's a big NO!
+
+## Crashing
+
+I've been using macOS for a few months now. It crashes needing a reboot. More than my EndeavourOS system does. Here is the interesting point though, Apple have complete controll over the hardware. The operating system is built for Apple hardware only, and it is still unstable. Can you imagine if Linux had a fixed suite of hardware to support? Wow, that would be an amazingly stable system. Which begs the question, why is macOS not an amazingly stable system?
+
