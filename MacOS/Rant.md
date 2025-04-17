@@ -107,3 +107,10 @@ Would I buy this device if it came with Linux, or I could install Linux with eas
 
 I've been using macOS for a few months now. It crashes needing a reboot. More than my EndeavourOS system does. Here is the interesting point though, Apple have complete controll over the hardware. The operating system is built for Apple hardware only, and it is still unstable. Can you imagine if Linux had a fixed suite of hardware to support? Wow, that would be an amazingly stable system. Which begs the question, why is macOS not an amazingly stable system?
 
+## Junk Files
+
+Working with archive files has revieled a new annoying thing you get using macOS, junk files. I'm talking about the operating system dropping `._*`, `._.*`, `.fseventsd`, `.spotlight-v100`, `.TemporaryItems`, `.Trashes`, `._DS_Store`, and other files onto the file system.
+
+Now I have to write "excludes" and other extra content into my Bash scripts to prevent littering my work with this garbage. It's horrible.
+
+
