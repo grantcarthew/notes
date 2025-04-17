@@ -1,6 +1,6 @@
 # macOS Rant
 
-The following things are driving me crazy and are good reasons for a Linux user to not want to ever work with a Mac. They probably apply to Windows users also.
+The following things are driving me crazy and are good reasons for a Linux user to not want to ever work with a Mac. They probably apply to Windows users as well.
 
 ## System Info
 
@@ -12,10 +12,10 @@ OS: macOS Sequoia 15.3.2 arm64
 Host: MacBook Pro (16-inch, 2024, Three Thunderbolt 5 ports)
 Kernel: Darwin 24.3.0
 Shell: bash 5.2.37
-Display (Color LCD): 3456x2234 @ 120 Hz (as 1728x1117) in 16" [Built-in] *
+Display (Colour LCD): 3456x2234 @ 120 Hz (as 1728x1117) in 16" [Built-in] *
 DE: Aqua
 WM: Quartz Compositor 278.2.7
-WM Theme: Multicolor (Light)
+WM Theme: Multicolour (Light)
 CPU: Apple M4 Pro (14) @ 4.51 GHz
 GPU: Apple M4 Pro (20) @ 1.58 GHz [Integrated]
 Memory: 14.62 GiB / 24.00 GiB (61%)
@@ -25,15 +25,17 @@ Disk (/): 74.59 GiB / 460.43 GiB (16%) - apfs [Read-only]
 
 ## Boot After Login
 
-You sit down to work on your machine and type in your user name and password. After hitting enter, you wait while the system boots. What a broken experience. Well done, Linux and Windows.
+You sit down to work on your machine and type in your username and password. After hitting Enter, you wait while the system boots. What a broken experience. Linux and Windows handle this much better.
+
+After using this system for some time now, I realised this is a security issue. I prefer to turn on my computer, perform tasks like getting a drink, and then log in to start working. On a macOS system, this workflow is impossible. If you press the power button, the system starts quickly but hasn't fully booted. You type your username and password, hit Enter, and then wait a long time for it to boot. The security issue arises because, after booting, the system automatically displays the desktop since you've already entered your credentials. You have no choice but to wait, leaving the system vulnerable to unauthorised access if unattended.
 
 ## Slow Unlock
 
-You walk back to your desk, press a key (I normally hit ESC), and type in your password. Oh, no, not on a macOS device. You press a key, then wait. It's not long, but you can't just type in your password. Why? What has it been doing? Going out on the town? Just let me unlock the device.
+You walk back to your desk, press a key (I normally hit ESC), and type in your password. Oh, no, not on a macOS device. You press a key, then wait. It's not long, but you can't just type in your password. Why? What has it been doing? Just let me unlock the device.
 
 ## Click Selects the Window
 
-When you are working on one application window, then move the mouse to "click a button" in another window, it does not click the button. It simply selects the other application window.
+When you are working on one application window, then move the mouse to "click a button" in another window, it does not click the button. It simply selects the other window.
 
 I can see this as a design choice for an operating system, but I think it is the wrong choice.
 
@@ -45,13 +47,13 @@ I've created a few global keyboard shortcuts, but they just don't work in all si
 
 You can open the system settings to change keyboard shortcuts. What you can't do is assign a task to a single modifier key.
 
-I fixed this with [Karabiner-Elements](https://github.com/grantcarthew/notes/blob/main/MacOS/README.md#karabiner-elements) to enable similar functionality to the [GNOME Activities Overview](https://github.com/grantcarthew/notes/blob/main/MacOS/gnome-activities-overview.json).
+I fixed this with [Karabiner-Elements](https://karabiner-elements.pqrs.org/) to enable similar functionality to the GNOME Activities Overview.
 
 ## Closing Applications
 
-When you click the red "x" at the top left (not right) of an application window, it does not close the application, meaning kill the process gracefully. It keeps it open in the background, like on your phone.
+When you click the red "x" at the top left (not right) of an application window, it does not terminate the application process. It keeps it open in the background, like mobile apps on iOS.
 
-I am a desktop user and I have finished with this application. I don't want it open anymore. I don't want it using system resources. I don't want this behavior.
+I am a desktop user and I have finished with this application. I don't want it open anymore. I don't want it using system resources. I don't want this behaviour.
 
 ## Firefox Window Sessions
 
@@ -61,11 +63,11 @@ I like to have Firefox keep my previous session when I open it the next day. Tha
 
 I love the GNOME desktop experience. To macOS's credit, they at least have something similar called Mission Control (silly name in my mind).
 
-I have mapped the keyboard using [Karabiner-Elements](https://github.com/grantcarthew/notes/blob/main/MacOS/README.md#karabiner-elements) to allow me to launch Mission Control when I press the Super key, but the application is extremely limited.
+I have mapped the keyboard using [Karabiner-Elements](https://karabiner-elements.pqrs.org/) to allow me to launch Mission Control when I press the Super key, but the application is extremely limited.
 
 ## Third-Party Application Package Manager
 
-To a power user, macOS is useless without installing [Homebrew](https://brew.sh/). This is just wrong. I've seen so many people comment about how much they love Brew. Come on people, this is a workaround. I should note that Windows has this same issue.
+To a power user, macOS is useless without installing [Homebrew](https://brew.sh/). This is just wrong. I've seen so many people comment about how much they love Brew. Come on, people, this is a workaround. I should note that Windows has this same issue.
 
 If you haven't tried Linux, do so (apt, pacman, yum, the list goes on).
 
@@ -73,25 +75,25 @@ If you haven't tried Linux, do so (apt, pacman, yum, the list goes on).
 
 There are some open-source applications that I use. They don't seem to work correctly. Windows flicker and other launching issues. This is really the operating system's fault.
 
-Another issue I've seen with applications is the need to launch them twice. This is probably related to the stupid "Closing Applications" issue mentioned above.
+Another issue I've seen with applications is the need to launch them twice. This is probably related to the "Closing Applications" issue mentioned above.
 
 ## File Explorer
 
 The "Finder" app is just... not good.
 
-If you right-click an archive file, where is the option to "Extract here"? Basic functionallity that is missing. OK, so you can double-click the file to extract it, but that's not what I want to do if I double-click it. If you double-click the file, you want to launch it, and in the case of an archive file, that means looking inside it. There should be a right-click options to extract it, not default to that. I imagine mac people don't know how to manage files by this looks of this.
+If you right-click an archive file, where is the option to "Extract here"? Basic functionality that is missing. OK, so you can double-click the file to extract it, but that's not what I want to do when I double-click it. When you double-click a file, you want to launch it, and in the case of an archive file, that means looking inside it. There should be a right-click option to extract it, not default to that. I imagine Mac users don't know how to manage files, by the looks of this.
 
 ## Performance
 
-Everyone gets excited over the M-whatever performance. It might be a good chip, but from my experience, the usability is poor. Applications take quite a while to start (again, probably why they chose not to close applications properly). Graphics artifacts are noticeable here and there! An example is when using YouTube full-screen on Firefox. When going back to in-page view, the menus on Firefox have to redraw. Just shocking.
+Everyone gets excited over the M-whatever performance. It might be a good chip, but from my experience, the usability is poor. Applications take quite a while to start (again, probably why they chose not to close applications properly). Graphics artefacts are noticeable here and there! An example is when using YouTube full-screen on Firefox. When going back to in-page view, the menus on Firefox have to redraw. Just shocking.
 
-In general, I'm not impressed. My Linux laptop is a Lenovo Legion, and the performance from that is far better. I think that is probably the operating system, though. I was always under the impression that Apple fans were brainwashed. I now know that to be a fact.
+In general, I'm not impressed. My Linux laptop is a Lenovo Legion, and the performance from that is far better. I think that is probably the operating system, though. I was always under the impression that Apple fans were overly enthusiastic. I now believe this to be true based on my experience.
 
 I will comment here about the battery life. It appears to be amazing. I say "appears" because I don't use it. If I'm working, I'm working at a desk. If I'm just fixing a thing or doing a quick job on my lap, it is for less than an hour. Almost any laptop will do for me. So I'm not a great judge of the battery life. This is, in my opinion, the one truly winning feature of the Mac, and I don't care. I have a lower-powered Lenovo E16 that I can plug into my Tesla Model 3 (2022) USB port and be online for a week.
 
 ## Hardware
 
-Again, not impressed. The keyboard is just horrid. I use a Keychron mechanical keyboard that is delightful to type on. I also have a cheaper but quite good Cooler Master keyboard. Both browns. I know it's a little unfair to compare a full mechanical keyboard to a laptop keyboard, and I'm not doing that here. I'm pointing out that I know what a good keyboard is.
+Again, not impressed. The keyboard is just horrid. I use a Keychron mechanical keyboard that is delightful to type on. I also have a cheaper but quite good Cooler Master keyboard. Both with brown switches. I know it's a little unfair to compare a full mechanical keyboard to a laptop keyboard, and I'm not doing that here. I'm pointing out that I know what a good keyboard is.
 
 For a laptop, though, the Mac keyboard is flat, has limited throw on the keys, and poor tactile feedback. It's like typing on a piece of paper. Yuck! The Lenovo laptops I have are fantastic to type on. I have many years of laptop ownership to lean on here. This Mac keyboard rates about a 1 out of 10 in my book.
 
@@ -105,12 +107,10 @@ Would I buy this device if it came with Linux, or I could install Linux with eas
 
 ## Crashing
 
-I've been using macOS for a few months now. It crashes needing a reboot. More than my EndeavourOS system does. Here is the interesting point though, Apple have complete controll over the hardware. The operating system is built for Apple hardware only, and it is still unstable. Can you imagine if Linux had a fixed suite of hardware to support? Wow, that would be an amazingly stable system. Which begs the question, why is macOS not an amazingly stable system?
+I've been using macOS for a few months now. It crashes, needing a reboot, more than my EndeavourOS system does. Here is the interesting point, though: Apple has complete control over the hardware. The operating system is built for Apple hardware only, and it is still unstable. Can you imagine if Linux had a fixed suite of hardware to support? Wow, that would be an amazingly stable system. This raises the question: why is macOS not an amazingly stable system?
 
 ## Junk Files
 
-Working with archive files has revieled a new annoying thing you get using macOS, junk files. I'm talking about the operating system dropping `._*`, `._.*`, `.fseventsd`, `.spotlight-v100`, `.TemporaryItems`, `.Trashes`, `._DS_Store`, and other files onto the file system.
+Working with archive files has revealed a new annoying thing you get using macOS: junk files. I'm talking about the operating system dropping `._` files (e.g., `._filename`), `.fseventsd`, `.spotlight-v100`, `.TemporaryItems`, `.Trashes`, `.DS_Store`, and other files onto the file system.
 
-Now I have to write "excludes" and other extra content into my Bash scripts to prevent littering my work with this garbage. It's horrible.
-
-
+Now, I have to write "excludes" and other extra content into my Bash scripts to prevent littering my work with this garbage. It's horrible.
