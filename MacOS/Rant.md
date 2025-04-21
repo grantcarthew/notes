@@ -81,6 +81,8 @@ Another issue I've seen with applications is the need to launch them twice. This
 
 The "Finder" app is just... not good.
 
+Firstly, you can't remove it from the dock! I know it is probably the basis for the entire desktop, but still.
+
 If you right-click an archive file, where is the option to "Extract here"? Basic functionality that is missing. OK, so you can double-click the file to extract it, but that's not what I want to do when I double-click it. When you double-click a file, you want to launch it, and in the case of an archive file, that means looking inside it. There should be a right-click option to extract it, not default to that. I imagine Mac users don't know how to manage files, by the looks of this.
 
 ## Performance
