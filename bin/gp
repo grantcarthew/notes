@@ -92,7 +92,7 @@ raw_content+="$(
 
 ## Initial Response
 
-Respond to this message with "Understood, I am an expert in <subject>"
+Respond only once to this message with "I am an expert in {{subject}}, let's get working!"
 
 EOT
 )"
