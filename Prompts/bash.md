@@ -95,7 +95,7 @@ export optional_arg="${3}"
 export calculated_arg="${required_arg1//https:/}"
 
 log_title "Your Script Title"
-log_header "Input Values"
+log_heading "Input Values"
 log_message "$(
   cat <<EOF
    required_arg1: '${required_arg1}'
@@ -105,17 +105,17 @@ log_message "$(
 EOF
 )"
 
-log_header "Validate Inputs"
+log_heading "Validate Inputs"
 
 # See the ../assets/verify module
 is_url "${required_arg1}" || exit 1
 is_not_empty "${required_token}" || exit 1
 [[ "${optional_arg}" ]] && { is_path "${optional_arg}" || exit 1; }
 
-log_header "foo version"
+log_heading "foo version"
 foo --version
 
-log_header "Function Title"
+log_heading "Function Title"
 
 # Ensure you log the output of steps for debugging
 ```
