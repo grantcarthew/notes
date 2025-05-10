@@ -235,24 +235,44 @@ export PATH="${PATH}:${HOME}/.local/share/aquaproj-aqua/bin
 ## AI Tools
 
 ### Terminal AI Clients
+
+#### aichat
+
+[aichat](https://github.com/sigoden/aichat): All-in-one AI CLI tool
+
 ```shell
 # aichat installed with pacman above
 nvim ~/.config/aichat/config.yaml
 ```
 
 ```yaml
-model: openai:gpt-4o
+model: xai:grok-3-mini-latest
 stream: true
 keybindings: vim
 editor: nvim
 wrap: auto
 wrap_code: false
 clients:
-- type: openai
+- type: openai-compatible
+  name: xai
+  base: https://api.x.ai/v1
   api_key: null
 ```
 
-- [aichat](https://github.com/sigoden/aichat): All-in-one AI CLI tool
+#### Aider
+
+[Aider](https://aider.chat/)
+
+```shell
+uv tool install aider-install
+aider-install
+nvim ~/.aider.conf.yml
+```
+
+```yaml
+model: xai/grok-3-mini-beta
+reasoning-effort: high
+```
 
 ### Local LLMs
 
