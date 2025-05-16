@@ -29,6 +29,8 @@ You sit down to work on your machine and type in your username and password. Aft
 
 After using this system for some time now, I realised this is a security issue. I prefer to turn on my computer, perform tasks like getting a drink, and then log in to start working. On a macOS system, this workflow is impossible. If you press the power button, the system starts quickly but hasn't fully booted. You type your username and password, hit Enter, and then wait a long time for it to boot. The security issue arises because, after booting, the system automatically displays the desktop since you've already entered your credentials. You have no choice but to wait, leaving the system vulnerable to unauthorised access if unattended.
 
+Update: A friend at work suggested this is an issue because of all the work related processes, which it possible.
+
 ## Slow Unlock
 
 You walk back to your desk, press a key (I normally hit ESC), and type in your password. Oh, no, not on a macOS device. You press a key, then wait. It's not long, but you can't just type in your password. Why? What has it been doing? Just let me unlock the device.
@@ -85,6 +87,8 @@ Firstly, you can't remove it from the dock! I know it is probably the basis for 
 
 If you right-click an archive file, where is the option to "Extract here"? Basic functionality that is missing. OK, so you can double-click the file to extract it, but that's not what I want to do when I double-click it. When you double-click a file, you want to launch it, and in the case of an archive file, that means looking inside it. There should be a right-click option to extract it, not default to that. I imagine Mac users don't know how to manage files, by the looks of this.
 
+Update: I am trying to be open minded with this operating system, truly I am. Finder is really is bad. I hate finder.
+
 ## Performance
 
 Everyone gets excited over the M-whatever performance. It might be a good chip, but from my experience, the usability is poor. Applications take quite a while to start (again, probably why they chose not to close applications properly). Graphics artefacts are noticeable here and there! An example is when using YouTube full-screen on Firefox. When going back to in-page view, the menus on Firefox have to redraw. Just shocking.
@@ -116,3 +120,8 @@ I've been using macOS for a few months now. It crashes, needing a reboot, more t
 Working with archive files has revealed a new annoying thing you get using macOS: junk files. I'm talking about the operating system dropping `._` files (e.g., `._filename`), `.fseventsd`, `.spotlight-v100`, `.TemporaryItems`, `.Trashes`, `.DS_Store`, and other files onto the file system.
 
 Now, I have to write "excludes" and other extra content into my Bash scripts to prevent littering my work with this garbage. It's horrible.
+
+## CAPS LOCK
+
+I love how if you press **caps lock** there is a blue oval with a white up-arrow that shows under the mouse pointer when you are in a text input field. Just a brilliant addition to any operating system. I doubt we will see it in any other system though because of software patents (I'm speculating here).
+
