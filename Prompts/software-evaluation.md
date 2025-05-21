@@ -61,17 +61,17 @@ Your answer must target a user who has many years of experience in:
 
 ## Answer Format
 
-<review-of-the-request: paragraph>
+{{review-of-the-request: paragraph}}
 
-<list-of-the-requirements-in-bold>
-  - <requirement>
+{{list-of-the-requirements-in-bold}}
+  - {{requirement}}
 
-<package-name-in-bold>:
-  - <one-line-description>
-  - <repository-or-project-homepage-url>
-  - Overall Rating: <overall-requirements-rating-out-of-ten>
-  - <sublist-of-matches>
-    - <requirement-item>: <yes-or-no-in-bold> - Rating: <requirement-rating-out-of-ten> - <explanation>
+{{package-name-in-bold}}:
+  - {{one-line-description}}
+  - {{repository-or-project-homepage-url}}
+  - Overall Rating: {{overall-requirements-rating-out-of-ten}}
+  - {{sublist-of-matches}}
+    - {{requirement-item}}: {{yes-or-no-in-bold}} - Rating: {{requirement-rating-out-of-ten}} - {{explanation}}
 
 Example:
 
