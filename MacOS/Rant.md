@@ -125,3 +125,8 @@ Now, I have to write "excludes" and other extra content into my Bash scripts to 
 
 I love how if you press **caps lock** there is a blue oval with a white up-arrow that shows under the mouse pointer when you are in a text input field. Just a brilliant addition to any operating system. I doubt we will see it in any other system though because of software patents (I'm speculating here).
 
+## Lost Windows
+
+This issue is less common but frustrating nonetheless. I've lost windows! I'm on the correct desktop with three monitors trying to access my application, but the window is missing. If I open the Mission Control, I can see it, but when I go back to work with the window, it is gone. The fix for this is not the same each time. Sometimes I've had to log off, sometimes it's resolved by moving the window between desktops. It changes. How much is this company worth? Single hardware support? This should not happen.
+
+
