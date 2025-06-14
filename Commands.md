@@ -96,6 +96,8 @@ rsync -avo /path/to/source /path/to/destination  # Preserve owner
 rsync -avg /path/to/source /path/to/destination  # Preserve group
 rsync -avc /path/to/source /path/to/destination  # Skip based on checksum, not mod-time & size
 
+jhead -n%Y-%m-%d-%H%M%S *.jpg  # Rename all jpg image files to ISO datetime format
+
 ```
 
 ## Git
