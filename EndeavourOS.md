@@ -81,7 +81,7 @@ sudo pacman --refresh --sync \
     starship \
     strace \
     syncthing \
-    thunar \
+    thunar tumbler \
     tigervnc \
     tmux \
     ttf-cascadia-code \
