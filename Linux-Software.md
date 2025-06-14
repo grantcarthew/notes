@@ -84,5 +84,5 @@ This page contains references to useful software packages for use with Linux and
 - [Resources](https://github.com/nokyan/resources): Keep an eye on system resources
 - [syncthing-gtk](https://github.com/kozec/syncthing-gtk) ([syncthing](https://syncthing.net/)): GTK3 based GUI and notification area icon for Syncthing
 - [vlc](https://www.videolan.org/): Open source cross-platform multimedia player and framework
-- [Thunar](https://docs.xfce.org/xfce/thunar/start): XFCE file manager
+- [Thunar](https://docs.xfce.org/xfce/thunar/start) & [tumbler](https://docs.xfce.org/xfce/tumbler/start): XFCE file manager with thumbnail generation
 - [Xournal++](https://xournalpp.github.io/): Take handwritten notes with ease
