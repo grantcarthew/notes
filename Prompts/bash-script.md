@@ -45,8 +45,6 @@
 
 # Environment setup
 set -o pipefail # set -e hides errors, don't use it
-
-# Get the directory of the script file
 SCRIPT_DIR="$(cd "${BASH_SOURCE[0]%/*}" || exit 1; pwd)"
 export PATH="${PATH}:${SCRIPT_DIR}"
 source "${SCRIPT_DIR}/bash_modules/terminal.sh"
@@ -75,8 +73,12 @@ if [[ $# -lt 2 || $# -gt 3 || "${1}" == "-h" || "${1}" == "--help" ]]; then
   exit 1
 fi
 
+log_title "Your Script Title"
+log_heading "Dependency Check"
+
+# Check for required environment variables
 if [[ -z "${SOME_TOKEN}" ]]; then
-  echo "ERROR: SOME_TOKEN environment variable is missing"
+  log_error "ERROR: SOME_TOKEN environment variable is missing"
   exit 1
 fi
 
@@ -89,13 +91,13 @@ for cmd in "${dependencies[@]}"; do
     fi
 done
 
+log_heading "Operational Values"
+
 export required_arg1="${1}"
 export required_token="${2}"
 export optional_arg="${3}"
 export calculated_arg="${required_arg1//https:/}"
 
-log_title "Your Script Title"
-log_heading "Input Values"
 log_message "$(
   cat <<EOF
    required_arg1: '${required_arg1}'
@@ -107,7 +109,7 @@ EOF
 
 log_heading "Validate Inputs"
 
-# See the ../assets/verify module
+# See the ../bash_modules/verify module
 is_url "${required_arg1}" || exit 1
 is_not_empty "${required_token}" || exit 1
 [[ "${optional_arg}" ]] && { is_path "${optional_arg}" || exit 1; }
@@ -118,4 +120,36 @@ foo --version
 log_heading "Function Title"
 
 # Ensure you log the output of steps for debugging
+log_message "Report: ${SCRIPT_DIR}"
+
+# Use success and failure for tick and cross icons
+log_success "This is a success message with a tick icon"
+log_failure "This is a failure message with a cross icon"
+
+# Log_ Functions
+# -------------------------------------------------------------
+# RipGrep Command: rg -o 'log_.*\(' scripts/bash_modules/terminal.sh | tr -d '('
+#
+# A list of the terminal.sh module log functions that send output to stderr:
+#
+# log_line            - Prints a horizontal line with customizable character and length
+# log_title           - Displays a bold green title with a double line separator
+# log_heading         - Displays a bold green heading with a single line separator
+# log_subheading      - Displays a bold green subheading with a line matching its length
+# log_sectionheading  - Displays a bold yellow section heading with a double line separator
+# log_message         - Prints a normal message to stderr
+# log_messagewithdate - Prints a message with UTC timestamp prefix
+# log_newline         - Inserts an empty line
+# log_sameline        - Updates text on the current line, erasing previous content
+# log_clearline       - Clears the current line without printing anything
+# log_warning         - Prints a yellow warning message
+# log_error           - Prints a red error message
+# log_success         - Prints a message with a green checkmark (✔)
+# log_failure         - Prints a message with a red cross (✖)
+# log_json            - Pretty prints JSON data using jq
+# log_percent         - Displays a percentage completion counter
+# log_progressbar     - Shows a visual progress bar with percentage
+# log_spinner         - Displays an animated spinner while a process is running
+# log_done            - Prints a completion message with a green checkmark
+
 ```
