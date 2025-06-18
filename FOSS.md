@@ -2,7 +2,10 @@
 
 My list of Free Open Source Software.
 
-https://osssoftware.org/
+- [Open Source Software](https://osssoftware.org/) - Open Source alternatives to popular projects
+- Mobile:
+  - [F-Droid](https://f-droid.org/) - Installable catalogue of Free and Open Source Software applications for the Android platform
+  - [Fossify](https://github.com/FossifyOrg) - A suite of open-source, ad-free apps (mobile) with customizable colors
 
 ## CLI Tools
 
