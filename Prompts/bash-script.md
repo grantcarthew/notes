@@ -31,6 +31,7 @@
 - Always use **double square brackets** for test
 - **Use $() for command substitution**
 - Functions will be used **when appropriate**
+- **Avoid single-use functions**
 - All functions MUST include the **function** keyword
 - Scripts will have minimal comments and be extremely readable
 - Use 2 spaces for tabs
