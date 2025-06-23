@@ -18,7 +18,7 @@ Review the following:
 - [Cloud Tools](#cloud-tools)
 - [Containers](#containers)
 - [Configuration](#configuration)
-  - [Blue Tooth](#blue-tooth)
+  - [Bluetooth](#bluetooth)
   - [NeoVim](#neovim)
 
 
