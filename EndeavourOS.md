@@ -19,6 +19,7 @@ Review the following:
 - [Containers](#containers)
 - [Configuration](#configuration)
   - [Blue Tooth](#blue-tooth)
+  - [NeoVim](#neovim)
 
 
 ## References
