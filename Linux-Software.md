@@ -39,6 +39,7 @@ This page contains references to useful software packages for use with Linux and
 - [mcfly](https://github.com/cantino/mcfly): McFly replaces your default ctrl-r shell history search
 - [mtr](https://github.com/traviscross/mtr): Combines the functionality of traceroute and ping into one tool
 - [neovim](https://github.com/neovim/neovim) (nvim): Better vim
+  - [neovimcraft](https://neovimcraft.com/): Curated list of neovim plugins
 - [ngrep](https://github.com/jpr5/ngrep): GNU grep applied to the network layer
 - [ntp](https://en.wikipedia.org/wiki/Network_Time_Protocol): Time sync
 - [oha](https://github.com/hatoo/oha): HTTP load generator
