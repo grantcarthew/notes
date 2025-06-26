@@ -82,6 +82,7 @@ if [[ -z "${SOME_TOKEN}" ]]; then
   log_error "ERROR: SOME_TOKEN environment variable is missing"
   exit 1
 fi
+log_success "Environment variables set"
 
 # Dependency check - edit this list adding commands
 dependencies=(foo bar baz)
@@ -91,6 +92,7 @@ for cmd in "${dependencies[@]}"; do
         exit 1
     fi
 done
+log_success "Command-line dependencies installed"
 
 log_heading "Operational Values"
 
@@ -108,9 +110,9 @@ log_message "$(
 EOF
 )"
 
-log_heading "Validate Inputs"
+log_heading "Validation Checks"
 
-# See the ../bash_modules/verify module
+# See the bash_modules/verify module
 is_url "${required_arg1}" || exit 1
 is_not_empty "${required_token}" || exit 1
 [[ "${optional_arg}" ]] && { is_path "${optional_arg}" || exit 1; }
@@ -118,7 +120,7 @@ is_not_empty "${required_token}" || exit 1
 log_heading "foo version"
 foo --version
 
-log_heading "Function Title"
+log_heading "Task Title"
 
 # Ensure you log the output of steps for debugging
 log_message "Report: ${SCRIPT_DIR}"
@@ -151,6 +153,8 @@ log_failure "This is a failure message with a cross icon"
 # log_percent         - Displays a percentage completion counter
 # log_progressbar     - Shows a visual progress bar with percentage
 # log_spinner         - Displays an animated spinner while a process is running
+# log_wait            - Waits for a specified duration, showing a spinner
+# log_pressanykey     - Prompts the user to press any key to continue
 # log_done            - Prints a completion message with a green checkmark
 
 ```
