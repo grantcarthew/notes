@@ -33,7 +33,8 @@ Procedure:
 - Get the items from the list above
 - Organise music
 - Crack a beer
-- Move furniture 
+- Move furniture
+- Place drop sheets
 - Clean walls
 - Fill gaps (gap filler)
 - Fill holes and dents (plaster filler)
