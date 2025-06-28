@@ -4,25 +4,25 @@
 
 Items needed:
 
-- Light
-- Gap Filler 
-- Spray bottle 
-- Toilet paper 
+- Light(s)
+- Gap Filler
+- Spray bottle (for gap filler)
+- Toilet paper (for wiping excess gap filler off your finger)
 - Plaster Filler (finishing compound)
-- Knife x 2
+- Knife x 2 (broad knife for applying plaster fill)
 - Sandpaper
 - Sanding block
-- Masking tape 
-- Thick tape for tin lid pouring 
+- Masking tape
+- Wide tape for tin lid pouring
 - Paint (stir first)
-- Tin lever
-- Stir stick
-- Brushes 
-- Roller 
+- Tin lid lever
+- Stiring stick
+- Brushes
+- Roller
 - Roller tray
-- Drop sheets 
+- Drop sheets
 - Rubbish bag/bin
-- Bucket 
+- Bucket
 - Rags
 - Music
 - Beer
