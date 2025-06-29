@@ -30,6 +30,8 @@
 - **Variable substitution** MUST include **double-quotes** and **curly braces**
 - Always use **double square brackets** for test
 - **Use $() for command substitution**
+- When logging a variable value to the terminal, put **single quotes** around the variable
+  - Example: `log_message "Output file: '${OUTPUT_FILE}'"
 - Functions will be used **when appropriate**
 - **Avoid single-use functions**
 - All functions MUST include the **function** keyword
