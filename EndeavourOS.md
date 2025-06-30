@@ -60,6 +60,7 @@ sudo pacman --refresh --sync \
     lsof \
     ltrace \
     mcfly \
+    mise \
     mtr \
     ncdu \
     neovim \
