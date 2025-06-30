@@ -37,6 +37,7 @@ This page contains references to useful software packages for use with Linux and
 - [lsof](https://github.com/lsof-org/lsof): List open files
 - [ltrace](https://www.man7.org/linux/man-pages/man1/ltrace.1.html): A library call tracer
 - [mcfly](https://github.com/cantino/mcfly): McFly replaces your default ctrl-r shell history search
+- [mise](https://github.com/jdx/mise): dev tools, env vars, task runner
 - [mtr](https://github.com/traviscross/mtr): Combines the functionality of traceroute and ping into one tool
 - [neovim](https://github.com/neovim/neovim) (nvim): Better vim
   - [neovimcraft](https://neovimcraft.com/): Curated list of neovim plugins
