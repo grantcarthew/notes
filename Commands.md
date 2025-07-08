@@ -98,6 +98,8 @@ rsync -avc /path/to/source /path/to/destination  # Skip based on checksum, not m
 
 jhead -n%Y-%m-%d-%H%M%S *.jpg  # Rename all jpg image files to ISO datetime format
 
+rg -Io 'string\.to\.match\.before([^"]+)\.and\.after' -r '$1' | sort -u  # Ripgrep ouput just the content of the regex group
+
 ```
 
 ## Git
