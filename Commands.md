@@ -7,6 +7,7 @@ Easy access with an alias:
 ```shell
 alias cmd="curl -s 'https://raw.githubusercontent.com/grantcarthew/notes/main/Commands.md'"
 ```
+
 Easy script:
 
 ```shell
@@ -264,5 +265,3 @@ O " New line above
 
 :g/string/d " Deletes every line that contains <string>
 ```
-
-
