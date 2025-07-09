@@ -4,8 +4,9 @@ EndeavourOS running notes
 
 _For package details, see the [Linux Software](Linux-Software.md) page._
 
-Review the following:
+- [References](#references)
 - [Basic Setup](#basic-setup)
+- [Terminal Config](#terminal-config)
 - [Laptop Battery Management](#laptop-battery-management)
 - [GUI Apps](#gui-apps)
   - [Alacarte](#alacarte)
@@ -14,6 +15,7 @@ Review the following:
 - [Programming](#programming)
 - [AI Tools](#ai-tools)
   - [Terminal AI Clients](#terminal-ai-clients)
+    - [aichat](#aichat)
   - [Local LLMs](#local-llms)
 - [Cloud Tools](#cloud-tools)
 - [Containers](#containers)
@@ -21,109 +23,136 @@ Review the following:
   - [Bluetooth](#bluetooth)
   - [NeoVim](#neovim)
 
-
 ## References
+
 - [Awesome TUIs](https://github.com/rothgar/awesome-tuis)
 
 ## Basic Setup
 
+Mandatory packages:
+
 ```shell
 sudo pacman --refresh --sync \
-    aichat \
-    bandwhich \
-    bash-completion \
-    bat \
-    broot \
-    btop \
-    ctop \
-    curlie \
-    difftastic \
-    diskus \
-    dog \
-    dua-cli \
-    entr \
-    fastfetch \
-    fd \
-    fdupes \
-    fzf \
-    gdb \
-    ghostty \
-    git \
-    gping \
-    gron \
-    hq \
-    hyperfine \
-    iotop \
-    jless \
-    jq \
-    lsd \
-    lsof \
-    ltrace \
-    mcfly \
-    mise \
-    mtr \
-    ncdu \
-    neovim \
-    ngrep \
-    ntp \
-    oha \
-    ouch \
-    p7zip \
-    procs \
-    progress \
-    python-pipx \
-    ranger \
-    remmina \
-    ripgrep \
-    rmlint \
-    rsync \
-    sd \
-    shellcheck \
-    speedtest-cli \
-    starship \
-    strace \
-    syncthing \
-    thunar tumbler \
-    tigervnc \
-    tmux \
-    ttf-cascadia-code \
-    vegeta \
-    yamllint \
-    yazi \
-    yq \
-    zellij \
-    zoxide
+  aichat \
+  bandwhich \
+  bash-completion \
+  bat \
+  broot \
+  btop \
+  ctop \
+  curlie \
+  difftastic \
+  diskus \
+  dog \
+  dua-cli \
+  entr \
+  fastfetch \
+  fd \
+  fdupes \
+  fzf \
+  gdb \
+  ghostty \
+  git \
+  gping \
+  gron \
+  hq \
+  hyperfine \
+  iotop \
+  jless \
+  jq \
+  lsd \
+  lsof \
+  ltrace \
+  mcfly \
+  mise \
+  mtr \
+  ncdu \
+  neovim \
+  ngrep \
+  ntp \
+  oha \
+  ouch \
+  p7zip \
+  procs \
+  progress \
+  python-pipx \
+  ranger \
+  remmina \
+  ripgrep \
+  rmlint \
+  rsync \
+  sd \
+  shellcheck \
+  speedtest-cli \
+  starship \
+  strace \
+  syncthing \
+  thunar tumbler \
+  tigervnc \
+  tmux \
+  ttf-cascadia-code \
+  vegeta \
+  yamllint \
+  yazi \
+  yq \
+  zellij \
+  zoxide
+```
 
-yay --sync jnv
+Specialised packages:
 
-yay --sync syncthing-gtk
+```shell
+yay --sync \
+  jnv
+  syncthing-gtk
+```
 
-# Fonts
+Fonts:
+
+```shell
 # Font Awesome and Nerd Fonts help 'lsd' show icons in the terminal
 sudo pacman --sync --noconfirm \
-    otf-cascadia-code \
-    otf-font-awesome \
-    nerd-fonts
+  otf-cascadia-code \
+  otf-font-awesome \
+  nerd-fonts
+```
 
-# For Gnome
+For Gnome:
+
+```shell
 sudo pacman --sync hunspell-en_au
+```
 
-# Network Monitoring
+Network monitoring:
+
+```shell
 sudo pacman --sync vnstat
 sudo systemctl enable vnstat
 sudo systemctl start vnstat
+```
 
-# Time sync
+Time sync:
+
+```shell
 sudo systemctl enable ntpd
 sudo systemctl start ntpd
+```
 
-# Ghostty Config
-# .config/ghostty/config
+## Terminal Config
+
+Ghostty config:
+
+```shell
+nvim .config/ghostty/config
 # font-size = 18
 # theme = Breeze
+```
 
+Starship config:
+
+```shell
 # Starship Config (https://starship.rs/config/)
-# .config/starship.toml
+nvim .config/starship.toml
 # Places the directory on the second line
 format = '$all$directory$character'
 ```
@@ -148,20 +177,20 @@ yay --refresh --sync threshy threshy-gui
 
 ```shell
 sudo pacman --sync --noconfirm \
-    alacarte \
-    chromium \
-    code \
-    copyq \
-    gnome-browser-connector \
-    gnome-firmware \
-    gnome-software \
-    gpick \
-    flatpak \
-    libreoffice-fresh \
-    pinta \
-    vlc \
-    xclip \
-    xournalpp
+  alacarte \
+  chromium \
+  code \
+  copyq \
+  gnome-browser-connector \
+  gnome-firmware \
+  gnome-software \
+  gpick \
+  flatpak \
+  libreoffice-fresh \
+  pinta \
+  vlc \
+  xclip \
+  xournalpp
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 # https://flathub.org/setup/EndeavourOS
@@ -191,9 +220,7 @@ nvim ~/.local/share/applications/alacarte-made.desktop # or the correct file
 ### Office Apps
 
 ```shell
-
 yay -S teams-for-linux
-
 ```
 
 Descriptions:
@@ -221,10 +248,6 @@ Descriptions:
 
 sudo pacman --sync deno go lua rust zig
 
-yay --sync nvm
-
-nvm install node
-
 # D-Bus Monitoring
 sudo pacman --sync bustle d-spy
 ```
@@ -234,7 +257,7 @@ Aqua for GitHub releases: https://aquaproj.github.io/
 ```
 export PATH="${PATH}:${HOME}/.local/share/aquaproj-aqua/bin
 ```
- 
+
 ## AI Tools
 
 ### Terminal AI Clients
@@ -262,21 +285,6 @@ clients:
   api_key: null
 ```
 
-#### Aider
-
-[Aider](https://aider.chat/)
-
-```shell
-uv tool install aider-install
-aider-install
-nvim ~/.aider.conf.yml
-```
-
-```yaml
-model: xai/grok-3-mini-beta
-reasoning-effort: high
-```
-
 ### Local LLMs
 
 ```shell
@@ -294,17 +302,17 @@ Descriptions:
 
 ```shell
 sudo pacman --sync \
-    dagger \
-    helm \
-    kubectl \
-    kubectx \
-    terraform
+  dagger \
+  helm \
+  kubectl \
+  kubectx \
+  terraform
 
 yay --sync --noconfirm stu tflint
 
 yay --sync --noconfirm opentofu
 
-pipx install awslogs --force
+mise tool install awslogs --force
 
 yay --sync --noconfirm awsvpnclient
 ```
@@ -314,7 +322,7 @@ Descriptions:
 - [aws-cli-v2](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html): Unified tool to manage your AWS services
 - [awslogs](https://github.com/jorgebastida/awslogs): AWS CloudWatch logs for Humans
 - [awsvpnclient](https://aur.archlinux.org/packages/awsvpnclient): AWS VPN Client supporting SSO
-- [dagger](https://dagger.io/): An engine to run your pipelines in containers 
+- [dagger](https://dagger.io/): An engine to run your pipelines in containers
 - [kubectl](https://kubernetes.io/docs/tasks/tools/): Kubernetes command-line tool
 - [kubectx](https://github.com/ahmetb/kubectx) (includes kubens): Faster way to switch between clusters and namespaces in kubectl
 - [opentofu](https://opentofu.org/): The open source infrastructure as code tool
@@ -430,5 +438,3 @@ return {
    opts = {},
 }
 ```
-
-
