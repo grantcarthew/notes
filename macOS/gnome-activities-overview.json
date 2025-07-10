@@ -1,0 +1,63 @@
+{
+    "title": "Left Option to Mission Control when pressed alone",
+    "rules": [
+        {
+            "description": "Launch Mission Control with Left Option on release if used alone",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "left_option",
+                        "modifiers": {
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "set_variable": {
+                                "name": "left_option_pressed",
+                                "value": 1
+                            }
+                        },
+                        {
+                            "key_code": "left_option"
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "mission_control"
+                        }
+                    ],
+                    "to_after_key_up": [
+                        {
+                            "set_variable": {
+                                "name": "left_option_pressed",
+                                "value": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "any": "key_code",
+                        "modifiers": {
+                            "mandatory": ["left_option"],
+                            "optional": ["any"]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_option",
+                            "modifiers": ["any"]
+                        },
+                        {
+                            "repeat": false,
+                            "halt": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
