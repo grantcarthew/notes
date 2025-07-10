@@ -31,6 +31,57 @@ The MacOS keyboard and desktop environment is a broken experience for Linux user
 
 ## Packages
 
+Brew packages:
+
+```bash
+brew install \
+  atuin \
+  bandwhich \
+  bash \
+  broot \
+  btop \
+  coreutils \
+  cowsay \
+  diskus \
+  dua-cli \
+  entr \
+  gping \
+  hq \
+  kubernetes-cli \
+  mcfly \
+  mise \
+  mplayer \
+  mtr \
+  ngrep \
+  nnn \
+  oha \
+  ouch \
+  pastel \
+  postgresql@14 \
+  procs \
+  ranger \
+  rsync \
+  speedtest-cli \
+  starship \
+  tree-sitter \
+  vegeta \
+  watch \
+  anythingllm \
+  copyq \
+  coteditor \
+  docker \
+  docker-desktop \
+  firefox \
+  ghostty \
+  google-cloud-sdk \
+  karabiner-elements \
+  marta \
+  orion \
+  pinta \
+  slack \
+  visual-studio-code
+```
+
 Mise config located at ~/.config/mise/config.toml.
 
 Run `mise install` after creating the config.toml file.
@@ -79,41 +130,4 @@ node = "latest"
 python = "latest"
 terraform = "1.11"
 uv = "latest"
-```
-
-Brew packages:
-
-```bash
-brew install \
-  atuin \
-  bandwhich \
-  bash \
-  broot \
-  btop \
-  coreutils \
-  cowsay \
-  diskus \
-  dua-cli \
-  entr \
-  gping \
-  hq \
-  kubernetes-cli \
-  mcfly \
-  mise \
-  mplayer \
-  mtr \
-  ngrep \
-  nnn \
-  oha \
-  ouch \
-  pastel \
-  postgresql@14 \
-  procs \
-  ranger \
-  rsync \
-  speedtest-cli \
-  starship \
-  tree-sitter \
-  vegeta \
-  watch
 ```
