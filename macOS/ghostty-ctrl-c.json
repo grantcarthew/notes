@@ -1,0 +1,29 @@
+{
+    "description": "Ghostty Ctrl+C Fix",
+    "manipulators": [
+        {
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "com.mitchellh.ghostty"
+                    ],
+                    "type": "frontmost_application_if"
+                }
+            ],
+            "from": {
+                "key_code": "c",
+                "modifiers": {
+                    "mandatory": ["left_command"],
+                    "optional": ["any"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "c",
+                    "modifiers": ["left_control"]
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
