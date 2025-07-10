@@ -22,12 +22,17 @@ The MacOS keyboard and desktop environment is a broken experience for Linux user
   - left_control -> left_command
   - left_command -> left_option
   - left_option -> left_control
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 69b41b2 (fix: macOS dir name)
 ### Complex Modifications
 
 - [Gnome Activities Overview](gnome-activities-overview.json): Simulates using the Super key (Window key) in Gnome to show the Activities Overview.
 - [Print Screen](print-screen.json): Enable the PrtSc or Print Screen key to select an area of the screen to copy to the clipboard.
 - [Home and End Mapping](home-and-end.json): Remaps the Home and End keys to go to the beginning and end of the current line.
+<<<<<<< HEAD
 
 ## Packages
 
@@ -152,3 +157,5 @@ mise install
 echo
 echo "Mise setup complete. All global runtimes are now installed."
 ```
+=======
+>>>>>>> 69b41b2 (fix: macOS dir name)
