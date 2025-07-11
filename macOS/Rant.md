@@ -2,6 +2,8 @@
 
 The following things are driving me crazy and are good reasons for a Linux user to not want to ever work with a Mac. They probably apply to Windows users as well.
 
+_Update: While I'm at work using my macOS, I say nasty things under my breath all the time. This rant document is not a "list of annoying things that you will get use to". This is a list of constant misery using an Apple product. I don't want to lead people astray here, everytime I use it, CONSTANTLY. All the time. What a piece of garbage this operating system is._
+
 ## System Info
 
 I got this info using [fastfetch](https://github.com/fastfetch-cli/fastfetch), which should show that I'm not using some ancient system:
@@ -29,11 +31,13 @@ You sit down to work on your machine and type in your username and password. Aft
 
 After using this system for some time now, I realised this is a security issue. I prefer to turn on my computer, perform tasks like getting a drink, and then log in to start working. On a macOS system, this workflow is impossible. If you press the power button, the system starts quickly but hasn't fully booted. You type your username and password, hit Enter, and then wait a long time for it to boot. The security issue arises because, after booting, the system automatically displays the desktop since you've already entered your credentials. You have no choice but to wait, leaving the system vulnerable to unauthorised access if unattended.
 
-Update: A friend at work suggested this is an issue because of all the work related processes, which it possible.
+_Update: A friend at work suggested this is an issue because of all the work related processes, which it possible._
 
 ## Slow Unlock
 
 You walk back to your desk, press a key (I normally hit ESC), and type in your password. Oh, no, not on a macOS device. You press a key, then wait. It's not long, but you can't just type in your password. Why? What has it been doing? Just let me unlock the device.
+
+_Update: This may be due to the security software running in the company. Unknown at this point. Either way, still annoying everytime._
 
 ## Click Selects the Window
 
@@ -44,6 +48,8 @@ I can see this as a design choice for an operating system, but I think it is the
 ## Global Keyboard Shortcuts
 
 I've created a few global keyboard shortcuts, but they just don't work in all situations. Drives me crazy.
+
+_Update: I've confirmed this is a common issue to all mac users. Sucks to be a mac user._
 
 ## Modifier Keyboard Shortcuts
 
@@ -60,6 +66,8 @@ I am a desktop user and I have finished with this application. I don't want it o
 ## Firefox Window Sessions
 
 I like to have Firefox keep my previous session when I open it the next day. Thanks to the "Closing Applications" issue discussed above, sometimes in the morning when I start Firefox, I have to go to my history and select "Recently closed windows" to find my main browser session.
+
+_Update: This does not happen "sometimes" anymore, it is every morning._
 
 ## Mission Control (GNOME Activities)
 
@@ -87,7 +95,9 @@ Firstly, you can't remove it from the dock! I know it is probably the basis for 
 
 If you right-click an archive file, where is the option to "Extract here"? Basic functionality that is missing. OK, so you can double-click the file to extract it, but that's not what I want to do when I double-click it. When you double-click a file, you want to launch it, and in the case of an archive file, that means looking inside it. There should be a right-click option to extract it, not default to that. I imagine Mac users don't know how to manage files, by the looks of this.
 
-Update: I am trying to be open minded with this operating system, truly I am. Finder is really is bad. I hate finder.
+_Update: I am trying to be open minded with this operating system, truly I am. Finder is really is bad. I hate finder._
+
+_Update2: I've started using [Marta](https://marta.sh/), which is not ideal, but better than Finder._
 
 ## Performance
 
@@ -123,10 +133,16 @@ Now, I have to write "excludes" and other extra content into my Bash scripts to 
 
 ## CAPS LOCK
 
-I love how if you press **caps lock** there is a blue oval with a white up-arrow that shows under the mouse pointer when you are in a text input field. Just a brilliant addition to any operating system. I doubt we will see it in any other system though because of software patents (I'm speculating here).
+This is not a part of the "rant" topic. Credit where credit is due. I love how if you press **caps lock** there is a blue oval with a white up-arrow that shows under the mouse pointer when you are in a text input field. Just a brilliant addition to any operating system. I doubt we will see it in any other system though because of software patents (I'm speculating here).
 
 ## Lost Windows
 
 This issue is less common but frustrating nonetheless. I've lost windows! I'm on the correct desktop with three monitors trying to access my application, but the window is missing. If I open the Mission Control, I can see it, but when I go back to work with the window, it is gone. The fix for this is not the same each time. Sometimes I've had to log off, sometimes it's resolved by moving the window between desktops. It changes. How much is this company worth? Single hardware support? This should not happen.
+
+_Update: I found a workaround for this. Open the Mission Control app and select the window, then go to the the Window menu and select a Move & Resize value, any of them._
+
+## Window Spanning
+
+You can't span a window over multiple monitors! What? On Linux and Windows you can drag the edge of a window across two or more monitors to get a wider view. I use this feature in the terminal sometimes to show long strings. You can't do it in macOS.
 
 
