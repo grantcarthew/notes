@@ -32,29 +32,70 @@ _For package details, see the [Linux Software](Linux-Software.md) page._
 Mandatory system wide packages:
 
 ```shell
-sudo pacman --refresh --sync \
+sudo pacman --refresh --sync --needed \
+  aichat \
+  bandwhich \
   bash-completion \
+  bat \
+  broot \
+  btop \
+  ctop \
+  curlie \
+  difftastic \
+  diskus \
+  dog \
+  dua-cli \
+  entr \
+  fastfetch \
+  fd \
   fdupes \
+  fzf \
   gdb \
   ghostty \
   git \
+  gping \
+  gron \
+  hq \
+  hyperfine \
   iotop \
+  jless \
+  jq \
   lsof \
   ltrace \
+  lsd \
+  mcfly \
   mtr \
   ncdu \
+  neovim \
   ngrep \
   ntp \
+  oha \
+  ouch \
   p7zip \
+  procs \
   progress \
+  ranger \
   remmina \
+  ripgrep \
   rmlint \
   rsync \
+  sd \
+  shellcheck \
+  speedtest-cli \
+  starship \
   strace \
   syncthing \
-  thunar tumbler \
+  thunar \
   tigervnc \
-  ttf-cascadia-code
+  tmux \
+  ttf-cascadia-code \
+  tumbler \
+  vegeta \
+  yamllint \
+  yazi \
+  yq \
+  zellij \
+  zoxide
 ```
 
 Mise user-space packages:
@@ -63,8 +104,7 @@ Mise user-space packages:
 #!/usr/bin/env bash
 #
 # This script sets up the global mise configuration file and installs the
-# specified tools. It is idempotent, meaning it can be run multiple times
-# without causing issues.
+# specified runtimes. It is idempotent.
 
 # Exit immediately if a command exits with a non-zero status.
 set -o pipefail
@@ -78,58 +118,18 @@ mkdir -p "$MISE_CONFIG_DIR"
 echo "Creating mise configuration file at $MISE_CONFIG_FILE..."
 cat > "$MISE_CONFIG_FILE" <<'EOF'
 [tools]
-aichat = "latest"
-bandwhich = "latest"
-bat = "latest"
-broot = "latest"
-btop = "latest"
-ctop = "latest"
-curlie = "latest"
-difftastic = "latest"
-diskus = "latest"
-dog = "latest"
-dua-cli = "latest"
-entr = "latest"
-fastfetch = "latest"
-fd = "latest"
-fzf = "latest"
-gping = "latest"
-gron = "latest"
-hq = "latest"
-hyperfine = "latest"
-jless = "latest"
-jq = "latest"
-lsd = "latest"
-mcfly = "latest"
-neovim = "latest"
-oha = "latest"
-ouch = "latest"
-procs = "latest"
-ranger = "latest"
-ripgrep = "latest"
-sd = "latest"
-shellcheck = "latest"
-speedtest-cli = "latest"
-starship = "latest"
-tmux = "latest"
-uv = "latest"
-vegeta = "latest"
-yamllint = "latest"
-yazi = "latest"
-yq = "latest"
-zellij = "latest"
-zoxide = "latest"
 python = "latest"
+uv = "latest"
 EOF
 
 echo "Configuration file successfully created."
 echo
 
-echo "Running 'mise install' to set up your global tools..."
+echo "Running 'mise install' to set up your global runtimes..."
 mise install
 
 echo
-echo "Mise setup complete. All global tools are now installed and available."
+echo "Mise setup complete. All global runtimes are now installed."
 ```
 
 Specialised packages:
