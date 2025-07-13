@@ -119,7 +119,7 @@ Mise config located at ~/.config/mise/config.toml.
 
 Run `mise install` after creating the config.toml file.
 
-```toml
+```bash
 #!/usr/bin/env bash
 #
 # This script sets up the global mise configuration file for runtimes.
