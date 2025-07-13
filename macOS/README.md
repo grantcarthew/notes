@@ -35,51 +35,84 @@ Brew packages:
 
 ```bash
 brew install \
+  anythingllm \
   atuin \
   bandwhich \
   bash \
+  bat \
+  bottom \
   broot \
   btop \
+  copyq \
   coreutils \
+  coteditor \
   cowsay \
+  ctop \
+  curlie \
+  delta \
+  difftastic \
   diskus \
+  docker \
   dua-cli \
+  dust \
   entr \
+  fastfetch \
+  fd \
+  firefox \
+  fzf \
+  ghostty \
+  glab \
+  google-cloud-sdk \
   gping \
+  gron \
+  helm \
   hq \
+  hyperfine \
+  jless \
+  jq \
+  karabiner-elements \
+  kubectx \
   kubernetes-cli \
+  lazydocker \
+  lazygit \
+  lsd \
+  marta \
   mcfly \
   mise \
   mplayer \
   mtr \
+  neovim \
   ngrep \
   nnn \
   oha \
+  orion \
   ouch \
   pastel \
+  pinta \
   postgresql@14 \
   procs \
   ranger \
+  ripgrep \
   rsync \
+  sd \
+  shellcheck \
+  slack \
   speedtest-cli \
   starship \
+  stylua \
+  terraform-docs \
+  tflint \
+  tmux \
   tree-sitter \
+  trivy \
   vegeta \
+  visual-studio-code \
   watch \
-  anythingllm \
-  copyq \
-  coteditor \
-  docker \
-  docker-desktop \
-  firefox \
-  ghostty \
-  google-cloud-sdk \
-  karabiner-elements \
-  marta \
-  orion \
-  pinta \
-  slack \
-  visual-studio-code
+  yamllint \
+  yazi \
+  yq \
+  zellij \
+  zoxide
 ```
 
 Mise config located at ~/.config/mise/config.toml.
@@ -87,47 +120,35 @@ Mise config located at ~/.config/mise/config.toml.
 Run `mise install` after creating the config.toml file.
 
 ```toml
-[tools]
-# Dev & CLI Tools
-bat = "latest"
-bottom = "latest"
-ctop = "latest"
-curlie = "latest"
-delta = "latest"
-difftastic = "latest"
-dust = "latest"
-fastfetch = "latest"
-fd = "latest"
-fzf = "latest"
-glab = "latest"
-gron = "latest"
-helm = "latest"
-hyperfine = "latest"
-jless = "latest"
-jq = "latest"
-kubectx = "latest"
-lazydocker = "latest"
-lazygit = "latest"
-lsd = "latest"
-neovim = "latest"
-ripgrep = "latest"
-sd = "latest"
-shellcheck = "latest"
-starship = "latest"
-stylua = "latest"
-terraform-docs = "latest"
-tflint = "latest"
-tmux = "latest"
-trivy = "latest"
-yamllint = "latest"
-yazi = "latest"
-yq = "latest"
-zellij = "latest"
-zoxide = "latest"
+#!/usr/bin/env bash
+#
+# This script sets up the global mise configuration file for runtimes.
 
-# Runtimes & Associated Packages
+# Exit immediately if a command exits with a non-zero status.
+set -o pipefail
+
+MISE_CONFIG_DIR="$HOME/.config/mise"
+MISE_CONFIG_FILE="$MISE_CONFIG_DIR/config.toml"
+
+echo "Ensuring mise configuration directory exists at $MISE_CONFIG_DIR..."
+mkdir -p "$MISE_CONFIG_DIR"
+
+echo "Creating mise configuration file at $MISE_CONFIG_FILE..."
+cat > "$MISE_CONFIG_FILE" <<'EOF'
+# Runtimes & Associated Packages managed by mise
+[tools]
 node = "latest"
 python = "latest"
 terraform = "1.11"
 uv = "latest"
+EOF
+
+echo "Configuration file successfully created."
+echo
+
+echo "Running 'mise install' to set up your global runtimes..."
+mise install
+
+echo
+echo "Mise setup complete. All global runtimes are now installed."
 ```
