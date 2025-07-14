@@ -55,6 +55,7 @@ This page contains references to useful software packages for use with Linux and
 - [rsync](https://en.wikipedia.org/wiki/Rsync): Efficiently transferring and synchronizing files between a computer and a storage
 - [sd](https://github.com/chmln/sd): Intuitive find & replace CLI (sed alternative)
 - [shellcheck](https://www.shellcheck.net/): Finds bugs in your shell scripts
+- [somo](https://github.com/theopfr/somo): A human-friendly alternative to netstat for socket and port monitoring
 - [speedtest-cli](https://github.com/sivel/speedtest-cli): Command line network speed test
 - [starship](https://github.com/starship/starship) ([config](https://starship.rs/config/)): The minimal, blazing-fast, and infinitely customizable prompt
 - [strace](https://man7.org/linux/man-pages/man1/strace.1.html): Trace system calls and signals
