@@ -29,10 +29,10 @@ _For package details, see the [Linux Software](Linux-Software.md) page._
 
 ## Basic Setup
 
-Mandatory packages:
+Mandatory system wide packages:
 
 ```shell
-sudo pacman --refresh --sync \
+sudo pacman --refresh --sync --needed \
   aichat \
   bandwhich \
   bash-completion \
@@ -60,11 +60,10 @@ sudo pacman --refresh --sync \
   iotop \
   jless \
   jq \
-  lsd \
   lsof \
   ltrace \
+  lsd \
   mcfly \
-  mise \
   mtr \
   ncdu \
   neovim \
@@ -75,7 +74,6 @@ sudo pacman --refresh --sync \
   p7zip \
   procs \
   progress \
-  python-pipx \
   ranger \
   remmina \
   ripgrep \
@@ -87,16 +85,51 @@ sudo pacman --refresh --sync \
   starship \
   strace \
   syncthing \
-  thunar tumbler \
+  thunar \
   tigervnc \
   tmux \
   ttf-cascadia-code \
+  tumbler \
   vegeta \
   yamllint \
   yazi \
   yq \
   zellij \
   zoxide
+```
+
+Mise user-space packages:
+
+```bash
+#!/usr/bin/env bash
+#
+# This script sets up the global mise configuration file and installs the
+# specified runtimes. It is idempotent.
+
+# Exit immediately if a command exits with a non-zero status.
+set -o pipefail
+
+MISE_CONFIG_DIR="$HOME/.config/mise"
+MISE_CONFIG_FILE="$MISE_CONFIG_DIR/config.toml"
+
+echo "Ensuring mise configuration directory exists at $MISE_CONFIG_DIR..."
+mkdir -p "$MISE_CONFIG_DIR"
+
+echo "Creating mise configuration file at $MISE_CONFIG_FILE..."
+cat > "$MISE_CONFIG_FILE" <<'EOF'
+[tools]
+python = "latest"
+uv = "latest"
+EOF
+
+echo "Configuration file successfully created."
+echo
+
+echo "Running 'mise install' to set up your global runtimes..."
+mise install
+
+echo
+echo "Mise setup complete. All global runtimes are now installed."
 ```
 
 Specialised packages:
