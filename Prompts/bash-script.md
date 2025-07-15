@@ -30,7 +30,7 @@
 - **Variable substitution** MUST include **double-quotes** and **curly braces**
 - Always use **double square brackets** for test
 - **Use $() for command substitution**
-- When logging a variable value to the terminal, put **single quotes** around the variable
+- When logging a variable value to the terminal, always put **single quotes** around the variable
   - Example: `log_message "Output file: '${OUTPUT_FILE}'"
 - Functions will be used **when appropriate**
 - **Avoid single-use functions**
@@ -46,11 +46,15 @@
 ```bash
 #!/usr/bin/env bash
 
-# Environment setup
-set -o pipefail # set -e hides errors, don't use it
+# -----------------------------------------------------------------------------
+# Environment setup - Leave this block intact
+# -----------------------------------------------------------------------------
+set -o pipefail # set -o errexit hides errors, don't use it
+[[ ${DEBUG-} ]] && set -o xtrace
 SCRIPT_DIR="$(cd "${BASH_SOURCE[0]%/*}" || exit 1; pwd)"
-export PATH="${PATH}:${SCRIPT_DIR}"
+[[ ":${PATH}:" != *:"${SCRIPT_DIR}":* ]] && export PATH="${SCRIPT_DIR}:${PATH}"
 source "${SCRIPT_DIR}/bash_modules/terminal.sh"
+[[ -z ${BASH_MODULES_DIR-} ]] && echo "ERROR: terminal.sh module missing" && exit 1
 
 function print_usage() {
   cat <<EOF
@@ -70,38 +74,44 @@ Optional arguments:
   -h, --help         Show this help message and exit
 EOF
 }
-
 if [[ $# -lt 2 || $# -gt 3 || "${1}" == "-h" || "${1}" == "--help" ]]; then
   print_usage
   exit 1
 fi
 
-log_title "Your Script Title"
-log_heading "Dependency Check"
+function ctrlc_trap() {
+  log_warning "\nScript interrupted. Exiting."
+  exit 130
+}
+trap ctrlc_trap SIGINT
 
-# Check for required environment variables
+# -----------------------------------------------------------------------------
+# Title and Dependency Checks
+# -----------------------------------------------------------------------------
+log_title "{{insert-descriptive-title}}"
+
 if [[ -z "${SOME_TOKEN}" ]]; then
   log_error "ERROR: SOME_TOKEN environment variable is missing"
   exit 1
 fi
-log_success "Environment variables set"
 
-# Dependency check - edit this list adding commands
-dependencies=(foo bar baz)
+dependencies=(foo bar baz) # If only one, remove the loop
 for cmd in "${dependencies[@]}"; do
     if ! command -v "${cmd}" >/dev/null; then
         log_error "ERROR: Missing dependency - '${cmd}'"
         exit 1
     fi
 done
-log_success "Command-line dependencies installed"
 
+# -----------------------------------------------------------------------------
+# Report Operational Values
+# -----------------------------------------------------------------------------
 log_heading "Operational Values"
 
-export required_arg1="${1}"
-export required_token="${2}"
-export optional_arg="${3}"
-export calculated_arg="${required_arg1//https:/}"
+declare required_arg1="${1}"
+declare required_token="${2}"
+declare optional_arg="${3}"
+declare calculated_arg="${required_arg1//https:/}"
 
 log_message "$(
   cat <<EOF
@@ -112,30 +122,35 @@ log_message "$(
 EOF
 )"
 
+# -----------------------------------------------------------------------------
+# Validation Checks - Remove if not needed
+# -----------------------------------------------------------------------------
 log_heading "Validation Checks"
-
 # See the bash_modules/verify module
 is_url "${required_arg1}" || exit 1
 is_not_empty "${required_token}" || exit 1
 [[ "${optional_arg}" ]] && { is_path "${optional_arg}" || exit 1; }
 
-log_heading "foo version"
-foo --version
-
-log_heading "Task Title"
-
-# Ensure you log the output of steps for debugging
-log_message "Report: ${SCRIPT_DIR}"
+# -----------------------------------------------------------------------------
+# Main Logic
+# -----------------------------------------------------------------------------
+log_heading "{{insert-task-name-and-repeat-for-multiple-tasks}}"
+log_message "{{insert-interim-process-results}}"
 
 # Use success and failure for tick and cross icons
-log_success "This is a success message with a tick icon"
-log_failure "This is a failure message with a cross icon"
+log_success "{{insert-success-message}}"
+log_failure "{{insert-failure-message}}"
 
-# Log_ Functions
-# -------------------------------------------------------------
-# RipGrep Command: rg -o 'log_.*\(' scripts/bash_modules/terminal.sh | tr -d '('
-#
+# AI Instructions
+# -----------------------------------------------------------------------------
+# - Do not create single use functions
+# - Keep main logic at the root level of the script
+# - Use the log_* functions from the terminal.sh module for all output
+# -----------------------------------------------------------------------------
+# Log_* Functions
+# -----------------------------------------------------------------------------
 # A list of the terminal.sh module log functions that send output to stderr:
+# RipGrep Command: rg -o 'log_.*\(' scripts/bash_modules/terminal.sh | tr -d '('
 #
 # log_line            - Prints a horizontal line with customizable character and length
 # log_title           - Displays a bold green title with a double line separator
