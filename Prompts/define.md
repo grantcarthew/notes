@@ -27,9 +27,11 @@
 Spelling: <correct-spelling>
 Definition: <your-definition>
 
-Synonyms: <list-ten-synonyms-as-numbered-bullet-points>
+Synonyms:
+<list-ten-synonyms-as-numbered-bullet-points>
 
-Antonyms: <list-ten-antonyms-as-numbered-bullet-points>
+Antonyms:
+<list-ten-antonyms-as-numbered-bullet-points>
 
 ## Conversation
 
@@ -40,11 +42,9 @@ excelent
 ### Assistant
 
 Spelling: Excellent
-
 Definition: of the highest quality; exceptionally good
 
 Synonyms:
-
 1. Outstanding
 2. Superb
 3. Exceptional
