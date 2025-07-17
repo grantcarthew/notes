@@ -80,7 +80,8 @@ if [[ $# -lt 2 || $# -gt 3 || "${1}" == "-h" || "${1}" == "--help" ]]; then
 fi
 
 function ctrlc_trap() {
-  log_warning "\nScript interrupted. Exiting."
+  log_newline
+  log_warning "Script interrupted. Exiting."
   exit 130
 }
 trap ctrlc_trap SIGINT
