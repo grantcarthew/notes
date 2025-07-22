@@ -2,7 +2,7 @@
 
 The following things are driving me crazy and are good reasons for a Linux user to not want to ever work with a Mac. They probably apply to Windows users as well.
 
-_Update: While I'm at work using my macOS, I say nasty things under my breath all the time. This rant document is not a "list of annoying things that you will get use to". This is a list of constant misery using an Apple product. I don't want to lead people astray here, everytime I use it, CONSTANTLY. All the time. What a piece of garbage this operating system is._
+_Update: While I'm at work using my macOS, I say nasty things under my breath all the time. This rant document is not a "list of annoying things that you will get used to". This is a list of constant misery using an Apple product. I don't want to lead people astray here, everytime I use it, CONSTANTLY. All the time. What a piece of garbage this operating system is._
 
 ## System Info
 
