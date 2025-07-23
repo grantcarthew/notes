@@ -46,8 +46,7 @@
 ```bash
 #!/usr/bin/env bash
 
-# -----------------------------------------------------------------------------
-# Environment setup - Leave this block intact
+# Environment setup
 # -----------------------------------------------------------------------------
 set -o pipefail # set -o errexit hides errors, don't use it
 [[ ${DEBUG-} ]] && set -o xtrace
@@ -86,7 +85,6 @@ function ctrlc_trap() {
 }
 trap ctrlc_trap SIGINT
 
-# -----------------------------------------------------------------------------
 # Title and Dependency Checks
 # -----------------------------------------------------------------------------
 log_title "{{insert-descriptive-title}}"
@@ -104,7 +102,6 @@ for cmd in "${dependencies[@]}"; do
     fi
 done
 
-# -----------------------------------------------------------------------------
 # Report Operational Values
 # -----------------------------------------------------------------------------
 log_heading "Operational Values"
@@ -123,7 +120,6 @@ log_message "$(
 EOF
 )"
 
-# -----------------------------------------------------------------------------
 # Validation Checks - Remove if not needed
 # -----------------------------------------------------------------------------
 log_heading "Validation Checks"
@@ -132,7 +128,6 @@ is_url "${required_arg1}" || exit 1
 is_not_empty "${required_token}" || exit 1
 [[ "${optional_arg}" ]] && { is_path "${optional_arg}" || exit 1; }
 
-# -----------------------------------------------------------------------------
 # Main Logic
 # -----------------------------------------------------------------------------
 log_heading "{{insert-task-name-and-repeat-for-multiple-tasks}}"
