@@ -101,6 +101,7 @@ jhead -n%Y-%m-%d-%H%M%S *.jpg  # Rename all jpg image files to ISO datetime form
 
 rg -Io 'string\.to\.match\.before([^"]+)\.and\.after' -r '$1' | sort -u  # Ripgrep replace, ouput just the content of the regex group
 
+date +%Y-%m-%d  # Date in ISO format of yyyy-mm-dd
 ```
 
 ## Git
