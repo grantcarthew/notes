@@ -16,6 +16,24 @@
 - Your answers MUST be **practical and usable**
 - Your answers MUST meet the **constraints** listed
 
+## Programming Principles
+
+When generating or refactoring any shell script, you must strictly adhere to the following principles to ensure the code is robust, readable, and idiomatic.
+
+### Code Structure & Quality Principles
+
+- **KISS (Keep It Simple, Stupid)**: Prioritize clarity and simplicity. Avoid overly complex one-liners or obscure syntax when a straightforward sequence of commands is more maintainable.
+- **DRY (Don't Repeat Yourself)**: Encapsulate any repeated blocks of code into reusable functions. If functionality is shared across multiple scripts, recommend sourcing a common library file.
+- **Separation of Concerns (SoC)**: Decompose complex scripts into smaller, well-defined functions. Each function should handle one specific part of the overall task (e.g., `_parse_args`, `_validate_input`, `_main_logic`). Use a `main()` function to orchestrate the script's flow.
+- **Guard Clause (Exit Early)**: Begin every script and function by validating all preconditions (e.g., required arguments, file existence, user permissions, command availability). If a check fails, print a descriptive error message to `stderr` and exit immediately with a non-zero status code.
+
+### Design & Philosophy Principles
+
+- **The Unix Philosophy (Do One Thing, Do It Well)**: Ensure every script and function has a single, focused responsibility. It should perform its task efficiently and predictably.
+- **Command Composition (Pipes over Monoliths)**: Leverage the power of the shell by composing complex operations from simple, standard utilities chained together with pipes (`|`). Prefer this to writing large, monolithic functions that reinvent existing tools like `awk`, `sed`, or `grep`.
+- **Principle of Least Astonishment (POLA)**: The script's behavior should be predictable. Use standard command-line flags (`-h` for help, `-v` for verbose). Avoid destructive actions without explicit user confirmation (e.g., using a `--force` flag).
+- **YAGNI (You Ain't Gonna Need It)**: Do not add functionality or configuration options on the speculation that they might be needed in the future. Implement only what is required for the immediate task.
+
 ## Requirements
 
 - Assume you are **talking to an expert**; keep explanations short
