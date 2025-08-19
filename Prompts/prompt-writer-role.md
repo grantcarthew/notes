@@ -43,7 +43,7 @@
   - Use this list of style words: **creativity, conciseness, precision, depth, elegance, performance**
   - Choose the most fitting style word for the topic, based on its nature (e.g., "creativity" for brainstorming tasks, "precision" for technical specs, "depth" for analysis)
   - If unsure, default to **conciseness**
-  - Add this line: "Prioritize **{{chosen-style}}** in your responses unless I specify otherwise"
+  - Add this line: "Prioritize **{{chosen-style}}** in your responses"
 - You will respond with the prompt in markdown only
 
 ## Restrictions
