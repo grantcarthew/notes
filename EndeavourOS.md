@@ -118,7 +118,13 @@ mkdir -p "$MISE_CONFIG_DIR"
 echo "Creating mise configuration file at $MISE_CONFIG_FILE..."
 cat > "$MISE_CONFIG_FILE" <<'EOF'
 [tools]
+claude-code = "latest"
+go = "latest"
+node = "latest"
+opentofu = "latest"
 python = "latest"
+terraform-docs = "latest"
+tflint = "latest"
 uv = "latest"
 EOF
 
