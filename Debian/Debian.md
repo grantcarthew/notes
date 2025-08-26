@@ -1,20 +1,22 @@
 missing - fonts-cascadia-code, gping
 
-
 # Debian <!-- omit from toc -->
 
 Debian running notes
 
 Review the following:
+
+- [References](#references)
 - [Basic Setup](#basic-setup)
 - [GUI Apps](#gui-apps)
+  - [Office Apps](#office-apps)
+  - [Other GUI App](#other-gui-app)
 - [AI Tools](#ai-tools)
 - [Cloud Tools](#cloud-tools)
 - [Containers](#containers)
-- [Configuration](#configuration)
-
 
 ## References
+
 - [Awesome TUIs](https://github.com/rothgar/awesome-tuis)
 
 ## Basic Setup
@@ -133,7 +135,7 @@ Descriptions (pacman):
 - [p7zip](https://7-zip.org/): File archiver with a high compression ratio
 - [procs](https://github.com/dalance/procs): A modern replacement for ps written in Rust
 - [progress](https://github.com/Xfennec/progress/tree/master): Displays percentage of running core util commands
-- [pipx](https://github.com/pypa/pipx): Install and Run Python Applications in Isolated Environments 
+- [pipx](https://github.com/pypa/pipx): Install and Run Python Applications in Isolated Environments
 - [ranger](https://github.com/ranger/ranger): A VIM-inspired filemanager for the console
 - [remmina](https://gitlab.com/Remmina/Remmina): The GTK Remmina Remote Desktop Client
 - [ripgrep](https://github.com/BurntSushi/ripgrep) (rg): Better file text search
@@ -146,7 +148,7 @@ Descriptions (pacman):
 - [strace](https://man7.org/linux/man-pages/man1/strace.1.html): Trace system calls and signals
 - [syncthing](https://syncthing.net/): Continuous file synchronization program
 - [syncthing-gtk](https://github.com/kozec/syncthing-gtk): GTK3 based GUI and notification area icon for Syncthing
-- [tigervnc](https://github.com/TigerVNC/tigervnc): High performance, multi-platform VNC client and server 
+- [tigervnc](https://github.com/TigerVNC/tigervnc): High performance, multi-platform VNC client and server
 - [tlp](https://github.com/linrunner/TLP): Optimize Linux Laptop Battery Life
 - [tmux](https://github.com/tmux/tmux): Terminal multiplexer
 - [ttf-cascadia-code](https://github.com/microsoft/cascadia-code): Programming and terminal font
@@ -154,10 +156,11 @@ Descriptions (pacman):
 - [yamllint](https://github.com/adrienverge/yamllint): Linter for YAML files
 - [yazi](https://github.com/sxyazi/yazi): Blazing fast terminal file manager written in Rust, based on async I/O
 - [yq](https://github.com/mikefarah/yq): YAML, JSON, XML, CSV, TOML and properties processor
-- [zellij](https://github.com/zellij-org/zellij): A terminal workspace with batteries included 
+- [zellij](https://github.com/zellij-org/zellij): A terminal workspace with batteries included
 - [zoxide](https://github.com/ajeetdsouza/zoxide): A smarter cd command
 
 Descriptions (yay):
+
 - [jnv](https://github.com/ynqa/jnv): Interactive JSON filter using jq
 
 ## GUI Apps
@@ -230,7 +233,7 @@ Descriptions:
 - File sharing:
   - [Warp](https://apps.gnome.org/Warp/): Fast and secure file transfer
   - [zrok](https://zrok.io/): Open source sharing solution built on OpenZiti, the zero trust networking platform
- 
+
 ## AI Tools
 
 ```shell
@@ -246,12 +249,11 @@ editor: nvim
 wrap: auto
 wrap_code: false
 clients:
-- type: openai
-  api_key: null
+  - type: openai
+    api_key: null
 ```
 
 - [aichat](https://github.com/sigoden/aichat): All-in-one AI CLI tool
-
 
 ## Cloud Tools
 
@@ -309,8 +311,3 @@ sudo pacman -S docker docker-compose minikube
 # Restart
 minikube start
 ```
-
-
-
-
-
