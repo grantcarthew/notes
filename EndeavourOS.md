@@ -2,7 +2,7 @@
 
 EndeavourOS running notes
 
-_For package details, see the [Linux Software](Linux-Software.md) page._
+_For package details, see the [Software](Software.md) page._
 
 - [References](#references)
 - [Basic Setup](#basic-setup)
