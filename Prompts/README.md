@@ -1,5 +1,6 @@
-# Prompt Engineering
+# Prompts and Context Engineering
 
-This directory contains useful LLM prompts I use or have used.
+This directory contains useful LLM Role and Agent prompts I use or have used.
 
-Use my get prompt script called [gp](https://github.com/grantcarthew/scripts/blob/main/gp) to retrieve these prompts with ease.
+See my [scripts](https://github.com/grantcarthew/scripts/) repository for interesting ways to automate the use of these prompts.
+
