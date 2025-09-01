@@ -90,6 +90,7 @@ brew install \
   pastel \
   pinta \
   postgresql@14 \
+  prettier \
   procs \
   ranger \
   ripgrep \
@@ -135,12 +136,14 @@ mkdir -p "$MISE_CONFIG_DIR"
 
 echo "Creating mise configuration file at $MISE_CONFIG_FILE..."
 cat > "$MISE_CONFIG_FILE" <<'EOF'
-# Runtimes & Associated Packages managed by mise
 [tools]
 node = "latest"
-python = "latest"
+python = "3.12"
 terraform = "1.11"
+opentofu = "latest"
 uv = "latest"
+jfrog-cli = "latest"
+rust = "latest"
 EOF
 
 echo "Configuration file successfully created."
