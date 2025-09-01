@@ -62,6 +62,7 @@ A comprehensive collection of Free Open Source Software (FOSS) and useful softwa
 - [gdb](https://sourceware.org/gdb/): GNU Project debugger
 - [gdu](https://github.com/dundee/gdu): Fast disk usage analyzer with console interface written in Go
 - [git](https://git-scm.com/): Source code management
+- [glow](https://github.com/charmbracelet/glow): Render markdown on the CLI, with pizzazz!
 - [gping](https://github.com/orf/gping): Ping, but with a graph
 - [gron](https://github.com/FGRibreau/gron): Make JSON greppable!
 - [hq](https://github.com/coderobe/hq): A HTML processor inspired by jq

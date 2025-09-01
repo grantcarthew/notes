@@ -53,6 +53,7 @@ sudo pacman --refresh --sync --needed \
   gdb \
   ghostty \
   git \
+  glow \
   gping \
   gron \
   hq \
