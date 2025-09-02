@@ -9,7 +9,7 @@ This repository is organized into the following categories:
 ### 🤖 AI & Machine Learning
 
 - **AI/**: Artificial Intelligence resources including Gemini, prompt engineering, and system prompts
-- **Prompts/**: Extensive collection of specialized prompts for development, DevOps, documentation, and various technical tasks
+- **Prompts/**: Information about AI prompts now located in the [scripts repository](https://github.com/grantcarthew/scripts/tree/main/ai)
 
 ### 💻 Operating Systems & Development
 
