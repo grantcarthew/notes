@@ -18,6 +18,6 @@ Other great resources:
 
 I like to use Markdown for my prompts and with the help of ChatGPT I created the Markdown Pseudo-Language. There are other Pseudo-Languages for prompting around:
 
-- [Markdown Pseudo Language](docs/markdown-pseudo-lang.md)
+- [Markdown Pseudo Language](MarkdownPseudoLang.md)
 - [SudoLang: A Powerful Pseudocode Programming Language for LLMs](https://medium.com/javascript-scene/sudolang-a-powerful-pseudocode-programming-language-for-llms-d64d42aa719b)
 - [Anatomy of a SudoLang Program: Prompt Engineering by Example](https://medium.com/javascript-scene/anatomy-of-a-sudolang-program-prompt-engineering-by-example-f7a7b65263bc)
