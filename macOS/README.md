@@ -58,7 +58,6 @@ brew install \
   entr \
   fastfetch \
   fd \
-  firefox \
   fzf \
   ghostty \
   glab \
@@ -115,6 +114,14 @@ brew install \
   zellij \
   zoxide
 ```
+
+## Firefox
+
+To install firefox, download the app and double-click it. You can install it with Brew, but I'm hoping this method with stop me losing my "previous session".
+
+[How to download and install Firefox on Mac](https://support.mozilla.org/en-US/kb/how-download-and-install-firefox-mac)
+
+## Mise
 
 Mise config located at ~/.config/mise/config.toml.
 
