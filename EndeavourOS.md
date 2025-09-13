@@ -56,7 +56,6 @@ sudo pacman --refresh --sync --needed \
   glow \
   gping \
   gron \
-  hq \
   hyperfine \
   iotop \
   jless \
@@ -65,6 +64,7 @@ sudo pacman --refresh --sync --needed \
   ltrace \
   lsd \
   mcfly \
+  mise \
   mtr \
   ncdu \
   neovim \
@@ -78,7 +78,6 @@ sudo pacman --refresh --sync --needed \
   ranger \
   remmina \
   ripgrep \
-  rmlint \
   rsync \
   sd \
   shellcheck \
@@ -143,7 +142,9 @@ Specialised packages:
 
 ```shell
 yay --sync \
-  jnv
+  hq \
+  jnv \
+  rmlint \
   syncthing-gtk
 ```
 
