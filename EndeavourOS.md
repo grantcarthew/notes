@@ -126,6 +126,7 @@ python = "latest"
 terraform-docs = "latest"
 tflint = "latest"
 uv = "latest"
+cosign = "latest"
 EOF
 
 echo "Configuration file successfully created."
@@ -228,10 +229,11 @@ sudo pacman --sync --noconfirm \
   gpick \
   flatpak \
   libreoffice-fresh \
-  pinta \
   vlc \
   xclip \
   xournalpp
+
+yay -S pinta
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 # https://flathub.org/setup/EndeavourOS
