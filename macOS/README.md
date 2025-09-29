@@ -61,10 +61,12 @@ brew install \
   fzf \
   ghostty \
   glab \
+  glow \
   google-cloud-sdk \
   gping \
   gron \
   helm \
+  JohannesKaufmann/tap/html2markdown \
   hq \
   hyperfine \
   jless \
