@@ -65,6 +65,7 @@ A comprehensive collection of Free Open Source Software (FOSS) and useful softwa
 - [glow](https://github.com/charmbracelet/glow): Render markdown on the CLI, with pizzazz!
 - [gping](https://github.com/orf/gping): Ping, but with a graph
 - [gron](https://github.com/FGRibreau/gron): Make JSON greppable!
+- [html2markdown](https://github.com/JohannesKaufmann/html-to-markdown): Convert HTML to Markdown
 - [hq](https://github.com/coderobe/hq): A HTML processor inspired by jq
 - [hyperfine](https://github.com/sharkdp/hyperfine): A command-line benchmarking tool
 - [iotop](https://github.com/Tomas-M/iotop): A top utility for IO
