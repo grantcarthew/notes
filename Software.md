@@ -119,6 +119,7 @@ A comprehensive collection of Free Open Source Software (FOSS) and useful softwa
 ## Graphical Applications
 
 - [Alacarte](https://gitlab.gnome.org/GNOME/alacarte): Menu editor for GNOME using the freedesktop.org menu specification
+- [Baobab](https://gitlab.gnome.org/GNOME/baobab): Gnome Disk Usage Analyzer
 - [chromium](https://www.chromium.org/chromium-projects/): Open-source browser project
 - [code](https://github.com/microsoft/vscode): Visual Studio Code
 - [copyq](https://github.com/hluk/CopyQ): Clipboard manager with advanced features
