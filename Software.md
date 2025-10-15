@@ -54,6 +54,7 @@ A comprehensive collection of Free Open Source Software (FOSS) and useful softwa
 - [diskus](https://github.com/sharkdp/diskus): A minimal, fast alternative to 'du -sh'
 - [dog](https://github.com/ogham/dog): A command-line DNS client
 - [dua](https://github.com/Byron/dua-cli): View disk space usage and delete unwanted data, fast
+- [duf](https://github.com/muesli/duf): Disk Usage/Free Utility - a better 'df' alternative
 - [entr](https://github.com/eradman/entr): Run arbitrary commands when files change
 - [fastfetch](https://github.com/fastfetch-cli/fastfetch): Feature-rich and performance oriented, neofetch like system information tool
 - [fd](https://github.com/sharkdp/fd): A simple, fast and user-friendly alternative to 'find'
