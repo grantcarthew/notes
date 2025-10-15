@@ -54,6 +54,7 @@ brew install \
   diskus \
   docker \
   dua-cli \
+  duf \
   dust \
   entr \
   fastfetch \

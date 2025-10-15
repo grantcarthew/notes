@@ -45,6 +45,7 @@ sudo pacman --refresh --sync --needed \
   diskus \
   dog \
   dua-cli \
+  duf \
   entr \
   fastfetch \
   fd \
