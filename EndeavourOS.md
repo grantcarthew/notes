@@ -35,6 +35,7 @@ Mandatory system wide packages:
 sudo pacman --refresh --sync --needed \
   aichat \
   bandwhich \
+  baobab \
   bash-completion \
   bat \
   broot \
