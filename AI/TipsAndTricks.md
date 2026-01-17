@@ -55,6 +55,9 @@ Reference
 
 I created a [Documentation Driven Development template](https://github.com/grantcarthew/ddd-template) I use for new projects.
 
+### Ask If Happy
+
+At the end of a session, ask the agent if it is happy with the result, whatever it may be. You can use other wording such as "Is this a good implementation?" or "What is your opinion of this design?". It's surprising how often you get some excellent feedback from the agent that can improve the end result if acted on.
 
 
 
