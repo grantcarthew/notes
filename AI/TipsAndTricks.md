@@ -59,6 +59,16 @@ I created a [Documentation Driven Development template](https://github.com/grant
 
 At the end of a session, ask the agent if it is happy with the result, whatever it may be. You can use other wording such as "Is this a good implementation?" or "What is your opinion of this design?". It's surprising how often you get some excellent feedback from the agent that can improve the end result if acted on.
 
+### Ask To Update Permissions
+
+If you are one of the people who decides not to give an AI agent full access to your device, you can get most of the benefit without enabling this dangerous feature. Simply ask, and the end of a session, for the agent to list the commands that were run during the session and compare that list to the ones in the "allowed" list from the settings. After review, ask it to add any that are missing.
+
+### Allow Use of Dangerous Tools
+
+If you depend on a CLI tool that has write/delete access to a system, and you can't just enable the safe parts of the tool, here is an acceptable workaround. Ask the AI agent to write a Bash script that takes the same arguments as the CLI tool, check for unsafe calls, and error.
+
+As an example, I find the GitLab CLI tool named glab is quite limited, as do agents. When using the tool, AI agents often call the "glab api" command. This gives easy authenticated access to the REST API including all features and the ability to delete resources. Wrap that call inside a Bash script that checks for unsafe calls, and errors. Give help to the AI agent when it is needed, and you can "Allow" the use of the script safely. 
+
 
 
 
