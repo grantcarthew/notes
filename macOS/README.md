@@ -43,6 +43,7 @@ brew install \
   bottom \
   broot \
   btop \
+  cloc \
   copyq \
   coreutils \
   coteditor \
