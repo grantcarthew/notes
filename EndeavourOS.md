@@ -40,6 +40,7 @@ sudo pacman --refresh --sync --needed \
   bat \
   broot \
   btop \
+  cloc \
   ctop \
   curlie \
   difftastic \
